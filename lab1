@@ -16,22 +16,20 @@
    16  sudo cp /lib/systemd/system/nginx.service \ /etc/systemd/system/nginx-port80.service
    17  sudo cp /lib/systemd/system/nginx.service /etc/systemd/system/nginx-port80.service
    18  sudo cp /lib/systemd/system/nginx.service /etc/systemd/system/nginx-port8080.service
-   19  sudo mkdir -p /etc/nginx80
-   20* 
-   21* 
-   22  sudo mkdir -p /etc/nginx-port80
-   23  sudo mkdir -p /etc/nginx-port8080
-   24  sudo rm  /etc/nginx80
-   25  sudo cp /etc/nginx/nginx.conf /etc/nginx-port80/nginx.conf
-   26  sudo cp /etc/nginx/nginx.conf /etc/nginx-port8080/nginx.conf
-   27  sudo nano /etc/nginx-port80/nginx.conf
+   19  sudo mkdir -p /etc/nginx80 
+   20  sudo mkdir -p /etc/nginx-port80
+   21  sudo mkdir -p /etc/nginx-port8080
+   22  sudo rm  /etc/nginx80
+   23  sudo cp /etc/nginx/nginx.conf /etc/nginx-port80/nginx.conf
+   24  sudo cp /etc/nginx/nginx.conf /etc/nginx-port8080/nginx.conf
+   25  sudo nano /etc/nginx-port80/nginx.conf
+   26  sudo nano /etc/nginx-port8080/nginx.conf
+   27  nginx -t
    28  sudo nano /etc/nginx-port8080/nginx.conf
    29  nginx -t
-   30  sudo nano /etc/nginx-port8080/nginx.conf
-   31  nginx -t
-   32  sudo nano /etc/systemd/system/nginx-port80.service
-   33  sudo nano /etc/systemd/system/nginx-port8080.service
-   34  sudo systemctl daemon-reload
-   35  touch lab1
-   36  cat >> lab1
-   37  history > lab1
+   30  sudo nano /etc/systemd/system/nginx-port80.service
+   31  sudo nano /etc/systemd/system/nginx-port8080.service
+   32  sudo systemctl daemon-reload
+   33  touch lab1
+   34  cat >> lab1
+   35  history > lab1
