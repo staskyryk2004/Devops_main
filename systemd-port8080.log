@@ -1,0 +1,26 @@
+тра 27 02:54:36 ubuntu systemd[1]: Starting Nginx Instance Port 8080...
+тра 27 02:54:36 ubuntu nginx[9531]: nginx: [crit] pread() "/etc/nginx-port8080" failed (21: Is a directory)
+тра 27 02:54:36 ubuntu nginx[9531]: nginx: configuration file /etc/nginx-port8080 test failed
+тра 27 02:54:36 ubuntu systemd[1]: nginx-port8080.service: Control process exited, code=exited, status=1/FAILURE
+тра 27 02:54:36 ubuntu systemd[1]: nginx-port8080.service: Failed with result 'exit-code'.
+тра 27 02:54:36 ubuntu systemd[1]: Failed to start Nginx Instance Port 8080.
+тра 27 02:55:12 ubuntu systemd[1]: Starting Nginx Instance Port 8080...
+тра 27 02:55:12 ubuntu nginx[9571]: nginx: [crit] pread() "/etc/nginx-port8080" failed (21: Is a directory)
+тра 27 02:55:12 ubuntu nginx[9571]: nginx: configuration file /etc/nginx-port8080 test failed
+тра 27 02:55:12 ubuntu systemd[1]: nginx-port8080.service: Control process exited, code=exited, status=1/FAILURE
+тра 27 02:55:12 ubuntu systemd[1]: nginx-port8080.service: Failed with result 'exit-code'.
+тра 27 02:55:12 ubuntu systemd[1]: Failed to start Nginx Instance Port 8080.
+тра 27 02:57:25 ubuntu systemd[1]: Starting Nginx Instance Port 8080...
+тра 27 02:57:25 ubuntu nginx[9637]: nginx: [crit] pread() "/etc/nginx-port8080" failed (21: Is a directory)
+тра 27 02:57:25 ubuntu nginx[9637]: nginx: configuration file /etc/nginx-port8080 test failed
+тра 27 02:57:25 ubuntu systemd[1]: nginx-port8080.service: Control process exited, code=exited, status=1/FAILURE
+тра 27 02:57:25 ubuntu systemd[1]: nginx-port8080.service: Failed with result 'exit-code'.
+тра 27 02:57:25 ubuntu systemd[1]: Failed to start Nginx Instance Port 8080.
+тра 27 02:57:36 ubuntu systemd[1]: Starting Nginx Instance Port 8080...
+тра 27 02:57:36 ubuntu nginx[9670]: nginx: the configuration file /etc/nginx-port8080/nginx.conf syntax is ok
+тра 27 02:57:36 ubuntu nginx[9670]: nginx: configuration file /etc/nginx-port8080/nginx.conf test is successful
+тра 27 02:57:36 ubuntu systemd[1]: Started Nginx Instance Port 8080.
+тра 27 03:01:06 ubuntu systemd[1]: Stopping Nginx Instance Port 8080...
+тра 27 03:01:06 ubuntu systemd[1]: nginx-port8080.service: Deactivated successfully.
+тра 27 03:01:06 ubuntu systemd[1]: Stopped Nginx Instance Port 8080.
+

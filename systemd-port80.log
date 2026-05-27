@@ -1,0 +1,43 @@
+тра 26 00:28:15 ubuntu systemd[1]: Starting A high performance web server and a reverse proxy server...
+тра 26 00:28:15 ubuntu nginx[6116]: nginx: [emerg] open() "/etc/nginx-port80/nginx.conf;" failed (2: No such file or directory)
+тра 26 00:28:15 ubuntu systemd[1]: nginx-port80.service: Control process exited, code=exited, status=1/FAILURE
+тра 26 00:28:15 ubuntu systemd[1]: nginx-port80.service: Failed with result 'exit-code'.
+тра 26 00:28:15 ubuntu systemd[1]: Failed to start A high performance web server and a reverse proxy server.
+тра 26 00:32:58 ubuntu systemd[1]: Starting A high performance web server and a reverse proxy server...
+тра 26 00:32:58 ubuntu nginx[6130]: nginx: [emerg] open() "/etc/nginx-port80/nginx.conf;" failed (2: No such file or directory)
+тра 26 00:32:58 ubuntu systemd[1]: nginx-port80.service: Control process exited, code=exited, status=1/FAILURE
+тра 26 00:32:58 ubuntu systemd[1]: nginx-port80.service: Failed with result 'exit-code'.
+тра 26 00:32:58 ubuntu systemd[1]: Failed to start A high performance web server and a reverse proxy server.
+тра 26 00:55:20 ubuntu systemd[1]: Starting A high performance web server and a reverse proxy server...
+тра 26 00:55:20 ubuntu nginx[6244]: nginx: [emerg] open() "/etc/nginx-port80/nginx.conf;" failed (2: No such file or directory)
+тра 26 00:55:20 ubuntu systemd[1]: nginx-port80.service: Control process exited, code=exited, status=1/FAILURE
+тра 26 00:55:20 ubuntu systemd[1]: nginx-port80.service: Failed with result 'exit-code'.
+тра 26 00:55:20 ubuntu systemd[1]: Failed to start A high performance web server and a reverse proxy server.
+-- Boot 42b8735f6b7f45979e88943d4e02f914 --
+тра 27 02:45:00 ubuntu systemd[1]: Starting This is Nginx instance port 80...
+тра 27 02:45:00 ubuntu nginx[9304]: nginx: [emerg] open() "/etc/nginx-port80/nginx.conf;" failed (2: No such file or directory)
+тра 27 02:45:00 ubuntu nginx[9304]: nginx: configuration file /etc/nginx-port80/nginx.conf; test failed
+тра 27 02:45:00 ubuntu systemd[1]: nginx-port80.service: Control process exited, code=exited, status=1/FAILURE
+тра 27 02:45:00 ubuntu systemd[1]: nginx-port80.service: Failed with result 'exit-code'.
+тра 27 02:45:00 ubuntu systemd[1]: Failed to start This is Nginx instance port 80.
+тра 27 02:47:50 ubuntu systemd[1]: Starting This is Nginx instance port 80...
+тра 27 02:47:50 ubuntu nginx[9372]: nginx: [emerg] open() "/etc/nginx-port80/nginx.conf;" failed (2: No such file or directory)
+тра 27 02:47:50 ubuntu nginx[9372]: nginx: configuration file /etc/nginx-port80/nginx.conf; test failed
+тра 27 02:47:50 ubuntu systemd[1]: nginx-port80.service: Control process exited, code=exited, status=1/FAILURE
+тра 27 02:47:50 ubuntu systemd[1]: nginx-port80.service: Failed with result 'exit-code'.
+тра 27 02:47:50 ubuntu systemd[1]: Failed to start This is Nginx instance port 80.
+тра 27 02:52:09 ubuntu systemd[1]: Starting This is Nginx instance port 80...
+тра 27 02:52:09 ubuntu nginx[9444]: nginx: [emerg] open() "/etc/nginx-port80/nginx.conf;" failed (2: No such file or directory)
+тра 27 02:52:09 ubuntu nginx[9444]: nginx: configuration file /etc/nginx-port80/nginx.conf; test failed
+тра 27 02:52:09 ubuntu systemd[1]: nginx-port80.service: Control process exited, code=exited, status=1/FAILURE
+тра 27 02:52:09 ubuntu systemd[1]: nginx-port80.service: Failed with result 'exit-code'.
+тра 27 02:52:09 ubuntu systemd[1]: Failed to start This is Nginx instance port 80.
+тра 27 02:53:40 ubuntu systemd[1]: Starting This is Nginx instance port 80...
+тра 27 02:53:40 ubuntu nginx[9502]: nginx: the configuration file /etc/nginx-port80/nginx.conf syntax is ok
+тра 27 02:53:40 ubuntu nginx[9502]: nginx: configuration file /etc/nginx-port80/nginx.conf test is successful
+тра 27 02:53:40 ubuntu systemd[1]: Started This is Nginx instance port 80.
+тра 27 02:55:02 ubuntu systemd[1]: Stopping This is Nginx instance port 80...
+тра 27 02:55:03 ubuntu nginx[9538]: nginx: [error] open() "/run/nginx.pid" failed (2: No such file or directory)
+тра 27 02:55:03 ubuntu systemd[1]: nginx-port80.service: Deactivated successfully.
+тра 27 02:55:03 ubuntu systemd[1]: Stopped This is Nginx instance port 80.
+
