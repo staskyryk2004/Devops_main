@@ -1,0 +1,23 @@
+pid ${PID_FILE};
+
+ worker_processes auto;
+
+ events {
+    worker_connections 1024;
+ }
+
+ http {
+    access_log ${ACCESS_LOG};
+    error_log  ${ERROR_LOG};
+
+    server {
+
+       listen ${PORT} default_server;
+
+       server_name localhost;
+       
+       location / {
+           return 200 "${MESSAGE}\n"
+       }
+    }
+  }

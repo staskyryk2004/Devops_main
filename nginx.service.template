@@ -1,0 +1,20 @@
+[Unit]
+Description=${SERVICE_NAME}
+After=network.target
+
+[Service]
+Type=forking
+PIDFile=${PID_FILE}
+
+ExecStartPre=/usr/sbin/nginx -t -c ${CONFIG_FILE}
+ExecStart=/usr/sbin/nginx -c ${CONFIG_FILE}
+ExecReload=/usr/sbin/nginx -s reload
+ExecStop=/usr/sbin/nginx -s quit
+
+PrivateTmp=true
+NoNewPrivileges=true
+ProtectSystem=full
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target

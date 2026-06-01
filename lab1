@@ -1,4 +1,4 @@
-    1  sudo apt upgrade
+       1  sudo apt upgrade
     2  sudo apt-get install git
     3  add-apt-repository ppa:git-core/ppa 
     4  sudo apt full-upgrade
@@ -56,20 +56,247 @@
    56  sudo systemctl start nginx-port8080
    57  sudo systemctl status nginx-port8080
    58  sudo cat /var/log/nginx/port80-access.log
-   59* 
-   60  sudo systemctl stop nginx-port8080
-   61  sudo systemctl daemon-reload
-   62  history > backup2
-   63  systemd analyze nginx-port80.service
-   64  systemd-analyze nginx-port80.service
-   65  systemd-analyze security nginx-port80.service
-   66  journal -u nginx-port80
-   67  journalctl -u nginx-port80
-   68  journalctl -u nginx-port80 > /tmp/systemd.log
-   69  journalctl -u nginx-port80 > /home/staskyryk2004/systemd.log
-   70  journalctl -u nginx-port8080 > /home/staskyryk2004/systemd.log
-   71  journalctl -u nginx-port80 > /home/staskyryk2004/systemd1.log
-   72  journalctl -u nginx-port80 > /home/staskyryk2004/systemd2.log
-   73  journalctl -u nginx-port8080 > /home/staskyryk2004/systemd2.log
-   74  history > backup3
-
+   59  sudo systemctl stop nginx-port8080
+   60  sudo systemctl daemon-reload
+   61  history > backup2
+   62  systemd analyze nginx-port80.service
+   63  systemd-analyze nginx-port80.service
+   64  systemd-analyze security nginx-port80.service
+   65  journal -u nginx-port80
+   66  journalctl -u nginx-port80
+   67  journalctl -u nginx-port80 > /tmp/systemd.log
+   68  journalctl -u nginx-port80 > /home/staskyryk2004/systemd.log
+   69  journalctl -u nginx-port8080 > /home/staskyryk2004/systemd.log
+   70  journalctl -u nginx-port80 > /home/staskyryk2004/systemd1.log
+   71  journalctl -u nginx-port80 > /home/staskyryk2004/systemd2.log
+   72  journalctl -u nginx-port8080 > /home/staskyryk2004/systemd2.log
+   73  history > backup3
+   74  exit
+   75  ls -l
+   76  nano /etc/systemd/system/nginx-port80.service
+   77  sudo systemctl daemon-reload
+   78  sudo systemctl restart nginx-port8080
+   79  sudo systemctl status nginx-port8080
+   80  sudo systemctl stop nginx-port8080
+   81  sudo systemctl daemon-reload
+   82  sudo systemctl start nginx-port80
+   83  sudo systemctl status nginx-port80
+   84  nano /etc/systemd/system/nginx-port80.service
+   85  nano /etc/nginx-port80/nginx.conf
+   86  nano /etc/systemd/system/nginx-port80.service
+   87  sudo systemctl daemon-reload
+   88  sudo systemctl start nginx-port80
+   89  sudo systemctl status nginx-port80
+   90  sudo systemctl restart nginx-port80
+   91  sudo systemctl restart nginx-port80.service
+   92  nano /etc/nginx-port80/nginx.conf
+   93  sudo systemctl start nginx-port80
+   94  sudo systemctl status nginx-port80
+   95  ps aux
+   96  htop
+   97  sudo systemctl status nginx-port80
+   98  sudo systemctl status nginx-port8080
+   99  sudo systemctl status nginx-port80
+  100  sudo nginx -t -c /etc/nginx-port80/nginx.conf
+  101  nano /etc/nginx-port80/nginx.conf
+  102  sudo systemctl status nginx-port8080
+  103  sudo systemctl status nginx-port80
+  104  sudo systemctl daemon-reload
+  105  sudo systemctl status nginx-port80
+  106  htop
+  107  apt  install htop
+  108  htop
+  109  sudo systemctl status nginx-port80
+  110  nano /etc/nginx-port80/nginx.conf
+  111  nano /etc/systemd/system/nginx-port80.service
+  112  sudo systemctl status nginx-port80
+  113  sudo systemctl daemon-reload
+  114  sudo systemctl status nginx-port80
+  115  nginx -t
+  116  systemd-analyze security nginx-port80.service
+  117  touch systemd-analyze.log
+  118  exit
+  119  nano .env
+  120  ls
+  121  nano .env
+  122  touch .env
+  123  nano .env
+  124  ls
+  125  ls -l
+  126  touch setup-nginx.sh
+  127  touch nginx.service.template
+  128* 
+  129  ls
+  130  touch .env
+  131  ls
+  132  touch .env
+  133  ls
+  134  nano nginx.service.template
+  135  ls -l
+  136  history>output
+  137  nano nginx.conf.template
+  138  nginx -t
+  139  nano nginx.conf.template
+  140  ls -l
+  141  nano setup-nginx.sh
+  142  sudo systemctl status
+  143  sudo systemctl status nginx-port80.service
+  144  sudo systemctl status nginx-port8080.service
+  145  sudo systemctl status nginx-port80
+  146  sudo systemctl status nginx-port8080
+  147  sudo rm -f /etc/systemd/system/nginx-port80.service
+  148  sudo rm -f /etc/systemd/system/nginx-port8080.service
+  149  sudo systemctl daemon-reload
+  150  sudo rm -f /etc/nginx-port80
+  151  sudo rm -rf /etc/nginx-port80
+  152  sudo rm -rf /etc/nginx-port8080
+  153  sudo rm -f /var/log/nginx/port80-access.log
+  154  sudo rm -f /var/log/nginx/port80-error.log
+  155  sudo rm -f /var/log/nginx/port8080-access.log
+  156  sudo rm -f /var/log/nginx/port8080-error.log
+  157  sudo systemctl daemon-reload
+  158  history>output
+  159  chmod +x setup-nginx.sh
+  160  ./setup-nginx.sh
+  161  ls -l
+  162  nano setup-nginx.sh
+  163  ./setup-nginx.sh
+  164  nano /etc/nginx-port80/nginx.conf
+  165  sudo nano /etc/nginx-port80/nginx.conf
+  166  sudo systemctl start nginx-port8080
+  167  sudo mkdir -p /etc/nginx-port80
+  168  sudo mkdir -p /etc/nginx-port8080
+  169  sudo cp /etc/nginx/nginx.conf /etc/nginx-port80/nginx.conf
+  170  sudo cp /etc/nginx/nginx.conf /etc/nginx-port8080/nginx.conf
+  171  nano /etc/systemd/system/nginx-port80.service
+  172  nano /etc/systemd/system/nginx-port8080.service
+  173  sudo nano /etc/nginx-port80/nginx.conf
+  174  sudo nano /etc/nginx-port8080/nginx.conf
+  175  sudo nano /etc/nginx-port80/nginx.conf
+  176  nginx -t
+  177  sudo cat /etc/nginx-port80/nginx.conf
+  178  sudo cat /etc/nginx-port8080/nginx.conf
+  179  ./setup-nginx.sh
+  180  sudo systemctl start nginx-port8080
+  181  sudo systemctl daemon-reload
+  182  sudo systemctl start nginx-port8080
+  183  ./setup-nginx.sh
+  184  sudo ./setup-nginx.sh
+  185  ./setup-nginx.sh "my-nginx-service" "/etc/nginx-port80"
+  186  ./setup-nginx.sh "my-nginx-service" "/etc/nginx"
+  187  nano /etc/systemd/system/nginx-port8080.service
+  188  nano /etc/systemd/system/nginx-port80.service
+  189  nano setup-nginx.sh
+  190  sudo ./setup-nginx.sh
+  191  nano setup-nginx.sh
+  192  sudo ./setup-nginx.sh
+  193  nano setup-nginx.sh
+  194  sudo ./setup-nginx.sh
+  195  nano setup-nginx.sh
+  196  sudo ./setup-nginx.sh
+  197  nano setup-nginx.sh
+  198  sudo ./setup-nginx.sh
+  199  nano setup-nginx.sh
+  200  sudo ./setup-nginx.sh
+  201  nano setup-nginx.sh
+  202  sudo ./setup-nginx.sh
+  203  nano setup-nginx.sh
+  204  sudo ./setup-nginx.sh
+  205  nano setup-nginx.sh
+  206  sudo ./setup-nginx.sh
+  207  nano setup-nginx.sh
+  208  sudo ./setup-nginx.sh
+  209  nano setup-nginx.sh
+  210  nano .env
+  211  nano setup-nginx.sh
+  212  sudo ./setup-nginx.sh
+  213  journalctl -xeu nginx-port80.service
+  214  sudo ./setup-nginx.sh
+  215  systemctl status nginx-port80.service
+  216  history>output
+  217  systemctl status nginx-port80.service
+  218  cat -n /etc/nginx-port80/nginx.conf
+  219  nano /etc/nginx-port80/nginx.conf
+  220  sudo ./setup-nginx.sh
+  221* 
+  222  nano /etc/nginx-port80/nginx.conf
+  223  sudo ./setup-nginx.sh
+  224  nano /etc/nginx-port80/nginx.conf
+  225  systemctl status nginx-port80.service
+  226  nano /etc/nginx-port80/nginx.conf
+  227  systemctl status nginx-port80.service
+  228  systemctl daemon-reload
+  229  systemctl status nginx-port80.service
+  230  nano /etc/nginx-port80/nginx.conf
+  231  sudo ss -tulpn | grep :80
+  232  sudo systemctl stop nginx
+  233  sudo ss -tulpn | grep :80
+  234  sudo ./setup-nginx.sh
+  235  systemctl status nginx-port80.service
+  236  nano /etc/nginx-port80/nginx.conf
+  237  systemctl status nginx-port80.service
+  238  systemctl daemon-reload
+  239  systemctl status nginx-port80.service
+  240  cat -n /etc/nginx-port80/nginx.conf
+  241  nano /etc/nginx-port80/nginx.conf
+  242  systemctl status nginx-port80.service
+  243  systemctl daemon-reload
+  244* 
+  245  cat -n /etc/nginx-port80/nginx.conf
+  246  nano /etc/nginx-port80/nginx.conf
+  247  systemctl status nginx-port80.service
+  248  cat -n /etc/nginx-port80/nginx.conf
+  249  nano /etc/nginx-port80/nginx.conf
+  250  cat -n /etc/nginx-port80/nginx.conf
+  251  systemctl daemon-reload
+  252  systemctl status nginx-port80.service
+  253  nano /etc/nginx-port80/nginx.conf
+  254  systemctl daemon-reload
+  255  systemctl status nginx-port80.service
+  256  sudo ./setup-nginx.sh
+  257  systemctl status nginx-port80.service
+  258  cat -n /etc/nginx-port80/nginx.conf
+  259  nano/etc/nginx-port80/nginx.conf
+  260  nano /etc/nginx-port80/nginx.conf
+  261  systemctl daemon-reload
+  262  systemctl status nginx-port80.service
+  263  cat -n /etc/nginx-port80/nginx.conf
+  264  nano /etc/nginx-port80/nginx.conf
+  265  cat -n /etc/nginx-port80/nginx.conf
+  266  systemctl daemon-reload
+  267  systemctl status nginx-port80.service
+  268  sudo nginx -t -c /etc/nginx-port80/nginx.conf
+  269  systemctl daemon-reload
+  270  systemctl restart nginx-port80
+  271  systemctl status nginx-port80.service
+  272  sudo ./setup-nginx.sh
+  273  systemctl status  nginx-port80.service
+  274  systemctl status  nginx-port8080.service
+  275  cat -n  nginx-port8080.service
+  276  cat   nginx-port8080.service
+  277  cat nginx-port8080.service
+  278* 
+  279  nano setup-nginx.sh
+  280  nano  nginx-port8080.service
+  281  sudo ./setup-nginx.sh
+  282  systemctl status nginx-port8080.service
+  283  systemctl status nginx-port80.service
+  284  nano /etc/nginx-port8080/nginx.conf
+  285  systemctl status nginx-port8080.service
+  286  systemctl restart nginx-port8080.service
+  287  systemctl status nginx-port8080.service
+  288  nano /etc/nginx-port8080/nginx.conf
+  289  systemctl status nginx-port8080.service
+  290  cat -n  nginx-port80.service
+  291  cat -n /etc/nginx-port80/nginx.conf
+  292  systemctl status nginx-port8080.service
+  293  systemctl status nginx-port80.service
+  294  systemctl status nginx-port8080.service
+  295  nano /etc/nginx-port8080/nginx.conf
+  296  systemctl restart nginx-port8080.service
+  297  systemctl status nginx-port8080.service
+  298  sudo ./setup-nginx.sh
+  299  systemctl status nginx-port8080.service
+  300  sudo ./setup-nginx.sh
+  301  systemctl status nginx-port8080.service
+  302  history>output
