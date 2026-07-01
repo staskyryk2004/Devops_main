@@ -1,0 +1,89 @@
+ ~/my-wordpress  minikube start --driver=podman --container-runtime=containerd --no-vtx-check                                                   ✔ ╱ 19:20:07 
+😄  minikube v1.38.1 на Darwin 26.5.2 (arm64)
+    ▪ KUBECONFIG=/Users/staskyryk/.kube/config
+✨  Використовую драйвер podman (experimental) на основі конфігурації користувача
+📌  Використання драйвера Podman без прав суперкористувача
+👍  Запуск вузла "minikube" primary control-plane в кластері "minikube"
+🚜  Отримання базового образа v0.0.50 ...
+💾  Завантаження Kubernetes v1.35.1 preload ...
+    > preloaded-images-k8s-v18-v1...:  292.37 MiB / 292.37 MiB  100.00% 7.40 Mi
+    > gcr.io/k8s-minikube/kicbase...:  483.40 MiB / 483.40 MiB  100.00% 6.15 Mi
+E0701 19:21:38.326000    8880 cache.go:239] Error downloading kic artifacts:  not yet implemented, see issue #8426
+🔥  Створюю podman container (CPUs=2, Memory=1942MB) ...
+📦  Підготовка Kubernetes v1.35.1 у containerd 2.2.1 ...
+🔗  Налаштування CNI (Container Networking Interface) ...
+🔎  Перевіряю компонети Kubernetes...
+    ▪ Використовую образ gcr.io/k8s-minikube/storage-provisioner:v5
+🌟  Увімкнені надбудови: storage-provisioner, default-storageclass
+🏄  Готово! kubectl налаштовано на стандартне використання кластера "minikube" та простору імен "default"
+
+ ~/my-wordpress  helm install my-release oci://registry-1.docker.io/bitnamicharts/wordpress                               ✔ ╱ 1m 38s ╱ minikube 󱃾 ╱ 19:21:54 
+Pulled: registry-1.docker.io/bitnamicharts/wordpress:32.1.10
+Digest: sha256:45828542d0089fb245d39ccc35e5a247141f0c8252b45faef3b646ab61c4bf23
+NAME: my-release
+LAST DEPLOYED: Wed Jul  1 19:22:11 2026
+NAMESPACE: default
+STATUS: deployed
+REVISION: 1
+DESCRIPTION: Install complete
+TEST SUITE: None
+NOTES:
+CHART NAME: wordpress
+CHART VERSION: 32.1.10
+APP VERSION: 7.0.0
+
+⚠ WARNING: Since August 28th, 2025, only a limited subset of images/charts are available for free.
+    Subscribe to Bitnami Secure Images to receive continued support and security updates.
+    More info at https://bitnami.com and https://github.com/bitnami/containers/issues/83267
+
+** Please be patient while the chart is being deployed **
+
+Your WordPress site can be accessed through the following DNS name from within your cluster:
+
+    my-release-wordpress.default.svc.cluster.local (port 80)
+
+To access your WordPress site from outside the cluster follow the steps below:
+
+1. Get the WordPress URL by running these commands:
+
+  NOTE: It may take a few minutes for the LoadBalancer IP to be available.
+        Watch the status with: 'kubectl get svc --namespace default -w my-release-wordpress'
+
+   export SERVICE_IP=$(kubectl get svc --namespace default my-release-wordpress --template "{{ range (index .status.loadBalancer.ingress 0) }}{{ . }}{{ end }}")
+   echo "WordPress URL: http://$SERVICE_IP/"
+   echo "WordPress Admin URL: http://$SERVICE_IP/admin"
+
+2. Open a browser and access WordPress using the obtained URL.
+
+3. Login with the following credentials below to see your blog:
+
+  echo Username: user
+  echo Password: $(kubectl get secret --namespace default my-release-wordpress -o jsonpath="{.data.wordpress-password}" | base64 -d)
+
+WARNING: no WordPress hostname provided and WordPress isn't exposed through Gateway API nor Ingress.
+  As a consequence, site URL will be constructed based on HTTP_HOST header which opens up vulnerability
+  to password-reset poisoning attacks. This is not recommended for production environments.
+  Set the hostname via 'wordpressHost' or exposed WordPress via Gateway API / Ingress.
+WARNING: Rolling tag detected (bitnami/wordpress:latest), please note that it is strongly recommended to avoid using rolling tags in a production environment.
++info https://techdocs.broadcom.com/us/en/vmware-tanzu/bitnami-secure-images/bitnami-secure-images/services/bsi-doc/apps-tutorials-understand-rolling-tags-containers-index.html
+WARNING: Rolling tag detected (bitnami/apache-exporter:latest), please note that it is strongly recommended to avoid using rolling tags in a production environment.
++info https://techdocs.broadcom.com/us/en/vmware-tanzu/bitnami-secure-images/bitnami-secure-images/services/bsi-doc/apps-tutorials-understand-rolling-tags-containers-index.html
+WARNING: Rolling tag detected (bitnami/os-shell:latest), please note that it is strongly recommended to avoid using rolling tags in a production environment.
++info https://techdocs.broadcom.com/us/en/vmware-tanzu/bitnami-secure-images/bitnami-secure-images/services/bsi-doc/apps-tutorials-understand-rolling-tags-containers-index.html
+
+WARNING: There are "resources" sections in the chart not set. Using "resourcesPreset" is not recommended for production. For production installations, please set the following values according to your workload needs:
+  - resources
++info https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+
+ ~/my-wordpress  kubectl create secret generic my-wordpress --from-literal=wordpress-password=admin --from-literal=smtp-password=root --dry-run -o yaml | kubectl apply -f -
+W0701 19:24:26.154612    9024 helpers.go:719] --dry-run is deprecated and can be replaced with --dry-run=client.
+secret/my-wordpress created
+
+ ~/my-wordpress  kubectl get nodes                                                                                                 ✔ ╱ minikube 󱃾 ╱ 19:24:26 
+NAME       STATUS   ROLES           AGE     VERSION
+minikube   Ready    control-plane   3m16s   v1.35.1
+
+ ~/my-wordpress  kubectl get pods                                                                                                  ✔ ╱ minikube 󱃾 ╱ 19:25:06 
+NAME                                    READY   STATUS    RESTARTS   AGE
+my-release-mariadb-0                    1/1     Running   0          3m5s
+my-release-wordpress-5c965d7c87-bzd7d   0/1     Running   0          3m5s
