@@ -1,0 +1,26 @@
+
+aws cloudformation validate-template --template-body file://template.yaml --region eu-central-1
+
+{
+    "Parameters": [],
+    "Description": "CloudFormation template"
+}
+
+aws cloudformation describe-stacks \                                      
+    --stack-name my-visual-architecture-stack \ 
+    --region eu-central-1 \          
+    --query "Stacks[0].StackStatus" \
+    --output text
+
+{
+    "StackId": "arn:aws:cloudformation:eu-central-1:140986930571:stack/my-visual-architecture-stack/1b769a20-77cb-11f1-9e7a-0a966bdd6cdd",
+    "OperationId": "1b77f9b0-77cb-11f1-9e7a-0a966bdd6cdd"
+}
+
+aws cloudformation describe-stacks \                                         
+    --stack-name my-visual-architecture-stack \
+    --region eu-central-1 \
+    --query "Stacks[0].StackStatus" \
+    --output text
+
+CREATE_COMPLETE
