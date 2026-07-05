@@ -1,0 +1,46 @@
+  1  ps xawf
+  2  systemd-analyze
+  3  systemd-analyze blame
+  4  systemd-analyze critical-chain
+  5  systemd-analyze plot > bootup.svg
+  6  systemd-analyze dot --to-pattern='*.target' --from-pattern='*.target' | dot -Tsvg > targets.svg 
+  7  systemctl show-environment
+  8  systemctl cat ssh.service
+  9  systemctl show ssh.service
+  10  systemctl show ssh.service -p ExecMainPID
+  11  systemctl show ssh.service -p ExecMainPID --value
+  12  history>outputcups
+  13 systemctl status cups
+  14 systemctl stop cups
+  15 systemctl status cups
+  16 systemctl start cups
+  17  systemctl status cups
+  18  systemctl cat cups.service
+  19  systemctl show cups -p MemoryMax
+  20  systemctl set-property cups MemoryMax=200G
+  21  systemctl set-property cups MemoryMax=2G
+  22  systemctl cat cups.service
+  23  systemctl set-property cups MemoryMax=2G
+  24  systemctl cat cups.service
+  25  systemctl show cups -p MemoryMax
+  26  systemctl stop cups
+  27  systemctl status cups
+  28  rm -rf /etc/systemd/system.control/cups.service.d
+  29  systemctl daemon-reload
+  30  systemctl restart cups.service
+  31  systemctl cat cups.service
+  32  systemctl status cups
+  33  systemctl get-default
+  34  systemctl set-default multi-user.target
+  35  systemctl isolate default.target
+  36  systemctl list-units -t target | grep graphical
+  37  systemctl list-units -t target --all
+  38  systemctl isolate basic.target
+  39  systemctl cat basic.target
+  40  systemctl cat multi-user.target
+  41  ls /sbin/{halt,poweroff,reboot,shutdown}
+  42  ls -l /sbin/{halt,poweroff,reboot,shutdown}
+  43  history>output
+  44  ls -l /lib/systemd/system | wc -l
+  45  ls -l /run/systemd/system | wc -l
+  46  ls -l /etc/systemd/system | wc -l
