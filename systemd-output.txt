@@ -1,0 +1,3372 @@
+ubuntu@ip-192-168-0-83:~$ ps xawf
+    PID TTY      STAT   TIME COMMAND
+      2 ?        S      0:00 [kthreadd]
+      3 ?        S      0:00  \_ [pool_workqueue_release]
+      4 ?        I<     0:00  \_ [kworker/R-rcu_gp]
+      5 ?        I<     0:00  \_ [kworker/R-sync_wq]
+      6 ?        I<     0:00  \_ [kworker/R-kvfree_rcu_reclaim]
+      7 ?        I<     0:00  \_ [kworker/R-slub_flushwq]
+      8 ?        I<     0:00  \_ [kworker/R-netns]
+      9 ?        I      0:00  \_ [kworker/0:0-events]
+     10 ?        I<     0:00  \_ [kworker/0:0H-events_highpri]
+     11 ?        I      0:00  \_ [kworker/0:1-events]
+     12 ?        I      0:00  \_ [kworker/u8:0-events_unbound]
+     13 ?        I<     0:00  \_ [kworker/R-mm_percpu_wq]
+     14 ?        S      0:00  \_ [ksoftirqd/0]
+     15 ?        I      0:00  \_ [rcu_sched]
+     16 ?        S      0:00  \_ [rcu_exp_par_gp_kthread_worker/0]
+     17 ?        S      0:00  \_ [rcu_exp_gp_kthread_worker]
+     18 ?        S      0:00  \_ [migration/0]
+     19 ?        S      0:00  \_ [idle_inject/0]
+     20 ?        S      0:00  \_ [cpuhp/0]
+     21 ?        S      0:00  \_ [cpuhp/1]
+     22 ?        S      0:00  \_ [idle_inject/1]
+     23 ?        S      0:00  \_ [migration/1]
+     24 ?        S      0:00  \_ [ksoftirqd/1]
+     26 ?        I<     0:00  \_ [kworker/1:0H-events_highpri]
+     27 ?        S      0:00  \_ [kdevtmpfs]
+     28 ?        I<     0:00  \_ [kworker/R-inet_frag_wq]
+     29 ?        I      0:00  \_ [rcu_tasks_rude_kthread]
+     30 ?        I      0:00  \_ [rcu_tasks_trace_kthread]
+     31 ?        S      0:00  \_ [kauditd]
+     32 ?        S      0:00  \_ [khungtaskd]
+     33 ?        I      0:00  \_ [kworker/u8:1-flush-259:0]
+     34 ?        S      0:00  \_ [oom_reaper]
+     35 ?        I<     0:00  \_ [kworker/R-writeback]
+     36 ?        I      0:00  \_ [kworker/u8:2-events_power_efficient]
+     37 ?        S      0:00  \_ [kcompactd0]
+     38 ?        SN     0:00  \_ [ksmd]
+     39 ?        SN     0:00  \_ [khugepaged]
+     40 ?        I<     0:00  \_ [kworker/R-kblockd]
+     41 ?        I<     0:00  \_ [kworker/R-blkcg_punt_bio]
+     42 ?        I<     0:00  \_ [kworker/R-kintegrityd]
+     43 ?        S      0:00  \_ [irq/9-acpi]
+     44 ?        I      0:00  \_ [kworker/1:1-cgroup_free]
+     45 ?        I<     0:00  \_ [kworker/R-tpm_dev_wq]
+     46 ?        I<     0:00  \_ [kworker/R-ata_sff]
+     47 ?        I<     0:00  \_ [kworker/R-md]
+     48 ?        I<     0:00  \_ [kworker/R-md_bitmap]
+     49 ?        I<     0:00  \_ [kworker/R-edac-poller]
+     50 ?        I<     0:00  \_ [kworker/R-devfreq_wq]
+     51 ?        S      0:00  \_ [watchdogd]
+     52 ?        I<     0:00  \_ [kworker/R-quota_events_unbound]
+     53 ?        I<     0:00  \_ [kworker/1:1H-kblockd]
+     54 ?        S      0:00  \_ [kswapd0]
+     55 ?        S      0:00  \_ [ecryptfs-kthread]
+     56 ?        I<     0:00  \_ [kworker/R-kthrotld]
+     57 ?        I<     0:00  \_ [kworker/R-acpi_thermal_pm]
+     58 ?        I<     0:00  \_ [kworker/R-nvme-wq]
+     59 ?        I<     0:00  \_ [kworker/R-nvme-reset-wq]
+     60 ?        I<     0:00  \_ [kworker/R-nvme-delete-wq]
+     61 ?        I<     0:00  \_ [kworker/R-nvme-auth-wq]
+     62 ?        I<     0:00  \_ [kworker/R-ena]
+     63 ?        I      0:00  \_ [kworker/u8:3-events_unbound]
+     64 ?        I      0:00  \_ [kworker/0:2-rcu_gp]
+     65 ?        I<     0:00  \_ [kworker/R-mld]
+     66 ?        I<     0:00  \_ [kworker/R-ipv6_addrconf]
+     67 ?        I<     0:00  \_ [kworker/R-kstrp]
+     69 ?        I<     0:00  \_ [kworker/u9:0]
+     80 ?        I<     0:00  \_ [kworker/R-charger_manager]
+     81 ?        I<     0:00  \_ [kworker/0:1H-kblockd]
+     82 ?        S      0:00  \_ [jbd2/nvme0n1p1-8]
+     83 ?        I<     0:00  \_ [kworker/R-ext4-rsv-conversion]
+     84 ?        I      0:00  \_ [kworker/1:2-events]
+    143 ?        I<     0:00  \_ [kworker/R-kmpathd]
+    144 ?        I<     0:00  \_ [kworker/R-kmpath_handlerd]
+    207 ?        S      0:00  \_ [psimon]
+    227 ?        I      0:00  \_ [kworker/u8:4-flush-259:0]
+    254 ?        I      0:00  \_ [kworker/1:3-events]
+    256 ?        S      0:00  \_ [jbd2/nvme0n1p16-8]
+    257 ?        I<     0:00  \_ [kworker/R-ext4-rsv-conversion]
+   1226 ?        I<     0:00  \_ [kworker/R-tls-strp]
+  12065 ?        S      0:00  \_ [psimon]
+      1 ?        Ss     0:06 /sbin/init
+    123 ?        S<s    0:00 /usr/lib/systemd/systemd-journald
+    200 ?        Ss     0:00 /usr/lib/systemd/systemd-udevd
+    341 ?        Ss     0:00 /usr/lib/systemd/systemd-resolved
+    521 ?        Ss     0:00 /usr/lib/systemd/systemd-networkd
+    626 ?        Ss     0:00 /usr/sbin/acpid
+    630 ?        Ss     0:00 /usr/sbin/cron -f -P
+    631 ?        Ss     0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+    636 ?        Ssl    0:00 /usr/sbin/irqbalance
+    638 ?        Ss     0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+    640 ?        Ssl    0:00 /usr/lib/polkit-1/polkitd --no-debug
+    647 ?        Ssl    0:00 /usr/lib/snapd/snapd
+    658 ?        Ss     0:00 /usr/lib/systemd/systemd-logind
+    776 ?        S      0:00 /usr/sbin/chronyd -F 1
+    786 ?        S      0:00  \_ /usr/sbin/chronyd -F 1
+    779 ttyS0    Ss+    0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,57600,38400,9600 - vt220
+    798 ?        Ssl    0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+    810 ?        Ssl    0:00 /usr/sbin/rsyslogd -n -iNONE
+    849 ?        Ssl    0:00 /usr/sbin/ModemManager
+    861 tty1     Ss+    0:00 /sbin/agetty -o -p -- \u --noclear - linux
+   1002 ?        Ssl    0:01 /snap/amazon-ssm-agent/13009/amazon-ssm-agent
+   1069 ?        Ss     0:00 sshd: ubuntu [priv]
+   1179 ?        S      0:01  \_ sshd: ubuntu@pts/0
+   1182 pts/0    Ss     0:00      \_ -bash
+  16533 pts/0    R+     0:00          \_ ps xawf
+   1074 ?        Ss     0:00 /usr/lib/systemd/systemd --user
+   1075 ?        S      0:00  \_ (sd-pam)
+   7941 ?        SLsl   0:00 /sbin/multipathd -d -s
+  11833 ?        Ssl    0:02 /usr/libexec/fwupd/fwupd
+  16470 ?        Ssl    0:00 /usr/libexec/packagekitd
+  16476 ?        Ssl    0:00 /usr/libexec/udisks2/udisksd
+ubuntu@ip-192-168-0-83:~$ systemd-analyze 
+Startup finished in 1.491s (kernel) + 18.702s (userspace) = 20.194s 
+graphical.target reached after 17.642s in userspace.
+ubuntu@ip-192-168-0-83:~$ systemd-analyze blame
+4.910s snapd.seeded.service
+4.382s fwupd-refresh.service
+3.902s cloud-init-local.service
+2.998s cloud-init.service
+2.109s cloud-config.service
+2.032s motd-news.service
+1.842s fwupd.service
+1.800s systemd-networkd-wait-online.service
+1.687s ldconfig.service
+1.655s ec2-instance-connect-harvest-hostkeys.service
+1.623s snapd.service
+1.611s dev-nvme0n1p1.device
+1.553s pollinate.service
+1.184s rsyslog.service
+1.065s chrony.service
+1.047s cloud-final.service
+ 982ms grub-common.service
+ 973ms polkit.service
+ 901ms networkd-dispatcher.service
+ 880ms hibinit-agent.service
+ 668ms apparmor.service
+ 493ms systemd-logind.service
+ 439ms systemd-resolved.service
+ 413ms e2scrub_reap.service
+ 407ms dev-loop0.device
+ 400ms dev-loop1.device
+ 376ms dbus.service
+ 365ms ModemManager.service
+ 345ms dev-loop2.device
+ 320ms update-notifier-download.service
+ 313ms apport.service
+ 307ms systemd-udevd.service
+ 298ms dev-hugepages.mount
+ 298ms user@1000.service
+ 295ms dev-mqueue.mount
+ 282ms systemd-udev-trigger.service
+ 281ms sys-kernel-debug.mount
+ 272ms sys-kernel-tracing.mount
+ 249ms keyboard-setup.service
+ 242ms systemd-journald.service
+ 241ms kmod-static-nodes.service
+ 227ms lvm2-monitor.service
+ 221ms sysstat.service
+ 209ms modprobe@configfs.service
+ 207ms modprobe@dm_mod.service
+ 198ms plymouth-quit-wait.service
+ 191ms snapd.apparmor.service
+ 189ms modprobe@drm.service
+ 169ms plymouth-quit.service
+ 159ms grub-initrd-fallback.service
+ 158ms modprobe@efi_pstore.service
+ 158ms modprobe@fuse.service
+ 157ms systemd-tmpfiles-setup-dev-early.service
+ 153ms console-setup.service
+ 145ms systemd-fsck@dev-disk-by\x2dlabel-UEFI.service
+ 143ms systemd-machine-id-commit.service
+ 141ms modprobe@loop.service
+ 136ms systemd-user-sessions.service
+ 134ms systemd-remount-fs.service
+ 127ms systemd-modules-load.service
+ 122ms systemd-fsck-root.service
+ 121ms systemd-journal-catalog-update.service
+ 117ms systemd-tmpfiles-setup.service
+ 115ms systemd-tmpfiles-clean.service
+ 109ms finalrd.service
+  99ms systemd-sysctl.service
+  98ms setvtrgb.service
+  94ms udisks2.service
+  92ms systemd-networkd.service
+  91ms plymouth-read-write.service
+  86ms systemd-fsck@dev-disk-by\x2dlabel-BOOT.service
+  86ms ssh.service
+  78ms boot-efi.mount
+  75ms systemd-journal-flush.service
+  75ms user-runtime-dir@1000.service
+  73ms sys-fs-fuse-connections.mount
+  73ms sys-kernel-config.mount
+  67ms boot.mount
+  62ms systemd-update-utmp.service
+  59ms systemd-update-utmp-runlevel.service
+  58ms snap-snapd-26865.mount
+  58ms snap-amazon\x2dssm\x2dagent-13009.mount
+  56ms systemd-sysusers.service
+  55ms snap-core22-2411.mount
+  44ms systemd-random-seed.service
+  43ms ufw.service
+  39ms sysstat-collect.service
+  38ms proc-sys-fs-binfmt_misc.mount
+  33ms lxd-installer.socket
+  33ms systemd-tmpfiles-setup-dev.service
+  32ms multipathd.service
+  32ms snapd.socket
+  28ms systemd-update-done.service
+  16ms modprobe@sd_mod.service
+  10ms systemd-binfmt.service
+  25us blk-availability.service
+
+ubuntu@ip-192-168-0-83:~$ systemd-analyze critical-chain
+The time when unit became active or started is printed after the "@" character.
+The time the unit took to start is printed after the "+" character.
+
+graphical.target @17.642s
+└─multi-user.target @17.639s
+  └─snapd.seeded.service @12.724s +4.910s
+    └─basic.target @12.464s
+      └─sockets.target @12.462s
+        └─snapd.socket @12.428s +32ms
+          └─sysinit.target @12.387s
+            └─cloud-init.service @9.379s +2.998s
+              └─systemd-networkd-wait-online.service @7.572s +1.800s
+                └─systemd-networkd.service @7.466s +92ms
+                  └─network-pre.target @7.455s
+                    └─cloud-init-local.service @3.546s +3.902s
+                      └─systemd-remount-fs.service @1.564s +134ms
+                        └─systemd-fsck-root.service @1.358s +122ms
+                          └─systemd-journald.socket @1.092s
+                            └─-.mount @914ms
+                              └─-.slice @914ms
+ubuntu@ip-192-168-0-83:~$ systemd-analyze plot > bootup.svg
+ubuntu@ip-192-168-0-83:~$ systemd-analyze dot --to-pattern='*.target' --from-pattern='*.target' | dot -Tsvg > targets.svg
+   Color legend: black     = Requires
+                 dark blue = Requisite
+                 dark grey = Wants
+                 red       = Conflicts
+                 green     = After
+ubuntu@ip-192-168-0-83:~$ systemctl show-environment
+LANG=C.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/snap/bin
+ubuntu@ip-192-168-0-83:~$ systemctl cat ssh.service
+# /usr/lib/systemd/system/ssh.service
+[Unit]
+Description=OpenBSD Secure Shell server
+Documentation=man:sshd(8) man:sshd_config(5)
+After=network.target auditd.service
+ConditionPathExists=!/etc/ssh/sshd_not_to_be_run
+
+[Service]
+EnvironmentFile=-/etc/default/ssh
+ExecStartPre=/usr/sbin/sshd -t
+ExecStart=/usr/sbin/sshd -D $SSHD_OPTS
+ExecReload=/usr/sbin/sshd -t
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+Restart=on-failure
+RestartPreventExitStatus=255
+Type=notify
+RuntimeDirectory=sshd
+RuntimeDirectoryMode=0755
+
+[Install]
+WantedBy=multi-user.target
+Alias=sshd.service
+
+# /usr/lib/systemd/system/ssh.service.d/ec2-instance-connect.conf
+[Service]
+ExecStart=
+ExecStart=/usr/sbin/sshd -D -o "AuthorizedKeysCommand /usr/share/ec2-instance-connect/eic_run_authorized_keys %%u %%f" >
+
+ubuntu@ip-192-168-0-83:~$ systemctl show ssh.service
+Type=notify
+ExitType=main
+Restart=on-failure
+RestartMode=normal
+NotifyAccess=main
+RestartUSec=100ms
+RestartSteps=0
+RestartMaxDelayUSec=infinity
+RestartUSecNext=100ms
+TimeoutStartUSec=1min 30s
+TimeoutStopUSec=1min 30s
+TimeoutAbortUSec=1min 30s
+TimeoutStartFailureMode=terminate
+TimeoutStopFailureMode=terminate
+RuntimeMaxUSec=infinity
+RuntimeRandomizedExtraUSec=0
+WatchdogUSec=0
+WatchdogTimestampMonotonic=0
+RootDirectoryStartOnly=no
+RemainAfterExit=no
+GuessMainPID=yes
+RestartPreventExitStatus=255
+MainPID=0
+ControlPID=0
+FileDescriptorStoreMax=0
+NFileDescriptorStore=0
+FileDescriptorStorePreserve=restart
+StatusErrno=0
+Result=success
+
+ubuntu@ip-192-168-0-83:~$ systemctl show ssh.service -p ExecMainPID
+ExecMainPID=1068
+ubuntu@ip-192-168-0-83:~$ systemctl show ssh.service -p ExecMainPID
+ExecMainPID=1068
+ubuntu@ip-192-168-0-83:~$ systemctl show ssh.service -p ExecMainPID --value
+1068
+ubuntu@ip-192-168-0-83:~$ systemctl status ssh.service
+○ ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/usr/lib/systemd/system/ssh.service; disabled; preset: enabled)
+    Drop-In: /usr/lib/systemd/system/ssh.service.d
+             └─ec2-instance-connect.conf
+     Active: inactive (dead) since Thu 2026-07-16 20:02:09 UTC; 40min ago
+   Duration: 2min 56.169s
+TriggeredBy: ● ssh.socket
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+   Main PID: 1068 (code=exited, status=0/SUCCESS)
+        CPU: 121ms
+
+Jul 16 19:59:13 ip-192-168-0-83 systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Jul 16 19:59:13 ip-192-168-0-83 sshd[1068]: Server listening on 0.0.0.0 port 22.
+Jul 16 19:59:13 ip-192-168-0-83 sshd[1068]: Server listening on :: port 22.
+Jul 16 19:59:13 ip-192-168-0-83 systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Jul 16 19:59:18 ip-192-168-0-83 sshd[1069]: Accepted publickey for ubuntu from 94.231.184.218 port 27348 ssh2: ED25519 >
+Jul 16 19:59:18 ip-192-168-0-83 sshd[1069]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(>
+Jul 16 20:02:09 ip-192-168-0-83 sshd[1068]: Received signal 15; terminating.
+Jul 16 20:02:09 ip-192-168-0-83 systemd[1]: Stopping ssh.service - OpenBSD Secure Shell server...
+Jul 16 20:02:09 ip-192-168-0-83 systemd[1]: ssh.service: Deactivated successfully.
+Jul 16 20:02:09 ip-192-168-0-83 systemd[1]: Stopped ssh.service - OpenBSD Secure Shell server.
+
+ubuntu@ip-192-168-0-83:~$ systemctl status cups
+● cups.service - CUPS Scheduler
+     Loaded: loaded (/usr/lib/systemd/system/cups.service; enabled; preset: enabled)
+     Active: active (running) since Thu 2026-07-16 20:45:34 UTC; 10s ago
+TriggeredBy: ● cups.socket
+             ● cups.path
+       Docs: man:cupsd(8)
+   Main PID: 19392 (cupsd)
+     Status: "Scheduler is running..."
+      Tasks: 1 (limit: 1013)
+     Memory: 3.9M (peak: 18.5M)
+        CPU: 808ms
+     CGroup: /system.slice/cups.service
+             └─19392 /usr/sbin/cupsd -l
+
+Jul 16 20:45:34 ip-192-168-0-83 systemd[1]: Starting cups.service - CUPS Scheduler...
+Jul 16 20:45:34 ip-192-168-0-83 systemd[1]: Started cups.service - CUPS Scheduler.
+ubuntu@ip-192-168-0-83:~$ 
+ubuntu@ip-192-168-0-83:~$ systemctl stop cups
+==== AUTHENTICATING FOR org.freedesktop.systemd1.manage-units ====
+Authentication is required to stop 'cups.service'.
+Authenticating as: Ubuntu (ubuntu)
+Password: 
+polkit-agent-helper-1: pam_authenticate failed: Authentication failure
+==== AUTHENTICATION FAILED ====
+Failed to stop cups.service: Access denied
+See system logs and 'systemctl status cups.service' for details.
+ubuntu@ip-192-168-0-83:~$ systemctl stop cups
+==== AUTHENTICATING FOR org.freedesktop.systemd1.manage-units ====
+Authentication is required to stop 'cups.service'.
+Authenticating as: Ubuntu (ubuntu)
+Password: 
+polkit-agent-helper-1: pam_authenticate failed: Authentication failure
+==== AUTHENTICATION FAILED ====
+Failed to stop cups.service: Access denied
+See system logs and 'systemctl status cups.service' for details.
+ubuntu@ip-192-168-0-83:~$ sudo su -
+root@ip-192-168-0-83:~# systemctl status cups
+● cups.service - CUPS Scheduler
+     Loaded: loaded (/usr/lib/systemd/system/cups.service; enabled; preset: enabled)
+     Active: active (running) since Thu 2026-07-16 20:45:34 UTC; 7min ago
+TriggeredBy: ● cups.socket
+             ● cups.path
+       Docs: man:cupsd(8)
+   Main PID: 19392 (cupsd)
+     Status: "Scheduler is running..."
+      Tasks: 1 (limit: 1013)
+     Memory: 3.9M (peak: 18.5M)
+        CPU: 808ms
+     CGroup: /system.slice/cups.service
+             └─19392 /usr/sbin/cupsd -l
+
+Jul 16 20:45:34 ip-192-168-0-83 systemd[1]: Starting cups.service - CUPS Scheduler...
+Jul 16 20:45:34 ip-192-168-0-83 systemd[1]: Started cups.service - CUPS Scheduler.
+root@ip-192-168-0-83:~# systemctl stop cups
+root@ip-192-168-0-83:~# systemctl status cups
+○ cups.service - CUPS Scheduler
+     Loaded: loaded (/usr/lib/systemd/system/cups.service; enabled; preset: enabled)
+     Active: inactive (dead) since Thu 2026-07-16 20:53:45 UTC; 2s ago
+   Duration: 8min 11.644s
+TriggeredBy: ○ cups.socket
+             ○ cups.path
+       Docs: man:cupsd(8)
+    Process: 19392 ExecStart=/usr/sbin/cupsd -l (code=exited, status=0/SUCCESS)
+   Main PID: 19392 (code=exited, status=0/SUCCESS)
+     Status: "Scheduler is running..."
+        CPU: 812ms
+
+Jul 16 20:45:34 ip-192-168-0-83 systemd[1]: Starting cups.service - CUPS Scheduler...
+Jul 16 20:45:34 ip-192-168-0-83 systemd[1]: Started cups.service - CUPS Scheduler.
+Jul 16 20:53:45 ip-192-168-0-83 systemd[1]: Stopping cups.service - CUPS Scheduler...
+Jul 16 20:53:45 ip-192-168-0-83 systemd[1]: cups.service: Deactivated successfully.
+Jul 16 20:53:45 ip-192-168-0-83 systemd[1]: Stopped cups.service - CUPS Scheduler.
+root@ip-192-168-0-83:~# systemctl start cups
+root@ip-192-168-0-83:~# systemctl status cups
+● cups.service - CUPS Scheduler
+     Loaded: loaded (/usr/lib/systemd/system/cups.service; enabled; preset: enabled)
+     Active: active (running) since Thu 2026-07-16 20:54:56 UTC; 2s ago
+TriggeredBy: ● cups.socket
+             ○ cups.path
+       Docs: man:cupsd(8)
+   Main PID: 19674 (cupsd)
+     Status: "Scheduler is running..."
+      Tasks: 1 (limit: 1013)
+     Memory: 2.2M (peak: 2.2M)
+        CPU: 11ms
+     CGroup: /system.slice/cups.service
+             └─19674 /usr/sbin/cupsd -l
+
+Jul 16 20:54:56 ip-192-168-0-83 systemd[1]: Starting cups.service - CUPS Scheduler...
+Jul 16 20:54:56 ip-192-168-0-83 systemd[1]: Started cups.service - CUPS Scheduler.
+root@ip-192-168-0-83:~# systemctl cat cups.service
+# /usr/lib/systemd/system/cups.service
+[Unit]
+Description=CUPS Scheduler
+Documentation=man:cupsd(8)
+After=network.target nss-user-lookup.target nslcd.service
+Requires=cups.socket
+
+[Service]
+ExecStart=/usr/sbin/cupsd -l
+Type=notify
+Restart=on-failure
+
+
+[Install]
+Also=cups.socket cups.path
+WantedBy=printer.target multi-user.target
+root@ip-192-168-0-83:~# systemctl show cups -p MemoryMax
+MemoryMax=infinity
+root@ip-192-168-0-83:~# systemctl set-property cups MemoryMax=200G
+root@ip-192-168-0-83:~# systemctl set-property cups MemoryMax=2G
+root@ip-192-168-0-83:~# systemctl show cups -p MemoryMax
+MemoryMax=2147483648
+root@ip-192-168-0-83:~# systemctl cat cups.service
+# /usr/lib/systemd/system/cups.service
+[Unit]
+Description=CUPS Scheduler
+Documentation=man:cupsd(8)
+After=network.target nss-user-lookup.target nslcd.service
+Requires=cups.socket
+
+[Service]
+ExecStart=/usr/sbin/cupsd -l
+Type=notify
+Restart=on-failure
+
+
+[Install]
+Also=cups.socket cups.path
+WantedBy=printer.target multi-user.target
+
+# /etc/systemd/system.control/cups.service.d/50-MemoryMax.conf
+# This is a drop-in unit file extension, created via "systemctl set-property"
+# or an equivalent operation. Do not edit.
+[Service]
+MemoryMax=2147483648
+root@ip-192-168-0-83:~# systemctl show cups -p MemoryMax
+MemoryMax=2147483648
+root@ip-192-168-0-83:~# systemctl set-property cups MemoryMax=2G
+root@ip-192-168-0-83:~# systemctl show cups -p MemoryMax
+MemoryMax=2147483648
+root@ip-192-168-0-83:~# systemctl cat cups.service
+# /usr/lib/systemd/system/cups.service
+[Unit]
+Description=CUPS Scheduler
+Documentation=man:cupsd(8)
+After=network.target nss-user-lookup.target nslcd.service
+Requires=cups.socket
+
+[Service]
+ExecStart=/usr/sbin/cupsd -l
+Type=notify
+Restart=on-failure
+
+
+[Install]
+Also=cups.socket cups.path
+WantedBy=printer.target multi-user.target
+
+# /etc/systemd/system.control/cups.service.d/50-MemoryMax.conf
+# This is a drop-in unit file extension, created via "systemctl set-property"
+# or an equivalent operation. Do not edit.
+[Service]
+MemoryMax=2147483648
+root@ip-192-168-0-83:~# systemctl stop cups
+root@ip-192-168-0-83:~# systemctl status cups
+○ cups.service - CUPS Scheduler
+     Loaded: loaded (/usr/lib/systemd/system/cups.service; enabled; preset: enabled)
+    Drop-In: /etc/systemd/system.control/cups.service.d
+             └─50-MemoryMax.conf
+     Active: inactive (dead) since Thu 2026-07-16 20:59:50 UTC; 20s ago
+   Duration: 4min 53.936s
+TriggeredBy: ○ cups.socket
+             ○ cups.path
+       Docs: man:cupsd(8)
+    Process: 19674 ExecStart=/usr/sbin/cupsd -l (code=exited, status=0/SUCCESS)
+   Main PID: 19674 (code=exited, status=0/SUCCESS)
+     Status: "Scheduler is running..."
+        CPU: 13ms
+
+Jul 16 20:54:56 ip-192-168-0-83 systemd[1]: Starting cups.service - CUPS Scheduler...
+Jul 16 20:54:56 ip-192-168-0-83 systemd[1]: Started cups.service - CUPS Scheduler.
+Jul 16 20:59:50 ip-192-168-0-83 systemd[1]: Stopping cups.service - CUPS Scheduler...
+Jul 16 20:59:50 ip-192-168-0-83 systemd[1]: cups.service: Deactivated successfully.
+Jul 16 20:59:50 ip-192-168-0-83 systemd[1]: Stopped cups.service - CUPS Scheduler.
+root@ip-192-168-0-83:~# rm -rf /etc/systemd/system.control/cups.service.d
+root@ip-192-168-0-83:~# systemctl daemon-reload
+root@ip-192-168-0-83:~# systemctl restart cups.service
+root@ip-192-168-0-83:~# systemctl cat cups.service
+# /usr/lib/systemd/system/cups.service
+[Unit]
+Description=CUPS Scheduler
+Documentation=man:cupsd(8)
+After=network.target nss-user-lookup.target nslcd.service
+Requires=cups.socket
+
+[Service]
+ExecStart=/usr/sbin/cupsd -l
+Type=notify
+Restart=on-failure
+
+
+[Install]
+Also=cups.socket cups.path
+WantedBy=printer.target multi-user.target
+root@ip-192-168-0-83:~# systemctl status cups
+● cups.service - CUPS Scheduler
+     Loaded: loaded (/usr/lib/systemd/system/cups.service; enabled; preset: enabled)
+     Active: active (running) since Thu 2026-07-16 21:01:00 UTC; 34s ago
+TriggeredBy: ● cups.socket
+             ○ cups.path
+       Docs: man:cupsd(8)
+   Main PID: 19764 (cupsd)
+     Status: "Scheduler is running..."
+      Tasks: 1 (limit: 1013)
+     Memory: 1.7M (peak: 1.7M)
+        CPU: 10ms
+     CGroup: /system.slice/cups.service
+             └─19764 /usr/sbin/cupsd -l
+
+Jul 16 21:01:00 ip-192-168-0-83 systemd[1]: Starting cups.service - CUPS Scheduler...
+Jul 16 21:01:00 ip-192-168-0-83 systemd[1]: Started cups.service - CUPS Scheduler.
+root@ip-192-168-0-83:~# 
+root@ip-192-168-0-83:~# systemctl get-default
+graphical.target
+root@ip-192-168-0-83:~# systemctl set-default multi-user.target
+Created symlink /etc/systemd/system/default.target → /usr/lib/systemd/system/multi-user.target.
+root@ip-192-168-0-83:~# systemctl isolate default.target
+root@ip-192-168-0-83:~# systemctl list-units -t target | grep graphical
+root@ip-192-168-0-83:~# systemctl list-units -t target --all
+  UNIT                                                    LOAD   ACTIVE   SUB    DESCRIPTION                           >
+  basic.target                                            loaded active   active Basic System
+  blockdev@dev-disk-by\x2dlabel-BOOT.target               loaded inactive dead   Block Device Preparation for /dev/disk>
+  blockdev@dev-disk-by\x2dlabel-cloudimg\x2drootfs.target loaded inactive dead   Block Device Preparation for /dev/disk>
+  blockdev@dev-disk-by\x2dlabel-UEFI.target               loaded inactive dead   Block Device Preparation for /dev/disk>
+  blockdev@dev-loop0.target                               loaded inactive dead   Block Device Preparation for /dev/loop0
+  blockdev@dev-loop1.target                               loaded inactive dead   Block Device Preparation for /dev/loop1
+  blockdev@dev-loop2.target                               loaded inactive dead   Block Device Preparation for /dev/loop2
+  blockdev@dev-nvme0n1p15.target                          loaded inactive dead   Block Device Preparation for /dev/nvme>
+  blockdev@dev-nvme0n1p16.target                          loaded inactive dead   Block Device Preparation for /dev/nvme>
+  cloud-config.target                                     loaded active   active Cloud-config availability
+  cloud-init.target                                       loaded active   active Cloud-init target
+  cryptsetup-pre.target                                   loaded inactive dead   Local Encrypted Volumes (Pre)
+  cryptsetup.target                                       loaded active   active Local Encrypted Volumes
+  emergency.target                                        loaded inactive dead   Emergency Mode
+  final.target                                            loaded inactive dead   Late Shutdown Services
+  first-boot-complete.target                              loaded inactive dead   First Boot Complete
+  getty-pre.target                                        loaded active   active Preparation for Logins
+  getty.target                                            loaded active   active Login Prompts
+  graphical.target                                        loaded inactive dead   Graphical Interface
+  hibernate.target                                        loaded inactive dead   System Hibernation
+  hybrid-sleep.target                                     loaded inactive dead   Hybrid Suspend+Hibernate
+  initrd-fs.target                                        loaded inactive dead   Initrd File Systems
+  initrd-root-device.target                               loaded inactive dead   Initrd Root Device
+  initrd-root-fs.target                                   loaded inactive dead   Initrd Root File System
+  initrd-switch-root.target                               loaded inactive dead   Switch Root
+  initrd-usr-fs.target                                    loaded inactive dead   Initrd /usr File System
+  initrd.target                                           loaded inactive dead   Initrd Default Target
+  integritysetup.target                                   loaded active   active Local Integrity Protected Volumes
+  local-fs-pre.target                                     loaded active   active Preparation for Local File Systems
+  local-fs.target                                         loaded active   active Local File Systems
+  multi-user.target                                       loaded active   active Multi-User System
+  network-online.target                                   loaded active   active Network is Online
+  network-pre.target                                      loaded active   active Preparation for Network
+  network.target                                          loaded active   active Network
+  nss-lookup.target                                       loaded active   active Host and Network Name Lookups
+  nss-user-lookup.target                                  loaded inactive dead   User and Group Name Lookups
+  paths.target                                            loaded active   active Path Units
+  remote-cryptsetup.target                                loaded inactive dead   Remote Encrypted Volumes
+  remote-fs-pre.target                                    loaded active   active Preparation for Remote File Systems
+  remote-fs.target                                        loaded active   active Remote File Systems
+  remote-veritysetup.target                               loaded inactive dead   Remote Verity Protected Volumes
+  rescue.target                                           loaded inactive dead   Rescue Mode
+  shutdown.target                                         loaded inactive dead   System Shutdown
+  sleep.target                                            loaded inactive dead   Sleep
+  slices.target                                           loaded active   active Slice Units
+  snapd.mounts-pre.target                                 loaded active   active Mounting snaps
+  snapd.mounts.target                                     loaded active   active Mounted snaps
+  sockets.target                                          loaded active   active Socket Units
+  soft-reboot.target                                      loaded inactive dead   Reboot System Userspace
+  suspend-then-hibernate.target                           loaded inactive dead   Suspend; Hibernate if not used for a p>
+  suspend.target                                          loaded inactive dead   Suspend
+  swap.target                                             loaded active   active Swaps
+  sysinit.target                                          loaded active   active System Initialization
+  time-set.target                                         loaded active   active System Time Set
+  time-sync.target                                        loaded active   active System Time Synchronized
+  timers.target                                           loaded active   active Timer Units
+  umount.target                                           loaded inactive dead   Unmount All Filesystems
+  veritysetup-pre.target                                  loaded inactive dead   Local Verity Protected Volumes (Pre)
+  veritysetup.target                                      loaded active   active Local Verity Protected Volumes
+
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+        SUB    → The low-level unit activation state, values depend on unit type.
+
+root@ip-192-168-0-83:~# systemctl isolate basic.target
+Failed to start basic.target: Operation refused, unit may not be isolated.
+See system logs and 'systemctl status basic.target' for details.
+root@ip-192-168-0-83:~# systemctl status basic.target
+● basic.target - Basic System
+     Loaded: loaded (/usr/lib/systemd/system/basic.target; static)
+     Active: active since Thu 2026-07-16 19:57:57 UTC; 1h 14min ago
+       Docs: man:systemd.special(7)
+
+Jul 16 19:57:57 ip-192-168-0-83 systemd[1]: Reached target basic.target - Basic System.
+root@ip-192-168-0-83:~# systemctl cat basic.target
+
+[Unit]
+Description=Basic System
+Documentation=man:systemd.special(7)
+Requires=sysinit.target
+Wants=sockets.target timers.target paths.target slices.target
+After=sysinit.target sockets.target paths.target slices.target tmp.mount
+
+RequiresMountsFor=/var /var/tmp
+Wants=tmp.mount
+root@ip-192-168-0-83:~# systemctl cat multi-user.target
+[Unit]
+Description=Multi-User System
+Documentation=man:systemd.special(7)
+Requires=basic.target
+Conflicts=rescue.service rescue.target
+After=basic.target rescue.service rescue.target
+AllowIsolate=yes
+root@ip-192-168-0-83:~# ls /sbin/{halt,poweroff,reboot,shutdown}
+/sbin/halt  /sbin/poweroff  /sbin/reboot  /sbin/shutdown
+root@ip-192-168-0-83:~# ls -l /sbin/{halt,poweroff,reboot,shutdown}
+lrwxrwxrwx 1 root root 16 Jun  5 15:36 /sbin/halt -> ../bin/systemctl
+lrwxrwxrwx 1 root root 16 Jun  5 15:36 /sbin/poweroff -> ../bin/systemctl
+lrwxrwxrwx 1 root root 16 Jun  5 15:36 /sbin/reboot -> ../bin/systemctl
+lrwxrwxrwx 1 root root 16 Jun  5 15:36 /sbin/shutdown -> ../bin/systemctl
+root@ip-192-168-0-83:~# ls -l /lib/systemd/system | wc -l
+423
+root@ip-192-168-0-83:~# ls -l /run/systemd/system | wc -l
+4
+root@ip-192-168-0-83:~# ls -l /etc/systemd/system | wc -l
+38
+root@ip-192-168-0-83:~# systemctl list-timers
+NEXT                            LEFT LAST                              PASSED UNIT                           ACTIVATES >
+Thu 2026-07-16 21:30:00 UTC 2min 47s Thu 2026-07-16 21:20:05 UTC     7min ago sysstat-collect.timer          sysstat-co>
+Thu 2026-07-16 21:34:46 UTC     7min Thu 2026-07-16 20:02:39 UTC 1h 24min ago fwupd-refresh.timer            fwupd-refr>
+Fri 2026-07-17 00:00:00 UTC 2h 32min -                                      - dpkg-db-backup.timer           dpkg-db-ba>
+Fri 2026-07-17 00:00:00 UTC 2h 32min -                                      - logrotate.timer                logrotate.>
+Fri 2026-07-17 00:07:00 UTC 2h 39min -                                      - sysstat-summary.timer          sysstat-su>
+Fri 2026-07-17 01:16:59 UTC 3h 49min -                                      - man-db.timer                   man-db.ser>
+Fri 2026-07-17 06:19:55 UTC       8h -                                      - apt-daily-upgrade.timer        apt-daily->
+Fri 2026-07-17 09:06:49 UTC      11h Thu 2026-07-16 20:02:39 UTC 1h 24min ago motd-news.timer                motd-news.>
+Fri 2026-07-17 09:39:37 UTC      12h -                                      - apt-daily.timer                apt-daily.>
+Fri 2026-07-17 20:02:50 UTC      22h Thu 2026-07-16 20:02:50 UTC 1h 24min ago update-notifier-download.timer update-not>
+Fri 2026-07-17 20:12:55 UTC      22h Thu 2026-07-16 20:12:55 UTC 1h 14min ago systemd-tmpfiles-clean.timer   systemd-tm>
+Sun 2026-07-19 03:10:09 UTC   2 days -                                      - e2scrub_all.timer              e2scrub_al>
+Mon 2026-07-20 00:22:18 UTC   3 days -                                      - fstrim.timer                   fstrim.ser>
+Tue 2026-07-21 11:55:53 UTC   4 days -                                      - update-notifier-motd.timer     update-not>
+
+14 timers listed.
+Pass --all to see loaded but inactive timers, too.
+
+root@ip-192-168-0-83:~# systemctl cat fstrim.timer
+# /usr/lib/systemd/system/fstrim.timer
+[Unit]
+Description=Discard unused filesystem blocks once a week
+Documentation=man:fstrim
+ConditionVirtualization=!container
+ConditionPathExists=!/etc/initrd-release
+
+[Timer]
+OnCalendar=weekly
+AccuracySec=1h
+Persistent=true
+RandomizedDelaySec=100min
+
+[Install]
+WantedBy=timers.target
+root@ip-192-168-0-83:~# systemctl cat fstrimservice
+No files found for fstrimservice.service.
+root@ip-192-168-0-83:~# systemctl cat fstrim.service
+# /usr/lib/systemd/system/fstrim.service
+[Unit]
+Description=Discard unused blocks on filesystems from /etc/fstab
+Documentation=man:fstrim(8)
+ConditionVirtualization=!container
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/fstrim --listed-in /etc/fstab:/proc/self/mountinfo --verbose --quiet-unsupported
+PrivateDevices=no
+PrivateNetwork=yes
+PrivateUsers=no
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+MemoryDenyWriteExecute=yes
+SystemCallFilter=@default @file-system @basic-io @system-service
+root@ip-192-168-0-83:~# systemd-analyze calendar hourly
+  Original form: hourly
+Normalized form: *-*-* *:00:00
+    Next elapse: Thu 2026-07-16 22:00:00 UTC
+       From now: 26min left
+root@ip-192-168-0-83:~# systemd-analyze calendar daily
+  Original form: daily
+Normalized form: *-*-* 00:00:00
+    Next elapse: Fri 2026-07-17 00:00:00 UTC
+       From now: 2h 25min left
+root@ip-192-168-0-83:~# systemd-analyze calendar weekly
+  Original form: weekly
+Normalized form: Mon *-*-* 00:00:00
+    Next elapse: Mon 2026-07-20 00:00:00 UTC
+       From now: 3 days left
+root@ip-192-168-0-83:~# systemd-analyze calendar monthly
+  Original form: monthly
+Normalized form: *-*-01 00:00:00
+    Next elapse: Sat 2026-08-01 00:00:00 UTC
+       From now: 2 weeks 1 day left
+root@ip-192-168-0-83:~# systemd-analyze calendar "*-*-* 09..17:00/5"
+  Original form: *-*-* 09..17:00/5
+Normalized form: *-*-* 09..17:00/5:00
+    Next elapse: Fri 2026-07-17 09:00:00 UTC
+       From now: 11h left
+root@ip-192-168-0-83:~# systemd-analyze calendar "Mon..Fri *-*-* 09..17:00/5"
+  Original form: Mon..Fri *-*-* 09..17:00/5
+Normalized form: Mon..Fri *-*-* 09..17:00/5:00
+    Next elapse: Fri 2026-07-17 09:00:00 UTC  
+       From now: 11h left
+root@ip-192-168-0-83:~# 
+root@ip-192-168-0-83:~# systemctl edit --full --force blahwoof.timer
+Successfully installed edited file '/etc/systemd/system/blahwoof.timer'.
+root@ip-192-168-0-83:~# systemctl edit --full --force blahwoof.service
+Successfully installed edited file '/etc/systemd/system/blahwoof.service'.
+root@ip-192-168-0-83:~# systemctl list-timers
+NEXT                            LEFT LAST                              PASSED UNIT                           ACTIVATES >
+Thu 2026-07-16 22:00:00 UTC  4min 2s Thu 2026-07-16 21:50:05 UTC     5min ago sysstat-collect.timer          sysstat-co>
+Thu 2026-07-16 22:13:40 UTC    17min Thu 2026-07-16 21:35:05 UTC    20min ago fwupd-refresh.timer            fwupd-refr>
+Fri 2026-07-17 00:00:00 UTC  2h 4min -                                      - dpkg-db-backup.timer           dpkg-db-ba>
+Fri 2026-07-17 00:00:00 UTC  2h 4min -                                      - logrotate.timer                logrotate.>
+Fri 2026-07-17 00:07:00 UTC 2h 11min -                                      - sysstat-summary.timer          sysstat-su>
+Fri 2026-07-17 06:24:15 UTC       8h -                                      - apt-daily-upgrade.timer        apt-daily->
+Fri 2026-07-17 07:37:07 UTC       9h Thu 2026-07-16 20:02:39 UTC 1h 53min ago motd-news.timer                motd-news.>
+Fri 2026-07-17 08:59:59 UTC      11h -                                      - man-db.timer                   man-db.ser>
+Fri 2026-07-17 11:05:22 UTC      13h -                                      - apt-daily.timer                apt-daily.>
+Fri 2026-07-17 20:02:50 UTC      22h Thu 2026-07-16 20:02:50 UTC 1h 53min ago update-notifier-download.timer update-not>
+Fri 2026-07-17 20:12:55 UTC      22h Thu 2026-07-16 20:12:55 UTC 1h 43min ago systemd-tmpfiles-clean.timer   systemd-tm>
+Sun 2026-07-19 03:10:55 UTC   2 days -                                      - e2scrub_all.timer              e2scrub_al>
+Mon 2026-07-20 01:05:29 UTC   3 days -                                      - fstrim.timer                   fstrim.ser>
+Tue 2026-07-21 10:04:58 UTC   4 days -                                      - update-notifier-motd.timer     update-not>
+
+14 timers listed.
+Pass --all to see loaded but inactive timers, too.
+
+root@ip-192-168-0-83:~# systemctl enable blahwoof.timer
+Created symlink /etc/systemd/system/timers.target.wants/blahwoof.timer → /etc/systemd/system/blahwoof.timer.
+root@ip-192-168-0-83:~# systemctl start blahwoof.timer
+root@ip-192-168-0-83:~# systemctl status blahwoof.timer
+● blahwoof.timer - Run the blahwoof service
+     Loaded: loaded (/etc/systemd/system/blahwoof.timer; enabled; preset: enabled)
+     Active: active (waiting) since Thu 2026-07-16 21:58:39 UTC; 15s ago
+    Trigger: Thu 2026-07-16 21:58:55 UTC; 118ms left
+   Triggers: ● blahwoof.service
+root@ip-192-168-0-83:/home/ubuntu# journalctl
+Jul 16 19:57:46 ubuntu kernel: Linux version 6.17.0-1017-aws (buildd@lcy02-amd64-010) (x86_64-linux-gnu-gcc-13 (Ubuntu >
+Jul 16 19:57:46 ubuntu kernel: Command line: BOOT_IMAGE=/vmlinuz-6.17.0-1017-aws root=PARTUUID=fe814a98-f7fd-4c3d-9642->
+Jul 16 19:57:46 ubuntu kernel: KERNEL supported cpus:
+Jul 16 19:57:46 ubuntu kernel:   Intel GenuineIntel
+Jul 16 19:57:46 ubuntu kernel:   AMD AuthenticAMD
+Jul 16 19:57:46 ubuntu kernel:   Hygon HygonGenuine
+Jul 16 19:57:46 ubuntu kernel:   Centaur CentaurHauls
+Jul 16 19:57:46 ubuntu kernel:   zhaoxin   Shanghai  
+Jul 16 19:57:46 ubuntu kernel: BIOS-provided physical RAM map:
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff] usable
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000390cdfff] usable
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x00000000390ce000-0x000000003934dfff] reserved
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x000000003934e000-0x000000003935dfff] ACPI data
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x000000003935e000-0x00000000393ddfff] ACPI NVS
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x00000000393de000-0x000000003d37bfff] usable
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x000000003d37c000-0x000000003d3fffff] reserved
+Jul 16 19:57:46 ubuntu kernel: NX (Execute Disable) protection: active
+Jul 16 19:57:46 ubuntu kernel: APIC: Static calls initialized
+Jul 16 19:57:46 ubuntu kernel: efi: EFI v2.7 by EDK II
+Jul 16 19:57:46 ubuntu kernel: efi: SMBIOS=0x3926a000 ACPI=0x3935d000 ACPI 2.0=0x3935d014 MEMATTR=0x37a18518 MOKvar=0x3>
+Jul 16 19:57:46 ubuntu kernel: SMBIOS 2.7 present.
+Jul 16 19:57:46 ubuntu kernel: DMI: Amazon EC2 t3.micro/, BIOS 1.0 10/16/2017
+Jul 16 19:57:46 ubuntu kernel: DMI: Memory slots populated: 1/1
+Jul 16 19:57:46 ubuntu kernel: secureboot: Secure boot disabled
+Jul 16 19:57:46 ubuntu kernel: Hypervisor detected: KVM
+Jul 16 19:57:46 ubuntu kernel: last_pfn = 0x3d37c max_arch_pfn = 0x400000000
+Jul 16 19:57:46 ubuntu kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+Jul 16 19:57:46 ubuntu kernel: kvm-clock: using sched offset of 2169140788 cycles
+Jul 16 19:57:46 ubuntu kernel: clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns:>
+Jul 16 19:57:46 ubuntu kernel: tsc: Detected 2499.998 MHz processor
+Jul 16 19:57:46 ubuntu kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Jul 16 19:57:46 ubuntu kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Jul 16 19:57:46 ubuntu kernel: last_pfn = 0x3d37c max_arch_pfn = 0x400000000
+Jul 16 19:57:46 ubuntu kernel: MTRR map: 4 entries (2 fixed + 2 variable; max 18), built from 8 variable MTRRs
+Jul 16 19:57:46 ubuntu kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Jul 16 19:57:46 ubuntu kernel: Using GB pages for direct mapping
+Jul 16 19:57:46 ubuntu kernel: secureboot: Secure boot disabled
+Jul 16 19:57:46 ubuntu kernel: RAMDISK: [mem 0x31c2f000-0x32a70fff]
+Jul 16 19:57:46 ubuntu kernel: ACPI: Early table checksum verification disabled
+Jul 16 19:57:46 ubuntu kernel: ACPI: RSDP 0x000000003935D014 000024 (v02 AMAZON)
+Jul 16 19:57:46 ubuntu kernel: ACPI: XSDT 0x000000003935C0E8 00006C (v01 AMAZON AMZNFACP 00000001      01000013)
+Jul 16 19:57:46 ubuntu kernel: ACPI: FACP 0x0000000039355000 000114 (v01 AMAZON AMZNFACP 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: DSDT 0x0000000039356000 00115A (v01 AMAZON AMZNDSDT 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: FACS 0x00000000393D0000 000040
+Jul 16 19:57:46 ubuntu kernel: ACPI: WAET 0x000000003935B000 000028 (v01 AMAZON AMZNWAET 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: SLIT 0x000000003935A000 00006C (v01 AMAZON AMZNSLIT 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: APIC 0x0000000039359000 000076 (v01 AMAZON AMZNAPIC 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: SRAT 0x0000000039358000 0000A0 (v01 AMAZON AMZNSRAT 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: HPET 0x0000000039354000 000038 (v01 AMAZON AMZNHPET 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: SSDT 0x0000000039353000 000759 (v01 AMAZON AMZNSSDT 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: SSDT 0x0000000039352000 0000D1 (v01 AMAZON AMZNSSDT 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: BGRT 0x0000000039351000 000038 (v01 AMAZON AMAZON   00000002      01000013)
+Jul 16 19:57:46 ubuntu kernel: ACPI: Reserving FACP table memory at [mem 0x39355000-0x39355113]
+Jul 16 19:57:46 ubuntu kernel: ACPI: Reserving DSDT table memory at [mem 0x39356000-0x39357159]
+Jul 16 19:57:46 ubuntu kernel: ACPI: Reserving FACS table memory at [mem 0x393d0000-0x393d003f]
+Jul 16 19:57:46 ubuntu kernel: ACPI: Reserving WAET table memory at [mem 0x3935b000-0x3935b027]
+Jul 16 19:57:46 ubuntu kernel: ACPI: Reserving SLIT table memory at [mem 0x3935a000-0x3935a06b]
+Jul 16 19:57:46 ubuntu kernel: ACPI: Reserving APIC table memory at [mem 0x39359000-0x39359075]
+Jul 16 19:57:46 ubuntu kernel: ACPI: Reserving SRAT table memory at [mem 0x39358000-0x3935809f]
+Jul 16 19:57:46 ubuntu kernel: ACPI: Reserving HPET table memory at [mem 0x39354000-0x39354037]
+Jul 16 19:57:46 ubuntu kernel: ACPI: Reserving SSDT table memory at [mem 0x39353000-0x39353758]
+Jul 16 19:57:46 ubuntu kernel: ACPI: Reserving SSDT table memory at [mem 0x39352000-0x393520d0]
+Jul 16 19:57:46 ubuntu kernel: ACPI: Reserving BGRT table memory at [mem 0x39351000-0x39351037]
+Jul 16 19:57:46 ubuntu kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x00000000-0x3fffffff]
+Jul 16 19:57:46 ubuntu kernel: NODE_DATA(0) allocated [mem 0x3b2cb2c0-0x3b2f5fff]
+Jul 16 19:57:46 ubuntu kernel: Zone ranges:
+Jul 16 19:57:46 ubuntu kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Jul 16 19:57:46 ubuntu kernel:   DMA32    [mem 0x0000000001000000-0x000000003d37bfff]
+Jul 16 19:57:46 ubuntu kernel:   Normal   empty
+Jul 16 19:57:46 ubuntu kernel:   Device   empty
+Jul 16 19:57:46 ubuntu kernel: Movable zone start for each node
+Jul 16 19:57:46 ubuntu kernel: Early memory node ranges
+Jul 16 19:57:46 ubuntu kernel:   node   0: [mem 0x0000000000001000-0x000000000009ffff]
+Jul 16 19:57:46 ubuntu kernel:   node   0: [mem 0x0000000000100000-0x00000000390cdfff]
+Jul 16 19:57:46 ubuntu kernel:   node   0: [mem 0x00000000393de000-0x000000003d37bfff]
+
+root@ip-192-168-0-83:/home/ubuntu# journalctl --list-boots
+IDX BOOT ID                          FIRST ENTRY                 LAST ENTRY                 
+  0 0143418841ac45f4ab134fd65db0b25c Thu 2026-07-16 19:57:46 UTC Thu 2026-07-16 22:57:10 UTC
+root@ip-192-168-0-83:/home/ubuntu# journalctl -b 0
+Jul 16 19:57:46 ubuntu kernel: Linux version 6.17.0-1017-aws (buildd@lcy02-amd64-010) (x86_64-linux-gnu-gcc-13 (Ubuntu >
+Jul 16 19:57:46 ubuntu kernel: Command line: BOOT_IMAGE=/vmlinuz-6.17.0-1017-aws root=PARTUUID=fe814a98-f7fd-4c3d-9642->
+Jul 16 19:57:46 ubuntu kernel: KERNEL supported cpus:
+Jul 16 19:57:46 ubuntu kernel:   Intel GenuineIntel
+Jul 16 19:57:46 ubuntu kernel:   AMD AuthenticAMD
+Jul 16 19:57:46 ubuntu kernel:   Hygon HygonGenuine
+Jul 16 19:57:46 ubuntu kernel:   Centaur CentaurHauls
+Jul 16 19:57:46 ubuntu kernel:   zhaoxin   Shanghai  
+Jul 16 19:57:46 ubuntu kernel: BIOS-provided physical RAM map:
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff] usable
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000390cdfff] usable
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x00000000390ce000-0x000000003934dfff] reserved
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x000000003934e000-0x000000003935dfff] ACPI data
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x000000003935e000-0x00000000393ddfff] ACPI NVS
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x00000000393de000-0x000000003d37bfff] usable
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x000000003d37c000-0x000000003d3fffff] reserved
+Jul 16 19:57:46 ubuntu kernel: NX (Execute Disable) protection: active
+Jul 16 19:57:46 ubuntu kernel: APIC: Static calls initialized
+Jul 16 19:57:46 ubuntu kernel: efi: EFI v2.7 by EDK II
+Jul 16 19:57:46 ubuntu kernel: efi: SMBIOS=0x3926a000 ACPI=0x3935d000 ACPI 2.0=0x3935d014 MEMATTR=0x37a18518 MOKvar=0x3>
+Jul 16 19:57:46 ubuntu kernel: SMBIOS 2.7 present.
+Jul 16 19:57:46 ubuntu kernel: DMI: Amazon EC2 t3.micro/, BIOS 1.0 10/16/2017
+Jul 16 19:57:46 ubuntu kernel: DMI: Memory slots populated: 1/1
+Jul 16 19:57:46 ubuntu kernel: secureboot: Secure boot disabled
+Jul 16 19:57:46 ubuntu kernel: Hypervisor detected: KVM
+Jul 16 19:57:46 ubuntu kernel: last_pfn = 0x3d37c max_arch_pfn = 0x400000000
+Jul 16 19:57:46 ubuntu kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+Jul 16 19:57:46 ubuntu kernel: kvm-clock: using sched offset of 2169140788 cycles
+Jul 16 19:57:46 ubuntu kernel: clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns:>
+Jul 16 19:57:46 ubuntu kernel: tsc: Detected 2499.998 MHz processor
+Jul 16 19:57:46 ubuntu kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Jul 16 19:57:46 ubuntu kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Jul 16 19:57:46 ubuntu kernel: last_pfn = 0x3d37c max_arch_pfn = 0x400000000
+
+root@ip-192-168-0-83:/home/ubuntu# journalctl -u dbus.service
+Jul 16 19:57:57 ip-192-168-0-83 systemd[1]: Starting dbus.service - D-Bus System Message Bus...
+Jul 16 19:57:57 ip-192-168-0-83 dbus-daemon[631]: [system] AppArmor D-Bus mediation is enabled
+Jul 16 19:57:57 ip-192-168-0-83 dbus-daemon[631]: [system] Activating systemd to hand-off: service name='org.freedeskto>
+Jul 16 19:57:58 ip-192-168-0-83 systemd[1]: Started dbus.service - D-Bus System Message Bus.
+Jul 16 19:57:58 ip-192-168-0-83 dbus-daemon[631]: [system] Successfully activated service 'org.freedesktop.systemd1'
+Jul 16 19:57:58 ip-192-168-0-83 dbus-daemon[631]: [system] Activating via systemd: service name='org.freedesktop.Policy>
+Jul 16 19:57:58 ip-192-168-0-83 dbus-daemon[631]: [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+Jul 16 19:57:59 ip-192-168-0-83 dbus-daemon[631]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Jul 16 19:58:01 ip-192-168-0-83 dbus-daemon[631]: [system] Activating via systemd: service name='org.freedesktop.timeda>
+Jul 16 19:58:01 ip-192-168-0-83 dbus-daemon[631]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Jul 16 20:01:24 ip-192-168-0-83 dbus-daemon[631]: [system] Activating via systemd: service name='org.freedesktop.Packag>
+Jul 16 20:01:24 ip-192-168-0-83 dbus-daemon[631]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+Jul 16 20:02:14 ip-192-168-0-83 dbus-daemon[631]: [system] Reloaded configuration
+Jul 16 20:02:14 ip-192-168-0-83 dbus-daemon[631]: [system] Reloaded configuration
+Jul 16 20:02:14 ip-192-168-0-83 dbus-daemon[631]: [system] Reloaded configuration
+Jul 16 20:02:14 ip-192-168-0-83 dbus-daemon[631]: [system] Reloaded configuration
+Jul 16 20:02:14 ip-192-168-0-83 dbus-daemon[631]: [system] Reloaded configuration
+Jul 16 20:02:14 ip-192-168-0-83 dbus-daemon[631]: [system] Reloaded configuration
+Jul 16 20:02:39 ip-192-168-0-83 dbus-daemon[631]: [system] Activating via systemd: service name='org.freedesktop.fwupd'>
+Jul 16 20:02:39 ip-192-168-0-83 systemd[1]: Reloading dbus.service - D-Bus System Message Bus...
+Jul 16 20:02:39 ip-192-168-0-83 dbus-daemon[631]: [system] Reloaded configuration
+Jul 16 20:02:39 ip-192-168-0-83 dbus-send[11829]: method return time=1784232159.725560 sender=org.freedesktop.DBus -> d>
+Jul 16 20:02:39 ip-192-168-0-83 systemd[1]: Reloaded dbus.service - D-Bus System Message Bus.
+Jul 16 20:02:41 ip-192-168-0-83 dbus-daemon[631]: [system] Successfully activated service 'org.freedesktop.fwupd'
+Jul 16 20:02:43 ip-192-168-0-83 dbus-daemon[631]: [system] Reloaded configuration
+Jul 16 20:03:04 ip-192-168-0-83 dbus-daemon[631]: [system] Activating via systemd: service name='org.freedesktop.timeda>
+Jul 16 20:03:04 ip-192-168-0-83 dbus-daemon[631]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Jul 16 20:28:45 ip-192-168-0-83 dbus-daemon[631]: [system] Activating via systemd: service name='org.freedesktop.hostna>
+Jul 16 20:28:45 ip-192-168-0-83 dbus-daemon[631]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Jul 16 20:31:09 ip-192-168-0-83 dbus-daemon[631]: [system] Activating via systemd: service name='org.freedesktop.Packag>
+Jul 16 20:31:09 ip-192-168-0-83 dbus-daemon[631]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+Jul 16 20:31:18 ip-192-168-0-83 dbus-daemon[631]: [system] Activating via systemd: service name='org.freedesktop.hostna>
+Jul 16 20:31:18 ip-192-168-0-83 dbus-daemon[631]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Jul 16 20:45:17 ip-192-168-0-83 dbus-daemon[631]: [system] Reloaded configuration
+Jul 16 20:45:17 ip-192-168-0-83 dbus-daemon[631]: [system] Reloaded configuration
+Jul 16 20:45:17 ip-192-168-0-83 dbus-daemon[631]: [system] Reloaded configuration
+Jul 16 20:45:17 ip-192-168-0-83 dbus-daemon[631]: Unknown username "avahi" in message bus configuration file
+Jul 16 20:45:17 ip-192-168-0-83 dbus-daemon[631]: [system] Reloaded configuration
+Jul 16 20:45:18 ip-192-168-0-83 dbus-daemon[631]: Unknown username "avahi" in message bus configuration file
+Jul 16 20:45:18 ip-192-168-0-83 dbus-daemon[631]: [system] Reloaded configuration
+Jul 16 20:45:18 ip-192-168-0-83 dbus-daemon[631]: Unknown username "avahi" in message bus configuration file
+Jul 16 20:45:18 ip-192-168-0-83 dbus-daemon[631]: [system] Reloaded configuration
+Jul 16 20:45:18 ip-192-168-0-83 dbus-daemon[631]: Unknown username "colord" in message bus configuration file
+
+root@ip-192-168-0-83:/home/ubuntu# journalctl -u dbus.service --follow systemd-cgls
+Failed to add match 'systemd-cgls': Invalid argument
+root@ip-192-168-0-83:/home/ubuntu# journalctl -u dbus.service --follow 
+Jul 16 20:45:25 ip-192-168-0-83 systemd[1]: Reloaded dbus.service - D-Bus System Message Bus.
+Jul 16 20:45:32 ip-192-168-0-83 dbus-daemon[631]: [system] Reloaded configuration
+Jul 16 20:45:36 ip-192-168-0-83 dbus-daemon[631]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.63' (uid=0 pid=19562 comm="/usr/bin/gdbus call --system --dest org.freedeskto" label="unconfined")
+Jul 16 20:45:36 ip-192-168-0-83 dbus-daemon[631]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+Jul 16 21:35:06 ip-192-168-0-83 dbus-daemon[631]: [system] Activating via systemd: service name='org.freedesktop.fwupd' unit='fwupd.service' requested by ':1.78' (uid=990 pid=20037 comm="/usr/bin/fwupdmgr refresh" label="unconfined")
+Jul 16 21:35:06 ip-192-168-0-83 dbus-daemon[631]: [system] Activating via systemd: service name='org.freedesktop.UDisks2' unit='udisks2.service' requested by ':1.79' (uid=0 pid=20045 comm="/usr/libexec/fwupd/fwupd" label="unconfined")
+Jul 16 21:35:06 ip-192-168-0-83 dbus-daemon[631]: [system] Successfully activated service 'org.freedesktop.UDisks2'
+Jul 16 21:35:06 ip-192-168-0-83 dbus-daemon[631]: [system] Successfully activated service 'org.freedesktop.fwupd'
+Jul 16 22:09:55 ip-192-168-0-83 dbus-daemon[631]: [system] Activating via systemd: service name='org.freedesktop.fwupd' unit='fwupd.service' requested by ':1.84' (uid=990 pid=20414 comm="/usr/bin/fwupdmgr refresh" label="unconfined")
+Jul 16 22:09:55 ip-192-168-0-83 dbus-daemon[631]: [system] Successfully activated service 'org.freedesktop.fwupd'
+^C
+root@ip-192-168-0-83:/home/ubuntu# systemd-cgls
+CGroup /:
+-.slice
+├─user.slice
+│ └─user-1000.slice
+│   ├─user@1000.service …
+│   │ └─init.scope
+│   │   ├─1074 /usr/lib/systemd/systemd --user
+│   │   └─1075 (sd-pam)
+│   ├─session-22.scope
+│   │ ├─20903 sshd: ubuntu [priv]
+│   │ ├─21001 sshd: ubuntu@pts/2
+│   │ ├─21003 -bash
+│   │ ├─21082 su
+│   │ ├─21083 bash
+│   │ ├─21337 systemd-cgls
+│   │ └─21338 less
+│   └─session-1.scope
+│     ├─ 1069 sshd: ubuntu [priv]
+│     ├─ 1179 sshd: ubuntu@pts/0
+│     ├─ 1182 -bash
+│     ├─20311 sudo su -
+│     ├─20312 sudo su -
+│     ├─20313 su -
+│     └─20314 -bash
+├─init.scope
+│ └─1 /sbin/init
+└─system.slice
+  ├─irqbalance.service
+  │ └─636 /usr/sbin/irqbalance
+  ├─systemd-networkd.service
+  │ └─521 /usr/lib/systemd/systemd-networkd
+  ├─systemd-udevd.service …
+  │ └─udev
+  │   └─200 /usr/lib/systemd/systemd-udevd
+  ├─cron.service
+  │ └─630 /usr/sbin/cron -f -P
+  ├─system-serial\x2dgetty.slice
+  │ └─serial-getty@ttyS0.service
+  │   └─779 /sbin/agetty -o -p -- \u --keep-baud 115200,57600,38400,9600 - vt220
+  ├─polkit.service
+  │ └─640 /usr/lib/polkit-1/polkitd --no-debug
+  ├─networkd-dispatcher.service
+  │ └─638 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+  ├─multipathd.service
+  │ └─7941 /sbin/multipathd -d -s
+  ├─snap.amazon-ssm-agent.amazon-ssm-agent.service
+  │ └─1002 /snap/amazon-ssm-agent/13009/amazon-ssm-agent
+  ├─ModemManager.service
+  │ └─849 /usr/sbin/ModemManager
+  ├─systemd-journald.service
+
+root@ip-192-168-0-83:/home/ubuntu# sudo journalctl
+_SYSTEMD_CGROUP=/user.slice/user-1001.slice/s
+ession-1.scope
+Jul 16 19:57:46 ubuntu kernel: Linux version 6.17.0-1017-aws (buildd@lcy02-amd64-010) (x86_64-linux-gnu-gcc-13 (Ubuntu >
+Jul 16 19:57:46 ubuntu kernel: Command line: BOOT_IMAGE=/vmlinuz-6.17.0-1017-aws root=PARTUUID=fe814a98-f7fd-4c3d-9642->
+Jul 16 19:57:46 ubuntu kernel: KERNEL supported cpus:
+Jul 16 19:57:46 ubuntu kernel:   Intel GenuineIntel
+Jul 16 19:57:46 ubuntu kernel:   AMD AuthenticAMD
+Jul 16 19:57:46 ubuntu kernel:   Hygon HygonGenuine
+Jul 16 19:57:46 ubuntu kernel:   Centaur CentaurHauls
+Jul 16 19:57:46 ubuntu kernel:   zhaoxin   Shanghai  
+Jul 16 19:57:46 ubuntu kernel: BIOS-provided physical RAM map:
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff] usable
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000390cdfff] usable
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x00000000390ce000-0x000000003934dfff] reserved
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x000000003934e000-0x000000003935dfff] ACPI data
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x000000003935e000-0x00000000393ddfff] ACPI NVS
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x00000000393de000-0x000000003d37bfff] usable
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x000000003d37c000-0x000000003d3fffff] reserved
+Jul 16 19:57:46 ubuntu kernel: NX (Execute Disable) protection: active
+Jul 16 19:57:46 ubuntu kernel: APIC: Static calls initialized
+Jul 16 19:57:46 ubuntu kernel: efi: EFI v2.7 by EDK II
+Jul 16 19:57:46 ubuntu kernel: efi: SMBIOS=0x3926a000 ACPI=0x3935d000 ACPI 2.0=0x3935d014 MEMATTR=0x37a18518 MOKvar=0x3>
+Jul 16 19:57:46 ubuntu kernel: SMBIOS 2.7 present.
+Jul 16 19:57:46 ubuntu kernel: DMI: Amazon EC2 t3.micro/, BIOS 1.0 10/16/2017
+Jul 16 19:57:46 ubuntu kernel: DMI: Memory slots populated: 1/1
+Jul 16 19:57:46 ubuntu kernel: secureboot: Secure boot disabled
+Jul 16 19:57:46 ubuntu kernel: Hypervisor detected: KVM
+Jul 16 19:57:46 ubuntu kernel: last_pfn = 0x3d37c max_arch_pfn = 0x400000000
+Jul 16 19:57:46 ubuntu kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+Jul 16 19:57:46 ubuntu kernel: kvm-clock: using sched offset of 2169140788 cycles
+Jul 16 19:57:46 ubuntu kernel: clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns:>
+Jul 16 19:57:46 ubuntu kernel: tsc: Detected 2499.998 MHz processor
+Jul 16 19:57:46 ubuntu kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Jul 16 19:57:46 ubuntu kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Jul 16 19:57:46 ubuntu kernel: last_pfn = 0x3d37c max_arch_pfn = 0x400000000
+Jul 16 19:57:46 ubuntu kernel: MTRR map: 4 entries (2 fixed + 2 variable; max 18), built from 8 variable MTRRs
+Jul 16 19:57:46 ubuntu kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Jul 16 19:57:46 ubuntu kernel: Using GB pages for direct mapping
+Jul 16 19:57:46 ubuntu kernel: secureboot: Secure boot disabled
+Jul 16 19:57:46 ubuntu kernel: RAMDISK: [mem 0x31c2f000-0x32a70fff]
+Jul 16 19:57:46 ubuntu kernel: ACPI: Early table checksum verification disabled
+Jul 16 19:57:46 ubuntu kernel: ACPI: RSDP 0x000000003935D014 000024 (v02 AMAZON)
+Jul 16 19:57:46 ubuntu kernel: ACPI: XSDT 0x000000003935C0E8 00006C (v01 AMAZON AMZNFACP 00000001      01000013)
+Jul 16 19:57:46 ubuntu kernel: ACPI: FACP 0x0000000039355000 000114 (v01 AMAZON AMZNFACP 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: DSDT 0x0000000039356000 00115A (v01 AMAZON AMZNDSDT 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: FACS 0x00000000393D0000 000040
+Jul 16 19:57:46 ubuntu kernel: ACPI: WAET 0x000000003935B000 000028 (v01 AMAZON AMZNWAET 00000001 AMZN 00000001)
+
+ession-1.scope: command not found
+root@ip-192-168-0-83:/home/ubuntu# sudo journalctl _SYSTEMD_CGROUP=/user.slice/user-1001.slice/session-1.scope
+-- No entries --
+root@ip-192-168-0-83:/home/ubuntu# sudo journalctl_SYSTEMD_CGROUP=/user.slice/user-1001.slice/session-1.scope
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-ABkNnS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-ABkNnS] [-g group] [-h host] [-p prompt] [-U user]
+            [-u user] [command [arg ...]]
+usage: sudo [-ABbEHkNnPS] [-r role] [-t type] [-C num] [-D directory]
+            [-g group] [-h host] [-p prompt] [-R directory] [-T timeout]
+            [-u user] [VAR=value] [-i | -s] [command [arg ...]]
+usage: sudo -e [-ABkNnS] [-r role] [-t type] [-C num] [-D directory]
+            [-g group] [-h host] [-p prompt] [-R directory] [-T timeout]
+            [-u user] file ...
+root@ip-192-168-0-83:/home/ubuntu# sudo journalctl _SYSTEMD_CGROUP=/user.slice/user-1001.slice/session-1.scope
+-- No entries --
+root@ip-192-168-0-83:/home/ubuntu# journalctl  --since=today 
+Jul 16 19:57:46 ubuntu kernel: Linux version 6.17.0-1017-aws (buildd@lcy02-amd64-010) (x86_64-linux-gnu-gcc-13 (Ubuntu >
+Jul 16 19:57:46 ubuntu kernel: Command line: BOOT_IMAGE=/vmlinuz-6.17.0-1017-aws root=PARTUUID=fe814a98-f7fd-4c3d-9642->
+Jul 16 19:57:46 ubuntu kernel: KERNEL supported cpus:
+Jul 16 19:57:46 ubuntu kernel:   Intel GenuineIntel
+Jul 16 19:57:46 ubuntu kernel:   AMD AuthenticAMD
+Jul 16 19:57:46 ubuntu kernel:   Hygon HygonGenuine
+Jul 16 19:57:46 ubuntu kernel:   Centaur CentaurHauls
+Jul 16 19:57:46 ubuntu kernel:   zhaoxin   Shanghai  
+Jul 16 19:57:46 ubuntu kernel: BIOS-provided physical RAM map:
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff] usable
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000390cdfff] usable
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x00000000390ce000-0x000000003934dfff] reserved
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x000000003934e000-0x000000003935dfff] ACPI data
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x000000003935e000-0x00000000393ddfff] ACPI NVS
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x00000000393de000-0x000000003d37bfff] usable
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x000000003d37c000-0x000000003d3fffff] reserved
+Jul 16 19:57:46 ubuntu kernel: NX (Execute Disable) protection: active
+Jul 16 19:57:46 ubuntu kernel: APIC: Static calls initialized
+Jul 16 19:57:46 ubuntu kernel: efi: EFI v2.7 by EDK II
+Jul 16 19:57:46 ubuntu kernel: efi: SMBIOS=0x3926a000 ACPI=0x3935d000 ACPI 2.0=0x3935d014 MEMATTR=0x37a18518 MOKvar=0x3>
+Jul 16 19:57:46 ubuntu kernel: SMBIOS 2.7 present.
+Jul 16 19:57:46 ubuntu kernel: DMI: Amazon EC2 t3.micro/, BIOS 1.0 10/16/2017
+Jul 16 19:57:46 ubuntu kernel: DMI: Memory slots populated: 1/1
+Jul 16 19:57:46 ubuntu kernel: secureboot: Secure boot disabled
+Jul 16 19:57:46 ubuntu kernel: Hypervisor detected: KVM
+Jul 16 19:57:46 ubuntu kernel: last_pfn = 0x3d37c max_arch_pfn = 0x400000000
+Jul 16 19:57:46 ubuntu kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+Jul 16 19:57:46 ubuntu kernel: kvm-clock: using sched offset of 2169140788 cycles
+Jul 16 19:57:46 ubuntu kernel: clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns:>
+Jul 16 19:57:46 ubuntu kernel: tsc: Detected 2499.998 MHz processor
+Jul 16 19:57:46 ubuntu kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Jul 16 19:57:46 ubuntu kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Jul 16 19:57:46 ubuntu kernel: last_pfn = 0x3d37c max_arch_pfn = 0x400000000
+Jul 16 19:57:46 ubuntu kernel: MTRR map: 4 entries (2 fixed + 2 variable; max 18), built from 8 variable MTRRs
+Jul 16 19:57:46 ubuntu kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Jul 16 19:57:46 ubuntu kernel: Using GB pages for direct mapping
+
+root@ip-192-168-0-83:/home/ubuntu# journalctl  --since=-5m 
+Jul 16 23:08:45 ip-192-168-0-83 systemd[1]: Starting blahwoof.service - Write a quick entry to the systemd journal...
+Jul 16 23:08:45 ip-192-168-0-83 (ourno.sh)[21395]: blahwoof.service: Failed to determine user credentials: No such proc>
+Jul 16 23:08:45 ip-192-168-0-83 systemd[1]: blahwoof.service: Main process exited, code=exited, status=217/USER
+Jul 16 23:08:45 ip-192-168-0-83 systemd[1]: blahwoof.service: Failed with result 'exit-code'.
+Jul 16 23:08:45 ip-192-168-0-83 systemd[1]: Failed to start blahwoof.service - Write a quick entry to the systemd journ>
+Jul 16 23:08:50 ip-192-168-0-83 systemd[1]: Starting blahwoof.service - Write a quick entry to the systemd journal...
+Jul 16 23:08:50 ip-192-168-0-83 (ourno.sh)[21396]: blahwoof.service: Failed to determine user credentials: No such proc>
+Jul 16 23:08:50 ip-192-168-0-83 systemd[1]: blahwoof.service: Main process exited, code=exited, status=217/USER
+Jul 16 23:08:50 ip-192-168-0-83 systemd[1]: blahwoof.service: Failed with result 'exit-code'.
+Jul 16 23:08:50 ip-192-168-0-83 systemd[1]: Failed to start blahwoof.service - Write a quick entry to the systemd journ>
+Jul 16 23:08:55 ip-192-168-0-83 systemd[1]: Starting blahwoof.service - Write a quick entry to the systemd journal...
+Jul 16 23:08:55 ip-192-168-0-83 (ourno.sh)[21397]: blahwoof.service: Failed to determine user credentials: No such proc>
+Jul 16 23:08:55 ip-192-168-0-83 systemd[1]: blahwoof.service: Main process exited, code=exited, status=217/USER
+Jul 16 23:08:55 ip-192-168-0-83 systemd[1]: blahwoof.service: Failed with result 'exit-code'.
+Jul 16 23:08:55 ip-192-168-0-83 systemd[1]: Failed to start blahwoof.service - Write a quick entry to the systemd journ>
+Jul 16 23:09:00 ip-192-168-0-83 systemd[1]: Starting blahwoof.service - Write a quick entry to the systemd journal...
+Jul 16 23:09:00 ip-192-168-0-83 (ourno.sh)[21398]: blahwoof.service: Failed to determine user credentials: No such proc>
+Jul 16 23:09:00 ip-192-168-0-83 systemd[1]: blahwoof.service: Main process exited, code=exited, status=217/USER
+Jul 16 23:09:00 ip-192-168-0-83 systemd[1]: blahwoof.service: Failed with result 'exit-code'.
+Jul 16 23:09:00 ip-192-168-0-83 systemd[1]: Failed to start blahwoof.service - Write a quick entry to the systemd journ>
+Jul 16 23:09:05 ip-192-168-0-83 systemd[1]: Starting blahwoof.service - Write a quick entry to the systemd journal...
+Jul 16 23:09:05 ip-192-168-0-83 (ourno.sh)[21399]: blahwoof.service: Failed to determine user credentials: No such proc>
+Jul 16 23:09:05 ip-192-168-0-83 systemd[1]: blahwoof.service: Main process exited, code=exited, status=217/USER
+Jul 16 23:09:05 ip-192-168-0-83 systemd[1]: blahwoof.service: Failed with result 'exit-code'.
+Jul 16 23:09:05 ip-192-168-0-83 systemd[1]: Failed to start blahwoof.service - Write a quick entry to the systemd journ>
+Jul 16 23:09:10 ip-192-168-0-83 systemd[1]: Starting blahwoof.service - Write a quick entry to the systemd journal...
+Jul 16 23:09:10 ip-192-168-0-83 (ourno.sh)[21400]: blahwoof.service: Failed to determine user credentials: No such proc>
+Jul 16 23:09:10 ip-192-168-0-83 systemd[1]: blahwoof.service: Main process exited, code=exited, status=217/USER
+Jul 16 23:09:10 ip-192-168-0-83 systemd[1]: blahwoof.service: Failed with result 'exit-code'.
+Jul 16 23:09:10 ip-192-168-0-83 systemd[1]: Failed to start blahwoof.service - Write a quick entry to the systemd journ>
+Jul 16 23:09:15 ip-192-168-0-83 systemd[1]: Starting blahwoof.service - Write a quick entry to the systemd journal...
+Jul 16 23:09:15 ip-192-168-0-83 (ourno.sh)[21401]: blahwoof.service: Failed to determine user credentials: No such proc>
+Jul 16 23:09:15 ip-192-168-0-83 systemd[1]: blahwoof.service: Main process exited, code=exited, status=217/USER
+Jul 16 23:09:15 ip-192-168-0-83 systemd[1]: blahwoof.service: Failed with result 'exit-code'.
+Jul 16 23:09:15 ip-192-168-0-83 systemd[1]: Failed to start blahwoof.service - Write a quick entry to the systemd journ>
+Jul 16 23:09:18 ip-192-168-0-83 sudo[21402]:     root : TTY=pts/2 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/jou>
+Jul 16 23:09:18 ip-192-168-0-83 sudo[21402]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=>
+Jul 16 23:09:18 ip-192-168-0-83 sudo[21402]: pam_unix(sudo:session): session closed for user root
+Jul 16 23:09:20 ip-192-168-0-83 systemd[1]: Starting blahwoof.service - Write a quick entry to the systemd journal...
+Jul 16 23:09:20 ip-192-168-0-83 (ourno.sh)[21406]: blahwoof.service: Failed to determine user credentials: No such proc>
+Jul 16 23:09:20 ip-192-168-0-83 systemd[1]: blahwoof.service: Main process exited, code=exited, status=217/USER
+Jul 16 23:09:20 ip-192-168-0-83 systemd[1]: blahwoof.service: Failed with result 'exit-code'.
+Jul 16 23:09:20 ip-192-168-0-83 systemd[1]: Failed to start blahwoof.service - Write a quick entry to the systemd journ>
+Jul 16 23:09:25 ip-192-168-0-83 systemd[1]: Starting blahwoof.service - Write a quick entry to the systemd journal...
+Jul 16 23:09:25 ip-192-168-0-83 (ourno.sh)[21407]: blahwoof.service: Failed to determine user credentials: No such proc>
+Jul 16 23:09:25 ip-192-168-0-83 systemd[1]: blahwoof.service: Main process exited, code=exited, status=217/USER
+
+root@ip-192-168-0-83:/home/ubuntu# journalctl  --since="2024-01-15 16:31" --until=now
+Jul 16 19:57:46 ubuntu kernel: Linux version 6.17.0-1017-aws (buildd@lcy02-amd64-010) (x86_64-linux-gnu-gcc-13 (Ubuntu >
+Jul 16 19:57:46 ubuntu kernel: Command line: BOOT_IMAGE=/vmlinuz-6.17.0-1017-aws root=PARTUUID=fe814a98-f7fd-4c3d-9642->
+Jul 16 19:57:46 ubuntu kernel: KERNEL supported cpus:
+Jul 16 19:57:46 ubuntu kernel:   Intel GenuineIntel
+Jul 16 19:57:46 ubuntu kernel:   AMD AuthenticAMD
+Jul 16 19:57:46 ubuntu kernel:   Hygon HygonGenuine
+Jul 16 19:57:46 ubuntu kernel:   Centaur CentaurHauls
+Jul 16 19:57:46 ubuntu kernel:   zhaoxin   Shanghai  
+Jul 16 19:57:46 ubuntu kernel: BIOS-provided physical RAM map:
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff] usable
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000390cdfff] usable
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x00000000390ce000-0x000000003934dfff] reserved
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x000000003934e000-0x000000003935dfff] ACPI data
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x000000003935e000-0x00000000393ddfff] ACPI NVS
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x00000000393de000-0x000000003d37bfff] usable
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x000000003d37c000-0x000000003d3fffff] reserved
+Jul 16 19:57:46 ubuntu kernel: NX (Execute Disable) protection: active
+Jul 16 19:57:46 ubuntu kernel: APIC: Static calls initialized
+Jul 16 19:57:46 ubuntu kernel: efi: EFI v2.7 by EDK II
+Jul 16 19:57:46 ubuntu kernel: efi: SMBIOS=0x3926a000 ACPI=0x3935d000 ACPI 2.0=0x3935d014 MEMATTR=0x37a18518 MOKvar=0x3>
+Jul 16 19:57:46 ubuntu kernel: SMBIOS 2.7 present.
+Jul 16 19:57:46 ubuntu kernel: DMI: Amazon EC2 t3.micro/, BIOS 1.0 10/16/2017
+Jul 16 19:57:46 ubuntu kernel: DMI: Memory slots populated: 1/1
+Jul 16 19:57:46 ubuntu kernel: secureboot: Secure boot disabled
+Jul 16 19:57:46 ubuntu kernel: Hypervisor detected: KVM
+Jul 16 19:57:46 ubuntu kernel: last_pfn = 0x3d37c max_arch_pfn = 0x400000000
+Jul 16 19:57:46 ubuntu kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+Jul 16 19:57:46 ubuntu kernel: kvm-clock: using sched offset of 2169140788 cycles
+Jul 16 19:57:46 ubuntu kernel: clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns:>
+Jul 16 19:57:46 ubuntu kernel: tsc: Detected 2499.998 MHz processor
+Jul 16 19:57:46 ubuntu kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Jul 16 19:57:46 ubuntu kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Jul 16 19:57:46 ubuntu kernel: last_pfn = 0x3d37c max_arch_pfn = 0x400000000
+Jul 16 19:57:46 ubuntu kernel: MTRR map: 4 entries (2 fixed + 2 variable; max 18), built from 8 variable MTRRs
+Jul 16 19:57:46 ubuntu kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Jul 16 19:57:46 ubuntu kernel: Using GB pages for direct mapping
+Jul 16 19:57:46 ubuntu kernel: secureboot: Secure boot disabled
+Jul 16 19:57:46 ubuntu kernel: RAMDISK: [mem 0x31c2f000-0x32a70fff]
+Jul 16 19:57:46 ubuntu kernel: ACPI: Early table checksum verification disabled
+Jul 16 19:57:46 ubuntu kernel: ACPI: RSDP 0x000000003935D014 000024 (v02 AMAZON)
+Jul 16 19:57:46 ubuntu kernel: ACPI: XSDT 0x000000003935C0E8 00006C (v01 AMAZON AMZNFACP 00000001      01000013)
+Jul 16 19:57:46 ubuntu kernel: ACPI: FACP 0x0000000039355000 000114 (v01 AMAZON AMZNFACP 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: DSDT 0x0000000039356000 00115A (v01 AMAZON AMZNDSDT 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: FACS 0x00000000393D0000 000040
+Jul 16 19:57:46 ubuntu kernel: ACPI: WAET 0x000000003935B000 000028 (v01 AMAZON AMZNWAET 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: SLIT 0x000000003935A000 00006C (v01 AMAZON AMZNSLIT 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: APIC 0x0000000039359000 000076 (v01 AMAZON AMZNAPIC 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: SRAT 0x0000000039358000 0000A0 (v01 AMAZON AMZNSRAT 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: HPET 0x0000000039354000 000038 (v01 AMAZON AMZNHPET 00000001 AMZN 00000001)
+
+root@ip-192-168-0-83:/home/ubuntu# journalctl _UID=xxxx
+-- No entries --
+root@ip-192-168-0-83:/home/ubuntu# journalctl
+Jul 16 19:57:46 ubuntu kernel: Linux version 6.17.0-1017-aws (buildd@lcy02-amd64-010) (x86_64-linux-gnu-gcc-13 (Ubuntu >
+Jul 16 19:57:46 ubuntu kernel: Command line: BOOT_IMAGE=/vmlinuz-6.17.0-1017-aws root=PARTUUID=fe814a98-f7fd-4c3d-9642->
+Jul 16 19:57:46 ubuntu kernel: KERNEL supported cpus:
+Jul 16 19:57:46 ubuntu kernel:   Intel GenuineIntel
+Jul 16 19:57:46 ubuntu kernel:   AMD AuthenticAMD
+Jul 16 19:57:46 ubuntu kernel:   Hygon HygonGenuine
+Jul 16 19:57:46 ubuntu kernel:   Centaur CentaurHauls
+Jul 16 19:57:46 ubuntu kernel:   zhaoxin   Shanghai  
+Jul 16 19:57:46 ubuntu kernel: BIOS-provided physical RAM map:
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff] usable
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000390cdfff] usable
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x00000000390ce000-0x000000003934dfff] reserved
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x000000003934e000-0x000000003935dfff] ACPI data
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x000000003935e000-0x00000000393ddfff] ACPI NVS
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x00000000393de000-0x000000003d37bfff] usable
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x000000003d37c000-0x000000003d3fffff] reserved
+Jul 16 19:57:46 ubuntu kernel: NX (Execute Disable) protection: active
+Jul 16 19:57:46 ubuntu kernel: APIC: Static calls initialized
+Jul 16 19:57:46 ubuntu kernel: efi: EFI v2.7 by EDK II
+Jul 16 19:57:46 ubuntu kernel: efi: SMBIOS=0x3926a000 ACPI=0x3935d000 ACPI 2.0=0x3935d014 MEMATTR=0x37a18518 MOKvar=0x3>
+Jul 16 19:57:46 ubuntu kernel: SMBIOS 2.7 present.
+Jul 16 19:57:46 ubuntu kernel: DMI: Amazon EC2 t3.micro/, BIOS 1.0 10/16/2017
+Jul 16 19:57:46 ubuntu kernel: DMI: Memory slots populated: 1/1
+Jul 16 19:57:46 ubuntu kernel: secureboot: Secure boot disabled
+Jul 16 19:57:46 ubuntu kernel: Hypervisor detected: KVM
+Jul 16 19:57:46 ubuntu kernel: last_pfn = 0x3d37c max_arch_pfn = 0x400000000
+Jul 16 19:57:46 ubuntu kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+Jul 16 19:57:46 ubuntu kernel: kvm-clock: using sched offset of 2169140788 cycles
+Jul 16 19:57:46 ubuntu kernel: clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns:>
+Jul 16 19:57:46 ubuntu kernel: tsc: Detected 2499.998 MHz processor
+Jul 16 19:57:46 ubuntu kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Jul 16 19:57:46 ubuntu kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Jul 16 19:57:46 ubuntu kernel: last_pfn = 0x3d37c max_arch_pfn = 0x400000000
+Jul 16 19:57:46 ubuntu kernel: MTRR map: 4 entries (2 fixed + 2 variable; max 18), built from 8 variable MTRRs
+Jul 16 19:57:46 ubuntu kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Jul 16 19:57:46 ubuntu kernel: Using GB pages for direct mapping
+Jul 16 19:57:46 ubuntu kernel: secureboot: Secure boot disabled
+Jul 16 19:57:46 ubuntu kernel: RAMDISK: [mem 0x31c2f000-0x32a70fff]
+Jul 16 19:57:46 ubuntu kernel: ACPI: Early table checksum verification disabled
+Jul 16 19:57:46 ubuntu kernel: ACPI: RSDP 0x000000003935D014 000024 (v02 AMAZON)
+Jul 16 19:57:46 ubuntu kernel: ACPI: XSDT 0x000000003935C0E8 00006C (v01 AMAZON AMZNFACP 00000001      01000013)
+Jul 16 19:57:46 ubuntu kernel: ACPI: FACP 0x0000000039355000 000114 (v01 AMAZON AMZNFACP 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: DSDT 0x0000000039356000 00115A (v01 AMAZON AMZNDSDT 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: FACS 0x00000000393D0000 000040
+Jul 16 19:57:46 ubuntu kernel: ACPI: WAET 0x000000003935B000 000028 (v01 AMAZON AMZNWAET 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: SLIT 0x000000003935A000 00006C (v01 AMAZON AMZNSLIT 00000001 AMZN 00000001)
+
+root@ip-192-168-0-83:/home/ubuntu# pgrep sshd
+1069
+1179
+20902
+20903
+21001
+root@ip-192-168-0-83:/home/ubuntu# journalctl -x
+Jul 16 19:57:46 ubuntu kernel: Linux version 6.17.0-1017-aws (buildd@lcy02-amd64-010) (x86_64-linux-gnu-gcc-13 (Ubuntu >
+Jul 16 19:57:46 ubuntu kernel: Command line: BOOT_IMAGE=/vmlinuz-6.17.0-1017-aws root=PARTUUID=fe814a98-f7fd-4c3d-9642->
+Jul 16 19:57:46 ubuntu kernel: KERNEL supported cpus:
+Jul 16 19:57:46 ubuntu kernel:   Intel GenuineIntel
+Jul 16 19:57:46 ubuntu kernel:   AMD AuthenticAMD
+Jul 16 19:57:46 ubuntu kernel:   Hygon HygonGenuine
+Jul 16 19:57:46 ubuntu kernel:   Centaur CentaurHauls
+Jul 16 19:57:46 ubuntu kernel:   zhaoxin   Shanghai  
+Jul 16 19:57:46 ubuntu kernel: BIOS-provided physical RAM map:
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff] usable
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000390cdfff] usable
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x00000000390ce000-0x000000003934dfff] reserved
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x000000003934e000-0x000000003935dfff] ACPI data
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x000000003935e000-0x00000000393ddfff] ACPI NVS
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x00000000393de000-0x000000003d37bfff] usable
+Jul 16 19:57:46 ubuntu kernel: BIOS-e820: [mem 0x000000003d37c000-0x000000003d3fffff] reserved
+Jul 16 19:57:46 ubuntu kernel: NX (Execute Disable) protection: active
+Jul 16 19:57:46 ubuntu kernel: APIC: Static calls initialized
+Jul 16 19:57:46 ubuntu kernel: efi: EFI v2.7 by EDK II
+Jul 16 19:57:46 ubuntu kernel: efi: SMBIOS=0x3926a000 ACPI=0x3935d000 ACPI 2.0=0x3935d014 MEMATTR=0x37a18518 MOKvar=0x3>
+Jul 16 19:57:46 ubuntu kernel: SMBIOS 2.7 present.
+Jul 16 19:57:46 ubuntu kernel: DMI: Amazon EC2 t3.micro/, BIOS 1.0 10/16/2017
+Jul 16 19:57:46 ubuntu kernel: DMI: Memory slots populated: 1/1
+Jul 16 19:57:46 ubuntu kernel: secureboot: Secure boot disabled
+Jul 16 19:57:46 ubuntu kernel: Hypervisor detected: KVM
+Jul 16 19:57:46 ubuntu kernel: last_pfn = 0x3d37c max_arch_pfn = 0x400000000
+Jul 16 19:57:46 ubuntu kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+Jul 16 19:57:46 ubuntu kernel: kvm-clock: using sched offset of 2169140788 cycles
+Jul 16 19:57:46 ubuntu kernel: clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns:>
+Jul 16 19:57:46 ubuntu kernel: tsc: Detected 2499.998 MHz processor
+Jul 16 19:57:46 ubuntu kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Jul 16 19:57:46 ubuntu kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Jul 16 19:57:46 ubuntu kernel: last_pfn = 0x3d37c max_arch_pfn = 0x400000000
+Jul 16 19:57:46 ubuntu kernel: MTRR map: 4 entries (2 fixed + 2 variable; max 18), built from 8 variable MTRRs
+Jul 16 19:57:46 ubuntu kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Jul 16 19:57:46 ubuntu kernel: Using GB pages for direct mapping
+Jul 16 19:57:46 ubuntu kernel: secureboot: Secure boot disabled
+Jul 16 19:57:46 ubuntu kernel: RAMDISK: [mem 0x31c2f000-0x32a70fff]
+Jul 16 19:57:46 ubuntu kernel: ACPI: Early table checksum verification disabled
+Jul 16 19:57:46 ubuntu kernel: ACPI: RSDP 0x000000003935D014 000024 (v02 AMAZON)
+Jul 16 19:57:46 ubuntu kernel: ACPI: XSDT 0x000000003935C0E8 00006C (v01 AMAZON AMZNFACP 00000001      01000013)
+Jul 16 19:57:46 ubuntu kernel: ACPI: FACP 0x0000000039355000 000114 (v01 AMAZON AMZNFACP 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: DSDT 0x0000000039356000 00115A (v01 AMAZON AMZNDSDT 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: FACS 0x00000000393D0000 000040
+Jul 16 19:57:46 ubuntu kernel: ACPI: WAET 0x000000003935B000 000028 (v01 AMAZON AMZNWAET 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: SLIT 0x000000003935A000 00006C (v01 AMAZON AMZNSLIT 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: APIC 0x0000000039359000 000076 (v01 AMAZON AMZNAPIC 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: SRAT 0x0000000039358000 0000A0 (v01 AMAZON AMZNSRAT 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: HPET 0x0000000039354000 000038 (v01 AMAZON AMZNHPET 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: SSDT 0x0000000039353000 000759 (v01 AMAZON AMZNSSDT 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: SSDT 0x0000000039352000 0000D1 (v01 AMAZON AMZNSSDT 00000001 AMZN 00000001)
+Jul 16 19:57:46 ubuntu kernel: ACPI: BGRT 0x0000000039351000 000038 (v01 AMAZON AMAZON   00000002      01000013)
+Jul 16 19:57:46 ubuntu kernel: ACPI: Reserving FACP table memory at [mem 0x39355000-0x39355113]
+
+root@ip-192-168-0-83:/home/ubuntu# journalctl --list-catalog
+0027229ca0644181a76c4e92458afa2e systemd: One or more messages could not be forwarded to syslog
+0e4284a0caca4bfc81c0bb6786972673 systemd: Unit skipped
+0e54470984ac419689743d957a119e2e systemd: Failed to allocate manager object
+1675d7f172174098b1108bf8c7dc8f5d systemd: DNSSEC validation failed
+187c62eb1e7f463bb530394f52cb090f systemd: A Portable Service has been attached
+1b3bb94037f04bbf81028e135a12d293 systemd: Failed to generate valid unit name from path '@MOUNT_POINT@'.
+1c0454c1bd2241e0ac6fefb4bc631433 systemd: systemd-udev-settle.service is deprecated.
+1dee0369c7fc4736b7099b38ecb46ee7 systemd: Mount point is not empty
+24d8d4452573402496068381a6312df2 systemd: A virtual machine or container has been started
+267437d33fdd41099ad76221cc24a335 systemd: Battery level critically low, powering off
+2ed18d4f78ca47f0a9bc25271c26adb4 systemd: Init received fatal signal but waitpid() failed
+3354939424b4456d9802ca8333ed424a systemd: Session @SESSION_ID@ has been terminated
+36db2dfa5a9045e1bd4af5f93e1cf057 systemd: DNSSEC mode has been turned off, as server doesn't support it
+38e8b1e039ad469291b18b44c553a5b7 systemd: Init failed to fork crash shell
+39f53479d3a045ac8e11786248231fbf systemd: A start job for unit @UNIT@ has finished successfully
+3a73a98baf5b4b199929e3226c0be783 systemd: Init received fatal signal from other process
+3ed0163e868a4417ab8b9e210407a96c systemd: System reboot failed after crash
+3f7d5ef3e54f4302b4f0b143bb270cab systemd: TPM PCR Extended
+42695b500df048298bee37159caa9f2e systemd: Init failed to drop capability bounding set
+45f82f4aef7a4bbf942ce861d1f20990 systemd: Time zone change to @TIMEZONE@
+4ac7566d4d7548f4981f629a28f0f829 systemd: Init received fatal signal and dumped core
+4d4408cfd0d144859184d1e65d7c8a65 systemd: A DNSSEC trust anchor has been revoked
+50876a9db00f4c40bde1a2ad381c3a1b systemd: The system is configured in a way that might cause problems
+56b1cd96f24246c5b607666fda952356 systemd: Init received fatal signal but coredump failed
+58432bd3bace477cb514b56381b8a758 systemd: A virtual machine or container has been terminated
+59288af523be43a28d494e41e26e4510 systemd: Manager failed to start default target
+5aadd8e954dc4b1a8c954d63fd9e1137 systemd: Core file was truncated to @SIZE_LIMIT@ bytes.
+5addb3a06a734d3396b794bf98fb2d01 systemd: Init received fatal signal while coredump is disabled
+5c9e98de4ab94c6a9d04d0ad793bd903 systemd: Init received fatal signal but fork failed
+5e6f1f5e4db64a0eaee3368249d20b94 systemd: Init received fatal signal from unknown sender process
+5eb03494b6584870a536b337290809b3 systemd: Automatic restarting of a unit has been scheduled
+5ed836f1766f4a8a9fc5da45aae23b29 systemd: Manager failed to collect passed file descriptors
+641257651c1b4ec9a8624d7a40a9e1e7 systemd: Process @EXECUTABLE@ could not be executed
+645c735537634ae0a32b15a7c6cba7d4 systemd: Init execution froze
+658a67adc1c940b3b3316e7e8628834a systemd: Manager failed to load SELinux policy
+689b4fcc97b4486ea5da92db69c9e314 systemd: Manager failed to isolate default target
+6a40fbfbd2ba4b8db02fb40c9cd090d7 systemd: Init failed to fix up environment variables
+
+root@ip-192-168-0-83:/home/ubuntu# journalctl --disk-usage
+Archived and active journals take up 16.0M in the file system.
+root@ip-192-168-0-83:/home/ubuntu# journalctl --vacuum-size
+journalctl: option '--vacuum-size' requires an argument
+root@ip-192-168-0-83:/home/ubuntu# journalctl --vacuum-size=500M
+Vacuuming done, freed 0B of archived journals from /var/log/journal/ec29e89f95bd57fde8d5745f8ed47857.
+Vacuuming done, freed 0B of archived journals from /var/log/journal.
+Vacuuming done, freed 0B of archived journals from /run/log/journal.
+root@ip-192-168-0-83:/home/ubuntu# journalctl --disk-usage
+Archived and active journals take up 16.0M in the file system.
+root@ip-192-168-0-83:/home/ubuntu# 
+root@ip-192-168-0-83:/home/ubuntu# sudo apt install systemd-container bridge-utils
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libnss-mymachines
+Suggested packages:
+  ifupdown
+The following NEW packages will be installed:
+  bridge-utils libnss-mymachines systemd-container
+0 upgraded, 3 newly installed, 0 to remove and 3 not upgraded.
+Need to get 604 kB of archives.
+After this operation, 2019 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 bridge-utils amd64 1.7.1-1ubuntu2 [33.9 kB]
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 systemd-container amd64 255.4-1ubuntu8.16 [417 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libnss-mymachines amd64 255.4-1ubuntu8.16 [153 kB]
+Fetched 604 kB in 0s (20.5 MB/s)            
+Selecting previously unselected package bridge-utils.
+(Reading database ... 77408 files and directories currently installed.)
+Preparing to unpack .../bridge-utils_1.7.1-1ubuntu2_amd64.deb ...
+Unpacking bridge-utils (1.7.1-1ubuntu2) ...
+Selecting previously unselected package systemd-container.
+Preparing to unpack .../systemd-container_255.4-1ubuntu8.16_amd64.deb ...
+Unpacking systemd-container (255.4-1ubuntu8.16) ...
+Selecting previously unselected package libnss-mymachines:amd64.
+Preparing to unpack .../libnss-mymachines_255.4-1ubuntu8.16_amd64.deb ...
+Unpacking libnss-mymachines:amd64 (255.4-1ubuntu8.16) ...
+Setting up bridge-utils (1.7.1-1ubuntu2) ...
+Setting up systemd-container (255.4-1ubuntu8.16) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/machines.target → /usr/lib/systemd/system/machines.target.
+Setting up libnss-mymachines:amd64 (255.4-1ubuntu8.16) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.7) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for dbus (1.14.10-4ubuntu4.1) ...
+Scanning processes...                                                                                                   
+Scanning candidates...                                                                                                  
+Scanning linux images...                                                                                                
+
+Running kernel seems to be up-to-date.
+
+Restarting services...
+
+Service restarts being deferred:
+ systemctl restart networkd-dispatcher.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+User sessions running outdated binaries:
+ ubuntu @ session #1: sshd[1069,1179]
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@ip-192-168-0-83:/home/ubuntu# sudo apt install debootstrap
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Suggested packages:
+  squid-deb-proxy-client debian-archive-keyring arch-test
+The following NEW packages will be installed:
+  debootstrap
+0 upgraded, 1 newly installed, 0 to remove and 3 not upgraded.
+Need to get 48.0 kB of archives.
+After this operation, 292 kB of additional disk space will be used.
+Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 debootstrap all 1.0.134ubuntu1 [48.0 kB]
+Fetched 48.0 kB in 0s (2219 kB/s)      
+Selecting previously unselected package debootstrap.
+(Reading database ... 77515 files and directories currently installed.)
+Preparing to unpack .../debootstrap_1.0.134ubuntu1_all.deb ...
+Unpacking debootstrap (1.0.134ubuntu1) ...
+Setting up debootstrap (1.0.134ubuntu1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Scanning processes...                                                                                                   
+Scanning candidates...                                                                                                  
+Scanning linux images...                                                                                                
+
+Running kernel seems to be up-to-date.
+
+Restarting services...
+
+Service restarts being deferred:
+ systemctl restart networkd-dispatcher.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+User sessions running outdated binaries:
+ ubuntu @ session #1: sshd[1069,1179]
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@ip-192-168-0-83:/home/ubuntu# debootstrap --arch=amd64 trixie /var/lib/machines/trixie1
+I: Keyring file not available at /usr/share/keyrings/debian-archive-keyring.gpg; switching to https mirror https://deb.debian.org/debian
+I: Retrieving InRelease 
+I: Retrieving Packages 
+I: Validating Packages 
+I: Resolving dependencies of required packages...
+I: Resolving dependencies of base packages...
+I: Checking component main on https://deb.debian.org/debian...
+I: Retrieving adduser 3.152
+I: Validating adduser 3.152
+I: Retrieving apt 3.0.3
+I: Validating apt 3.0.3
+I: Retrieving apt-utils 3.0.3
+I: Validating apt-utils 3.0.3
+I: Retrieving base-files 13.8+deb13u6
+I: Validating base-files 13.8+deb13u6
+I: Retrieving base-passwd 3.6.7
+I: Validating base-passwd 3.6.7
+I: Retrieving bash 5.2.37-2+b9
+I: Validating bash 5.2.37-2+b9
+I: Retrieving bsdutils 1:2.41-5
+I: Validating bsdutils 1:2.41-5
+I: Retrieving ca-certificates 20250419
+I: Validating ca-certificates 20250419
+I: Retrieving coreutils 9.7-3
+I: Validating coreutils 9.7-3
+I: Retrieving cpio 2.15+dfsg-2
+I: Validating cpio 2.15+dfsg-2
+I: Retrieving cron 3.0pl1-197
+I: Validating cron 3.0pl1-197
+I: Retrieving cron-daemon-common 3.0pl1-197
+I: Validating cron-daemon-common 3.0pl1-197
+I: Retrieving dash 0.5.12-12
+I: Validating dash 0.5.12-12
+I: Retrieving debconf 1.5.91
+I: Validating debconf 1.5.91
+I: Retrieving debconf-i18n 1.5.91
+I: Validating debconf-i18n 1.5.91
+I: Retrieving debian-archive-keyring 2025.1
+I: Validating debian-archive-keyring 2025.1
+I: Retrieving debianutils 5.23.2
+I: Validating debianutils 5.23.2
+I: Retrieving dhcpcd-base 1:10.1.0-11+deb13u3
+I: Validating dhcpcd-base 1:10.1.0-11+deb13u3
+I: Retrieving diffutils 1:3.10-4
+I: Validating diffutils 1:3.10-4
+I: Retrieving dmidecode 3.6-2
+I: Validating dmidecode 3.6-2
+I: Retrieving dpkg 1.22.22
+I: Validating dpkg 1.22.22
+I: Retrieving e2fsprogs 1.47.2-3+b11
+I: Validating e2fsprogs 1.47.2-3+b11
+I: Retrieving fdisk 2.41-5
+I: Validating fdisk 2.41-5
+I: Retrieving findutils 4.10.0-3
+I: Validating findutils 4.10.0-3
+I: Retrieving gcc-14-base 14.2.0-19
+I: Validating gcc-14-base 14.2.0-19
+I: Retrieving grep 3.11-4
+I: Validating grep 3.11-4
+I: Retrieving gzip 1.13-1
+I: Validating gzip 1.13-1
+I: Retrieving hostname 3.25
+I: Validating hostname 3.25
+I: Retrieving ifupdown 0.8.44+deb13u1
+I: Validating ifupdown 0.8.44+deb13u1
+I: Retrieving init 1.69~deb13u1
+I: Validating init 1.69~deb13u1
+I: Retrieving init-system-helpers 1.69~deb13u1
+I: Validating init-system-helpers 1.69~deb13u1
+I: Retrieving iproute2 6.15.0-1
+I: Validating iproute2 6.15.0-1
+I: Retrieving iputils-ping 3:20240905-3
+I: Validating iputils-ping 3:20240905-3
+I: Retrieving kmod 34.2-2
+I: Validating kmod 34.2-2
+I: Retrieving less 668-1
+I: Validating less 668-1
+I: Retrieving libacl1 2.3.2-2+b1
+I: Validating libacl1 2.3.2-2+b1
+I: Retrieving libapparmor1 4.1.0-1
+I: Validating libapparmor1 4.1.0-1
+I: Retrieving libapt-pkg7.0 3.0.3
+I: Validating libapt-pkg7.0 3.0.3
+I: Retrieving libattr1 1:2.5.2-3
+I: Validating libattr1 1:2.5.2-3
+I: Retrieving libaudit-common 1:4.0.2-2
+I: Validating libaudit-common 1:4.0.2-2
+I: Retrieving libaudit1 1:4.0.2-2+b2
+I: Validating libaudit1 1:4.0.2-2+b2
+I: Retrieving libblkid1 2.41-5
+I: Validating libblkid1 2.41-5
+I: Retrieving libbpf1 1:1.5.0-3
+I: Validating libbpf1 1:1.5.0-3
+I: Retrieving libbsd0 0.12.2-2
+I: Validating libbsd0 0.12.2-2
+I: Retrieving libbz2-1.0 1.0.8-6
+I: Validating libbz2-1.0 1.0.8-6
+I: Retrieving libc-bin 2.41-12+deb13u3
+I: Validating libc-bin 2.41-12+deb13u3
+I: Retrieving libc6 2.41-12+deb13u3
+I: Validating libc6 2.41-12+deb13u3
+I: Retrieving libcap-ng0 0.8.5-4+b1
+I: Validating libcap-ng0 0.8.5-4+b1
+I: Retrieving libcap2 1:2.75-10+deb13u1+b1
+I: Validating libcap2 1:2.75-10+deb13u1+b1
+I: Retrieving libcap2-bin 1:2.75-10+deb13u1+b1
+I: Validating libcap2-bin 1:2.75-10+deb13u1+b1
+I: Retrieving libcom-err2 1.47.2-3+b11
+I: Validating libcom-err2 1.47.2-3+b11
+I: Retrieving libcrypt1 1:4.4.38-1
+I: Validating libcrypt1 1:4.4.38-1
+I: Retrieving libdb5.3t64 5.3.28+dfsg2-9
+I: Validating libdb5.3t64 5.3.28+dfsg2-9
+I: Retrieving libdebconfclient0 0.280
+I: Validating libdebconfclient0 0.280
+I: Retrieving libedit2 3.1-20250104-1
+I: Validating libedit2 3.1-20250104-1
+I: Retrieving libelf1t64 0.192-4
+I: Validating libelf1t64 0.192-4
+I: Retrieving libext2fs2t64 1.47.2-3+b11
+I: Validating libext2fs2t64 1.47.2-3+b11
+I: Retrieving libfdisk1 2.41-5
+I: Validating libfdisk1 2.41-5
+I: Retrieving libgcc-s1 14.2.0-19
+I: Validating libgcc-s1 14.2.0-19
+I: Retrieving libgmp10 2:6.3.0+dfsg-3
+I: Validating libgmp10 2:6.3.0+dfsg-3
+I: Retrieving libgssapi-krb5-2 1.21.3-5+deb13u1
+I: Validating libgssapi-krb5-2 1.21.3-5+deb13u1
+I: Retrieving libhogweed6t64 3.10.1-1
+I: Validating libhogweed6t64 3.10.1-1
+I: Retrieving libidn2-0 2.3.8-2
+I: Validating libidn2-0 2.3.8-2
+I: Retrieving libjansson4 2.14-2+b3
+I: Validating libjansson4 2.14-2+b3
+I: Retrieving libk5crypto3 1.21.3-5+deb13u1
+I: Validating libk5crypto3 1.21.3-5+deb13u1
+I: Retrieving libkeyutils1 1.6.3-6
+I: Validating libkeyutils1 1.6.3-6
+I: Retrieving libkmod2 34.2-2
+I: Validating libkmod2 34.2-2
+I: Retrieving libkrb5-3 1.21.3-5+deb13u1
+I: Validating libkrb5-3 1.21.3-5+deb13u1
+I: Retrieving libkrb5support0 1.21.3-5+deb13u1
+I: Validating libkrb5support0 1.21.3-5+deb13u1
+I: Retrieving liblastlog2-2 2.41-5
+I: Validating liblastlog2-2 2.41-5
+I: Retrieving liblocale-gettext-perl 1.07-7+b1
+I: Validating liblocale-gettext-perl 1.07-7+b1
+I: Retrieving liblz4-1 1.10.0-4
+I: Validating liblz4-1 1.10.0-4
+I: Retrieving liblzma5 5.8.1-1+deb13u1
+I: Validating liblzma5 5.8.1-1+deb13u1
+I: Retrieving libmd0 1.1.0-2+b1
+I: Validating libmd0 1.1.0-2+b1
+I: Retrieving libmnl0 1.0.5-3
+I: Validating libmnl0 1.0.5-3
+I: Retrieving libmount1 2.41-5
+I: Validating libmount1 2.41-5
+I: Retrieving libncursesw6 6.5+20250216-2
+I: Validating libncursesw6 6.5+20250216-2
+I: Retrieving libnettle8t64 3.10.1-1
+I: Validating libnettle8t64 3.10.1-1
+I: Retrieving libnewt0.52 0.52.25-1
+I: Validating libnewt0.52 0.52.25-1
+I: Retrieving libnftables1 1.1.3-1
+I: Validating libnftables1 1.1.3-1
+I: Retrieving libnftnl11 1.2.9-1
+I: Validating libnftnl11 1.2.9-1
+I: Retrieving libpam-modules 1.7.0-5
+I: Validating libpam-modules 1.7.0-5
+I: Retrieving libpam-modules-bin 1.7.0-5
+I: Validating libpam-modules-bin 1.7.0-5
+I: Retrieving libpam-runtime 1.7.0-5
+I: Validating libpam-runtime 1.7.0-5
+I: Retrieving libpam0g 1.7.0-5
+I: Validating libpam0g 1.7.0-5
+I: Retrieving libpcre2-8-0 10.46-1~deb13u1
+I: Validating libpcre2-8-0 10.46-1~deb13u1
+I: Retrieving libpopt0 1.19+dfsg-2
+I: Validating libpopt0 1.19+dfsg-2
+I: Retrieving libproc2-0 2:4.0.4-9
+I: Validating libproc2-0 2:4.0.4-9
+I: Retrieving libreadline8t64 8.2-6
+I: Validating libreadline8t64 8.2-6
+I: Retrieving libseccomp2 2.6.0-2
+I: Validating libseccomp2 2.6.0-2
+I: Retrieving libselinux1 3.8.1-1
+I: Validating libselinux1 3.8.1-1
+I: Retrieving libsemanage-common 3.8.1-1
+I: Validating libsemanage-common 3.8.1-1
+I: Retrieving libsemanage2 3.8.1-1
+I: Validating libsemanage2 3.8.1-1
+I: Retrieving libsepol2 3.8.1-1
+I: Validating libsepol2 3.8.1-1
+I: Retrieving libslang2 2.3.3-5+b2
+I: Validating libslang2 2.3.3-5+b2
+I: Retrieving libsmartcols1 2.41-5
+I: Validating libsmartcols1 2.41-5
+I: Retrieving libsqlite3-0 3.46.1-7+deb13u1
+I: Validating libsqlite3-0 3.46.1-7+deb13u1
+I: Retrieving libss2 1.47.2-3+b11
+I: Validating libss2 1.47.2-3+b11
+I: Retrieving libssl3t64 3.5.6-1~deb13u2
+I: Validating libssl3t64 3.5.6-1~deb13u2
+I: Retrieving libstdc++6 14.2.0-19
+I: Validating libstdc++6 14.2.0-19
+I: Retrieving libsystemd-shared 257.13-1~deb13u1
+I: Validating libsystemd-shared 257.13-1~deb13u1
+I: Retrieving libsystemd0 257.13-1~deb13u1
+I: Validating libsystemd0 257.13-1~deb13u1
+I: Retrieving libtext-charwidth-perl 0.04-11+b4
+I: Validating libtext-charwidth-perl 0.04-11+b4
+I: Retrieving libtext-iconv-perl 1.7-8+b4
+I: Validating libtext-iconv-perl 1.7-8+b4
+I: Retrieving libtext-wrapi18n-perl 0.06-10
+I: Validating libtext-wrapi18n-perl 0.06-10
+I: Retrieving libtinfo6 6.5+20250216-2
+I: Validating libtinfo6 6.5+20250216-2
+I: Retrieving libtirpc-common 1.3.6+ds-1
+I: Validating libtirpc-common 1.3.6+ds-1
+I: Retrieving libtirpc3t64 1.3.6+ds-1
+I: Validating libtirpc3t64 1.3.6+ds-1
+I: Retrieving libudev1 257.13-1~deb13u1
+I: Validating libudev1 257.13-1~deb13u1
+I: Retrieving libunistring5 1.3-2
+I: Validating libunistring5 1.3-2
+I: Retrieving libuuid1 2.41-5
+I: Validating libuuid1 2.41-5
+I: Retrieving libxtables12 1.8.11-2
+I: Validating libxtables12 1.8.11-2
+I: Retrieving libxxhash0 0.8.3-2
+I: Validating libxxhash0 0.8.3-2
+I: Retrieving libzstd1 1.5.7+dfsg-1
+I: Validating libzstd1 1.5.7+dfsg-1
+I: Retrieving linux-sysctl-defaults 4.12.1
+I: Validating linux-sysctl-defaults 4.12.1
+I: Retrieving login 1:4.16.0-2+really2.41-5
+I: Validating login 1:4.16.0-2+really2.41-5
+I: Retrieving login.defs 1:4.17.4-2
+I: Validating login.defs 1:4.17.4-2
+I: Retrieving logrotate 3.22.0-1
+I: Validating logrotate 3.22.0-1
+I: Retrieving logsave 1.47.2-3+b11
+I: Validating logsave 1.47.2-3+b11
+I: Retrieving mawk 1.3.4.20250131-1
+I: Validating mawk 1.3.4.20250131-1
+I: Retrieving mount 2.41-5
+I: Validating mount 2.41-5
+I: Retrieving nano 8.4-1+deb13u1
+I: Validating nano 8.4-1+deb13u1
+I: Retrieving ncurses-base 6.5+20250216-2
+I: Validating ncurses-base 6.5+20250216-2
+I: Retrieving ncurses-bin 6.5+20250216-2
+I: Validating ncurses-bin 6.5+20250216-2
+I: Retrieving netbase 6.5
+I: Validating netbase 6.5
+I: Retrieving nftables 1.1.3-1
+I: Validating nftables 1.1.3-1
+I: Retrieving openssl 3.5.6-1~deb13u2
+I: Validating openssl 3.5.6-1~deb13u2
+I: Retrieving openssl-provider-legacy 3.5.6-1~deb13u2
+I: Validating openssl-provider-legacy 3.5.6-1~deb13u2
+I: Retrieving passwd 1:4.17.4-2
+I: Validating passwd 1:4.17.4-2
+I: Retrieving perl-base 5.40.1-6
+I: Validating perl-base 5.40.1-6
+I: Retrieving procps 2:4.0.4-9
+I: Validating procps 2:4.0.4-9
+I: Retrieving readline-common 8.2-6
+I: Validating readline-common 8.2-6
+I: Retrieving sed 4.9-2+deb13u1
+I: Validating sed 4.9-2+deb13u1
+I: Retrieving sensible-utils 0.0.25
+I: Validating sensible-utils 0.0.25
+I: Retrieving sqv 1.3.0-3+b2
+I: Validating sqv 1.3.0-3+b2
+I: Retrieving systemd 257.13-1~deb13u1
+I: Validating systemd 257.13-1~deb13u1
+I: Retrieving systemd-sysv 257.13-1~deb13u1
+I: Validating systemd-sysv 257.13-1~deb13u1
+I: Retrieving sysvinit-utils 3.14-4
+I: Validating sysvinit-utils 3.14-4
+I: Retrieving tar 1.35+dfsg-3.1
+I: Validating tar 1.35+dfsg-3.1
+I: Retrieving tzdata 2026b-0+deb13u1
+I: Validating tzdata 2026b-0+deb13u1
+I: Retrieving udev 257.13-1~deb13u1
+I: Validating udev 257.13-1~deb13u1
+I: Retrieving usr-is-merged 39+nmu2
+I: Validating usr-is-merged 39+nmu2
+I: Retrieving util-linux 2.41-5
+I: Validating util-linux 2.41-5
+I: Retrieving vim-common 2:9.1.1230-2
+I: Validating vim-common 2:9.1.1230-2
+I: Retrieving vim-tiny 2:9.1.1230-2
+I: Validating vim-tiny 2:9.1.1230-2
+I: Retrieving whiptail 0.52.25-1
+I: Validating whiptail 0.52.25-1
+I: Retrieving zlib1g 1:1.3.dfsg+really1.3.1-1+b1
+I: Validating zlib1g 1:1.3.dfsg+really1.3.1-1+b1
+I: Chosen extractor for .deb packages: dpkg-deb
+I: Extracting apt...
+I: Extracting base-files...
+I: Extracting base-passwd...
+I: Extracting bash...
+I: Extracting bsdutils...
+I: Extracting coreutils...
+I: Extracting dash...
+I: Extracting debconf...
+I: Extracting debian-archive-keyring...
+I: Extracting debianutils...
+I: Extracting diffutils...
+I: Extracting dpkg...
+I: Extracting findutils...
+I: Extracting gcc-14-base...
+I: Extracting grep...
+I: Extracting gzip...
+I: Extracting hostname...
+I: Extracting init-system-helpers...
+I: Extracting libacl1...
+I: Extracting libapt-pkg7.0...
+I: Extracting libattr1...
+I: Extracting libaudit-common...
+I: Extracting libaudit1...
+I: Extracting libblkid1...
+I: Extracting libbsd0...
+I: Extracting libbz2-1.0...
+I: Extracting libc-bin...
+I: Extracting libc6...
+I: Extracting libcap-ng0...
+I: Extracting libcap2...
+I: Extracting libcrypt1...
+I: Extracting libdb5.3t64...
+I: Extracting libdebconfclient0...
+I: Extracting libgcc-s1...
+I: Extracting libgmp10...
+I: Extracting libhogweed6t64...
+I: Extracting liblastlog2-2...
+I: Extracting liblz4-1...
+I: Extracting liblzma5...
+I: Extracting libmd0...
+I: Extracting libmount1...
+I: Extracting libnettle8t64...
+I: Extracting libpam-modules...
+I: Extracting libpam-modules-bin...
+I: Extracting libpam-runtime...
+I: Extracting libpam0g...
+I: Extracting libpcre2-8-0...
+I: Extracting libseccomp2...
+I: Extracting libselinux1...
+I: Extracting libsemanage-common...
+I: Extracting libsemanage2...
+I: Extracting libsepol2...
+I: Extracting libsmartcols1...
+I: Extracting libsqlite3-0...
+I: Extracting libssl3t64...
+I: Extracting libstdc++6...
+I: Extracting libsystemd0...
+I: Extracting libtinfo6...
+I: Extracting libudev1...
+I: Extracting libuuid1...
+I: Extracting libxxhash0...
+I: Extracting libzstd1...
+I: Extracting login...
+I: Extracting login.defs...
+I: Extracting mawk...
+I: Extracting mount...
+I: Extracting ncurses-base...
+I: Extracting ncurses-bin...
+I: Extracting openssl-provider-legacy...
+I: Extracting passwd...
+I: Extracting perl-base...
+I: Extracting sed...
+I: Extracting sqv...
+I: Extracting sysvinit-utils...
+I: Extracting tar...
+I: Extracting tzdata...
+I: Extracting usr-is-merged...
+I: Extracting util-linux...
+I: Extracting zlib1g...
+I: Installing core packages...
+I: Unpacking required packages...
+I: Unpacking apt...
+I: Unpacking base-files...
+I: Unpacking base-passwd...
+I: Unpacking bash...
+I: Unpacking bsdutils...
+I: Unpacking coreutils...
+I: Unpacking dash...
+I: Unpacking debconf...
+I: Unpacking debian-archive-keyring...
+I: Unpacking debianutils...
+I: Unpacking diffutils...
+I: Unpacking dpkg...
+I: Unpacking findutils...
+I: Unpacking gcc-14-base:amd64...
+I: Unpacking grep...
+I: Unpacking gzip...
+I: Unpacking hostname...
+I: Unpacking init-system-helpers...
+I: Unpacking libacl1:amd64...
+I: Unpacking libapt-pkg7.0:amd64...
+I: Unpacking libattr1:amd64...
+I: Unpacking libaudit-common...
+I: Unpacking libaudit1:amd64...
+I: Unpacking libblkid1:amd64...
+I: Unpacking libbsd0:amd64...
+I: Unpacking libbz2-1.0:amd64...
+I: Unpacking libc-bin...
+I: Unpacking libc6:amd64...
+I: Unpacking libcap-ng0:amd64...
+I: Unpacking libcap2:amd64...
+I: Unpacking libcrypt1:amd64...
+I: Unpacking libdb5.3t64:amd64...
+I: Unpacking libdebconfclient0:amd64...
+I: Unpacking libgcc-s1:amd64...
+I: Unpacking libgmp10:amd64...
+I: Unpacking libhogweed6t64:amd64...
+I: Unpacking liblastlog2-2:amd64...
+I: Unpacking liblz4-1:amd64...
+I: Unpacking liblzma5:amd64...
+I: Unpacking libmd0:amd64...
+I: Unpacking libmount1:amd64...
+I: Unpacking libnettle8t64:amd64...
+I: Unpacking libpam-modules:amd64...
+I: Unpacking libpam-modules-bin...
+I: Unpacking libpam-runtime...
+I: Unpacking libpam0g:amd64...
+I: Unpacking libpcre2-8-0:amd64...
+I: Unpacking libseccomp2:amd64...
+I: Unpacking libselinux1:amd64...
+I: Unpacking libsemanage-common...
+I: Unpacking libsemanage2:amd64...
+I: Unpacking libsepol2:amd64...
+I: Unpacking libsmartcols1:amd64...
+I: Unpacking libsqlite3-0:amd64...
+I: Unpacking libssl3t64:amd64...
+I: Unpacking libstdc++6:amd64...
+I: Unpacking libsystemd0:amd64...
+I: Unpacking libtinfo6:amd64...
+I: Unpacking libudev1:amd64...
+I: Unpacking libuuid1:amd64...
+I: Unpacking libxxhash0:amd64...
+I: Unpacking libzstd1:amd64...
+I: Unpacking login...
+I: Unpacking login.defs...
+I: Unpacking mawk...
+I: Unpacking mount...
+I: Unpacking ncurses-base...
+I: Unpacking ncurses-bin...
+I: Unpacking openssl-provider-legacy...
+I: Unpacking passwd...
+I: Unpacking perl-base...
+I: Unpacking sed...
+I: Unpacking sqv...
+I: Unpacking sysvinit-utils...
+I: Unpacking tar...
+I: Unpacking tzdata...
+I: Unpacking usr-is-merged...
+I: Unpacking util-linux...
+I: Unpacking zlib1g:amd64...
+I: Configuring required packages...
+I: Configuring gcc-14-base:amd64...
+I: Configuring login.defs...
+I: Configuring debian-archive-keyring...
+I: Configuring usr-is-merged...
+I: Configuring libaudit-common...
+I: Configuring libsemanage-common...
+I: Configuring debconf...
+I: Configuring tzdata...
+I: Configuring ncurses-base...
+I: Configuring init-system-helpers...
+I: Configuring libgcc-s1:amd64...
+I: Configuring libc6:amd64...
+I: Configuring libdb5.3t64:amd64...
+I: Configuring libmd0:amd64...
+I: Configuring libxxhash0:amd64...
+I: Configuring libattr1:amd64...
+I: Configuring sysvinit-utils...
+I: Configuring debianutils...
+I: Configuring mawk...
+I: Configuring libdebconfclient0:amd64...
+I: Configuring base-files...
+I: Configuring libbz2-1.0:amd64...
+I: Configuring libbsd0:amd64...
+I: Configuring libblkid1:amd64...
+I: Configuring libstdc++6:amd64...
+I: Configuring dash...
+I: Configuring libtinfo6:amd64...
+I: Configuring bash...
+I: Configuring libzstd1:amd64...
+I: Configuring liblzma5:amd64...
+I: Configuring liblz4-1:amd64...
+I: Configuring libc-bin...
+I: Configuring libsqlite3-0:amd64...
+I: Configuring ncurses-bin...
+I: Configuring libacl1:amd64...
+I: Configuring libsmartcols1:amd64...
+I: Configuring zlib1g:amd64...
+I: Configuring libcrypt1:amd64...
+I: Configuring diffutils...
+I: Configuring libseccomp2:amd64...
+I: Configuring libcap2:amd64...
+I: Configuring perl-base...
+I: Configuring openssl-provider-legacy...
+I: Configuring hostname...
+I: Configuring libcap-ng0:amd64...
+I: Configuring libnettle8t64:amd64...
+I: Configuring libgmp10:amd64...
+I: Configuring libaudit1:amd64...
+I: Configuring gzip...
+I: Configuring libuuid1:amd64...
+I: Configuring libsepol2:amd64...
+I: Configuring libpcre2-8-0:amd64...
+I: Configuring libudev1:amd64...
+I: Configuring libhogweed6t64:amd64...
+I: Configuring sqv...
+I: Configuring grep...
+I: Configuring libssl3t64:amd64...
+I: Configuring liblastlog2-2:amd64...
+I: Configuring libsystemd0:amd64...
+I: Configuring libselinux1:amd64...
+I: Configuring libpam0g:amd64...
+I: Configuring sed...
+I: Configuring findutils...
+I: Configuring libmount1:amd64...
+I: Configuring libsemanage2:amd64...
+I: Configuring libapt-pkg7.0:amd64...
+I: Configuring base-passwd...
+I: Configuring apt...
+I: Configuring bsdutils...
+I: Configuring tar...
+I: Configuring libpam-modules-bin...
+I: Configuring coreutils...
+I: Configuring dpkg...
+I: Configuring mount...
+I: Configuring libpam-modules:amd64...
+I: Configuring passwd...
+I: Configuring libpam-runtime...
+I: Configuring login...
+I: Configuring util-linux...
+I: Configuring libc-bin...
+I: Unpacking the base system...
+I: Unpacking apt-utils...
+I: Unpacking ca-certificates...
+I: Unpacking cpio...
+I: Unpacking cron...
+I: Unpacking debconf-i18n...
+I: Unpacking dhcpcd-base...
+I: Unpacking dmidecode...
+I: Unpacking e2fsprogs...
+I: Unpacking fdisk...
+I: Unpacking ifupdown...
+I: Unpacking init...
+I: Unpacking iproute2...
+I: Unpacking iputils-ping...
+I: Unpacking kmod...
+I: Unpacking less...
+I: Unpacking libbpf1:amd64...
+I: Unpacking libcap2-bin...
+I: Unpacking libedit2:amd64...
+I: Unpacking libelf1t64:amd64...
+I: Unpacking libfdisk1:amd64...
+I: Unpacking libgssapi-krb5-2:amd64...
+I: Unpacking libidn2-0:amd64...
+I: Unpacking libjansson4:amd64...
+I: Unpacking libk5crypto3:amd64...
+I: Unpacking libkeyutils1:amd64...
+I: Unpacking libkmod2:amd64...
+I: Unpacking libkrb5-3:amd64...
+I: Unpacking libkrb5support0:amd64...
+I: Unpacking liblocale-gettext-perl...
+I: Unpacking libmnl0:amd64...
+I: Unpacking libncursesw6:amd64...
+I: Unpacking libnewt0.52:amd64...
+I: Unpacking libnftables1:amd64...
+I: Unpacking libnftnl11:amd64...
+I: Unpacking libpopt0:amd64...
+I: Unpacking libproc2-0:amd64...
+I: Unpacking libreadline8t64:amd64...
+I: Unpacking libslang2:amd64...
+I: Unpacking libtext-charwidth-perl:amd64...
+I: Unpacking libtext-iconv-perl:amd64...
+I: Unpacking libtext-wrapi18n-perl...
+I: Unpacking libtirpc-common...
+I: Unpacking libtirpc3t64:amd64...
+I: Unpacking libunistring5:amd64...
+I: Unpacking libxtables12:amd64...
+I: Unpacking linux-sysctl-defaults...
+I: Unpacking logrotate...
+I: Unpacking logsave...
+I: Unpacking nano...
+I: Unpacking netbase...
+I: Unpacking nftables...
+I: Unpacking openssl...
+I: Unpacking procps...
+I: Unpacking readline-common...
+I: Unpacking sensible-utils...
+I: Unpacking udev...
+I: Unpacking vim-common...
+I: Unpacking vim-tiny...
+I: Unpacking whiptail...
+I: Configuring the base system...
+I: Configuring cpio...
+I: Configuring libtext-iconv-perl:amd64...
+I: Configuring libtext-charwidth-perl:amd64...
+I: Configuring libkeyutils1:amd64...
+I: Configuring apt-utils...
+I: Configuring init...
+I: Configuring libtirpc-common...
+I: Configuring libedit2:amd64...
+I: Configuring less...
+I: Configuring libtext-wrapi18n-perl...
+I: Configuring libelf1t64:amd64...
+I: Configuring libjansson4:amd64...
+I: Configuring libkrb5support0:amd64...
+I: Configuring libcap2-bin...
+I: Configuring linux-sysctl-defaults...
+I: Configuring vim-common...
+I: Configuring libslang2:amd64...
+I: Configuring libproc2-0:amd64...
+I: Configuring libunistring5:amd64...
+I: Configuring libmnl0:amd64...
+I: Configuring dhcpcd-base...
+I: Configuring libncursesw6:amd64...
+I: Configuring libk5crypto3:amd64...
+I: Configuring libxtables12:amd64...
+I: Configuring logsave...
+I: Configuring libfdisk1:amd64...
+I: Configuring nano...
+I: Configuring sensible-utils...
+I: Configuring procps...
+I: Configuring netbase...
+I: Configuring libkrb5-3:amd64...
+I: Configuring dmidecode...
+I: Configuring openssl...
+I: Configuring readline-common...
+I: Configuring liblocale-gettext-perl...
+I: Configuring libbpf1:amd64...
+I: Configuring libkmod2:amd64...
+I: Configuring libpopt0:amd64...
+I: Configuring logrotate...
+I: Configuring libnewt0.52:amd64...
+I: Configuring cron...
+I: Configuring debconf-i18n...
+I: Configuring libnftnl11:amd64...
+I: Configuring e2fsprogs...
+I: Configuring libidn2-0:amd64...
+I: Configuring vim-tiny...
+I: Configuring kmod...
+I: Configuring ca-certificates...
+I: Configuring libgssapi-krb5-2:amd64...
+I: Configuring udev...
+I: Configuring libreadline8t64:amd64...
+I: Configuring whiptail...
+I: Configuring iputils-ping...
+I: Configuring libnftables1:amd64...
+I: Configuring nftables...
+I: Configuring libtirpc3t64:amd64...
+I: Configuring iproute2...
+I: Configuring fdisk...
+I: Configuring ifupdown...
+I: Configuring libc-bin...
+I: Configuring ca-certificates...
+I: Base system installed successfully.
+root@ip-192-168-0-83:/home/ubuntu# machinectl list-images
+NAME    TYPE      RO USAGE CREATED                     MODIFIED
+trixie1 directory no       Thu 2026-07-16 23:43:26 UTC -
+
+1 images listed.
+root@ip-192-168-0-83:/home/ubuntu# machinectl start trixie1
+root@ip-192-168-0-83:/home/ubuntu# machinectl status trixie1
+trixie1(f9d2a5a300544c9db8cafc7f1c2d86ed)
+           Since: Thu 2026-07-16 23:51:45 UTC; 1min 54s ago
+          Leader: 34084 (systemd)
+         Service: systemd-nspawn; class container
+            Root: /var/lib/machines/trixie1
+           Iface: ve-trixie1
+              OS: Debian GNU/Linux 13 (trixie)
+  UID Shift: 1530265600
+            Unit: systemd-nspawn@trixie1.service
+                  ├─payload
+                  │ ├─init.scope
+                  │ │ └─34084 /usr/lib/systemd/systemd
+                  │ └─system.slice
+                  │   ├─console-getty.service
+                  │   │ └─34170 /sbin/agetty -o "-- \\u" --noreset --noclear --keep-baud 115200,57600,38400,9600 - vt220
+                  │   ├─cron.service
+                  │   │ └─34167 /usr/sbin/cron -f
+                  │   └─systemd-journald.service
+                  │     └─34113 /usr/lib/systemd/systemd-journald
+                  └─supervisor
+                    └─34081 systemd-nspawn --quiet --keep-unit --boot --link-journal=try-guest --network-veth -U --sett>
+
+Jul 16 23:51:46 ip-192-168-0-83 systemd-nspawn[34081]: [  OK  ] Started cron.service - Regular background program proce>
+Jul 16 23:51:46 ip-192-168-0-83 systemd-nspawn[34081]:          Starting systemd-user-sessions.service - Permit User Se>
+Jul 16 23:51:46 ip-192-168-0-83 systemd-nspawn[34081]: [  OK  ] Finished systemd-user-sessions.service - Permit User Se>
+Jul 16 23:51:46 ip-192-168-0-83 systemd-nspawn[34081]: [  OK  ] Started console-getty.service - Console Getty.
+Jul 16 23:51:46 ip-192-168-0-83 systemd-nspawn[34081]: [  OK  ] Reached target getty.target - Login Prompts.
+Jul 16 23:51:46 ip-192-168-0-83 systemd-nspawn[34081]: [  OK  ] Reached target multi-user.target - Multi-User System.
+Jul 16 23:51:46 ip-192-168-0-83 systemd-nspawn[34081]: [  OK  ] Reached target graphical.target - Graphical Interface.
+Jul 16 23:51:47 ip-192-168-0-83 systemd-nspawn[34081]: 
+Jul 16 23:51:47 ip-192-168-0-83 systemd-nspawn[34081]: Debian GNU/Linux 13 ip-192-168-0-83 pts/0
+Jul 16 23:51:47 ip-192-168-0-83 systemd-nspawn[34081]: 
+
+root@ip-192-168-0-83:/home/ubuntu# machinectl login trixie1
+Failed to get login PTY: There is no system bus in container trixie1.
+root@ip-192-168-0-83:/home/ubuntu# sudo systemd-nspawn -D /var/lib/machines/trixie1 --machine trixie1
+Directory tree /var/lib/machines/trixie1 is currently busy.
+root@ip-192-168-0-83:/home/ubuntu# sudo systemd-nspawn -D /var/lib/machines/trixie1 --machine trixie1 -b
+Directory tree /var/lib/machines/trixie1 is currently busy.
+root@ip-192-168-0-83:/home/ubuntu# systemctl status systemd-nspawn@trixie1.service
+● systemd-nspawn@trixie1.service - Container trixie1
+     Loaded: loaded (/usr/lib/systemd/system/systemd-nspawn@.service; disabled; preset: enabled)
+     Active: active (running) since Thu 2026-07-16 23:51:45 UTC; 6min ago
+       Docs: man:systemd-nspawn(1)
+   Main PID: 34081 (systemd-nspawn)
+     Status: "Container running: Ready."
+      Tasks: 5 (limit: 16384)
+     Memory: 17.9M (peak: 22.7M)
+        CPU: 769ms
+     CGroup: /machine.slice/systemd-nspawn@trixie1.service
+             ├─payload
+             │ ├─init.scope
+             │ │ └─34084 /usr/lib/systemd/systemd
+             │ └─system.slice
+             │   ├─console-getty.service
+             │   │ └─34170 /sbin/agetty -o "-- \\u" --noreset --noclear --keep-baud 115200,57600,38400,9600 - vt220
+             │   ├─cron.service
+             │   │ └─34167 /usr/sbin/cron -f
+             │   └─systemd-journald.service
+             │     └─34113 /usr/lib/systemd/systemd-journald
+             └─supervisor
+               └─34081 systemd-nspawn --quiet --keep-unit --boot --link-journal=try-guest --network-veth -U --settings=>
+
+Jul 16 23:51:46 ip-192-168-0-83 systemd-nspawn[34081]: [  OK  ] Started cron.service - Regular background program proce>
+Jul 16 23:51:46 ip-192-168-0-83 systemd-nspawn[34081]:          Starting systemd-user-sessions.service - Permit User Se>
+Jul 16 23:51:46 ip-192-168-0-83 systemd-nspawn[34081]: [  OK  ] Finished systemd-user-sessions.service - Permit User Se>
+Jul 16 23:51:46 ip-192-168-0-83 systemd-nspawn[34081]: [  OK  ] Started console-getty.service - Console Getty.
+Jul 16 23:51:46 ip-192-168-0-83 systemd-nspawn[34081]: [  OK  ] Reached target getty.target - Login Prompts.
+Jul 16 23:51:46 ip-192-168-0-83 systemd-nspawn[34081]: [  OK  ] Reached target multi-user.target - Multi-User System.
+Jul 16 23:51:46 ip-192-168-0-83 systemd-nspawn[34081]: [  OK  ] Reached target graphical.target - Graphical Interface.
+root@ip-192-168-0-83:/home/ubuntu# sudo systemd-nspawn -D /var/lib/machines/trixie1 --machine trixie1
+Directory tree /var/lib/machines/trixie1 is currently busy.
+root@ip-192-168-0-83:/home/ubuntu# systemctl status systemd-nspawn@trixie1.service
+● systemd-nspawn@trixie1.service - Container trixie1
+     Loaded: loaded (/usr/lib/systemd/system/systemd-nspawn@.service; disabled; preset: enabled)
+     Active: active (running) since Thu 2026-07-16 23:51:45 UTC; 11min ago
+       Docs: man:systemd-nspawn(1)
+   Main PID: 34081 (systemd-nspawn)
+     Status: "Container running: Ready."
+      Tasks: 5 (limit: 16384)
+     Memory: 16.4M (peak: 22.7M)
+        CPU: 850ms
+     CGroup: /machine.slice/systemd-nspawn@trixie1.service
+             ├─payload
+             │ ├─init.scope
+             │ │ └─34084 /usr/lib/systemd/systemd
+             │ └─system.slice
+             │   ├─console-getty.service
+             │   │ └─34170 /sbin/agetty -o "-- \\u" --noreset --noclear --keep-baud 115200,57600,38400,9600 - vt220
+             │   ├─cron.service
+             │   │ └─34167 /usr/sbin/cron -f
+             │   └─systemd-journald.service
+             │     └─34113 /usr/lib/systemd/systemd-journald
+             └─supervisor
+               └─34081 systemd-nspawn --quiet --keep-unit --boot --link-journal=try-guest --network-veth -U --settings=>
+
+Jul 16 23:51:46 ip-192-168-0-83 systemd-nspawn[34081]: [  OK  ] Started cron.service - Regular background program proce>
+Jul 16 23:51:46 ip-192-168-0-83 systemd-nspawn[34081]:          Starting systemd-user-sessions.service - Permit User Se>
+Jul 16 23:51:46 ip-192-168-0-83 systemd-nspawn[34081]: [  OK  ] Finished systemd-user-sessions.service - Permit User Se>
+Jul 16 23:51:46 ip-192-168-0-83 systemd-nspawn[34081]: [  OK  ] Started console-getty.service - Console Getty.
+Jul 16 23:51:46 ip-192-168-0-83 systemd-nspawn[34081]: [  OK  ] Reached target getty.target - Login Prompts.
+Jul 16 23:51:46 ip-192-168-0-83 systemd-nspawn[34081]: [  OK  ] Reached target multi-user.target - Multi-User System.
+
+root@ip-192-168-0-83:/home/ubuntu# sudo machinectl stop trixie1
+root@ip-192-168-0-83:/home/ubuntu# systemctl status systemd-nspawn@trixie1.service
+○ systemd-nspawn@trixie1.service - Container trixie1
+     Loaded: loaded (/usr/lib/systemd/system/systemd-nspawn@.service; disabled; preset: enabled)
+     Active: inactive (dead)
+       Docs: man:systemd-nspawn(1)
+
+Jul 17 00:07:30 ip-192-168-0-83 systemd-nspawn[34081]: [  OK  ] Reached target umount.target - Unmount All Filesystems.
+Jul 17 00:07:30 ip-192-168-0-83 systemd-nspawn[34081]: [  OK  ] Reached target final.target - Late Shutdown Services.
+Jul 17 00:07:30 ip-192-168-0-83 systemd-nspawn[34081]: [  OK  ] Finished systemd-poweroff.service - System Power Off.
+Jul 17 00:07:30 ip-192-168-0-83 systemd-nspawn[34081]: [  OK  ] Reached target poweroff.target - System Power Off.
+Jul 17 00:07:30 ip-192-168-0-83 systemd-nspawn[34081]: Sending SIGTERM to remaining processes...
+Jul 17 00:07:30 ip-192-168-0-83 systemd-nspawn[34081]: Sending SIGKILL to remaining processes...
+Jul 17 00:07:30 ip-192-168-0-83 systemd-nspawn[34081]: All filesystems, swaps, loop devices, MD devices and DM devices >
+Jul 17 00:07:30 ip-192-168-0-83 systemd-nspawn[34081]: Powering off.
+Jul 17 00:07:30 ip-192-168-0-83 systemd[1]: systemd-nspawn@trixie1.service: Deactivated successfully.
+Jul 17 00:07:30 ip-192-168-0-83 systemd[1]: systemd-nspawn@trixie1.service: Consumed 1.014s CPU time, 22.7M memory peak>
+
+root@ip-192-168-0-83:/home/ubuntu# machinectl start trixie1
+root@ip-192-168-0-83:/home/ubuntu# sudo machinectl login trixie1
+Failed to get login PTY: There is no system bus in container trixie1.
+root@ip-192-168-0-83:/home/ubuntu# machinectl start trixie1
+root@ip-192-168-0-83:/home/ubuntu# systemctl status systemd-nspawn@trixie1.service
+● systemd-nspawn@trixie1.service - Container trixie1
+     Loaded: loaded (/usr/lib/systemd/system/systemd-nspawn@.service; disabled; preset: enabled)
+     Active: active (running) since Fri 2026-07-17 00:08:14 UTC; 27s ago
+       Docs: man:systemd-nspawn(1)
+   Main PID: 34809 (systemd-nspawn)
+     Status: "Container running: Ready."
+      Tasks: 5 (limit: 16384)
+     Memory: 8.7M (peak: 16.8M)
+        CPU: 771ms
+     CGroup: /machine.slice/systemd-nspawn@trixie1.service
+             ├─payload
+             │ ├─init.scope
+             │ │ └─34812 /usr/lib/systemd/systemd
+             │ └─system.slice
+             │   ├─console-getty.service
+             │   │ └─34889 /sbin/agetty -o "-- \\u" --noreset --noclear --keep-baud 115200,57600,38400,9600 - vt220
+             │   ├─cron.service
+             │   │ └─34885 /usr/sbin/cron -f
+             │   └─systemd-journald.service
+             │     └─34841 /usr/lib/systemd/systemd-journald
+             └─supervisor
+               └─34809 systemd-nspawn --quiet --keep-unit --boot --link-journal=try-guest --network-veth -U --settings=>
+
+Jul 17 00:08:15 ip-192-168-0-83 systemd-nspawn[34809]: [  OK  ] Reached target network.target - Network.
+Jul 17 00:08:15 ip-192-168-0-83 systemd-nspawn[34809]:          Starting systemd-user-sessions.service - Permit User Se>
+Jul 17 00:08:15 ip-192-168-0-83 systemd-nspawn[34809]: [  OK  ] Finished systemd-user-sessions.service - Permit User Se>
+Jul 17 00:08:15 ip-192-168-0-83 systemd-nspawn[34809]: [  OK  ] Started console-getty.service - Console Getty.
+Jul 17 00:08:15 ip-192-168-0-83 systemd-nspawn[34809]: [  OK  ] Reached target getty.target - Login Prompts.
+Jul 17 00:08:15 ip-192-168-0-83 systemd-nspawn[34809]: [  OK  ] Reached target multi-user.target - Multi-User System.
+
+root@ip-192-168-0-83:/home/ubuntu# machinectl start trixie1
+root@ip-192-168-0-83:/home/ubuntu# machinectl status trixie1
+trixie1(f9d2a5a300544c9db8cafc7f1c2d86ed)
+           Since: Fri 2026-07-17 00:08:14 UTC; 1min 2s ago
+          Leader: 34812 (systemd)
+         Service: systemd-nspawn; class container
+            Root: /var/lib/machines/trixie1
+           Iface: ve-trixie1
+              OS: Debian GNU/Linux 13 (trixie)
+  UID Shift: 1530265600
+            Unit: systemd-nspawn@trixie1.service
+                  ├─payload
+                  │ ├─init.scope
+                  │ │ └─34812 /usr/lib/systemd/systemd
+                  │ └─system.slice
+                  │   ├─console-getty.service
+                  │   │ └─34889 /sbin/agetty -o "-- \\u" --noreset --noclear --keep-baud 115200,57600,38400,9600 - vt220
+                  │   ├─cron.service
+                  │   │ └─34885 /usr/sbin/cron -f
+                  │   └─systemd-journald.service
+                  │     └─34841 /usr/lib/systemd/systemd-journald
+                  └─supervisor
+                    └─34809 systemd-nspawn --quiet --keep-unit --boot --link-journal=try-guest --network-veth -U --sett>
+
+Jul 17 00:08:15 ip-192-168-0-83 systemd-nspawn[34809]: [  OK  ] Reached target network.target - Network.
+Jul 17 00:08:15 ip-192-168-0-83 systemd-nspawn[34809]:          Starting systemd-user-sessions.service - Permit User Se>
+Jul 17 00:08:15 ip-192-168-0-83 systemd-nspawn[34809]: [  OK  ] Finished systemd-user-sessions.service - Permit User Se>
+Jul 17 00:08:15 ip-192-168-0-83 systemd-nspawn[34809]: [  OK  ] Started console-getty.service - Console Getty.
+Jul 17 00:08:15 ip-192-168-0-83 systemd-nspawn[34809]: [  OK  ] Reached target getty.target - Login Prompts.
+Jul 17 00:08:15 ip-192-168-0-83 systemd-nspawn[34809]: [  OK  ] Reached target multi-user.target - Multi-User System.
+Jul 17 00:08:15 ip-192-168-0-83 systemd-nspawn[34809]: [  OK  ] Reached target graphical.target - Graphical Interface.
+
+root@ip-192-168-0-83:/home/ubuntu# machinectl stop trixie1
+root@ip-192-168-0-83:/home/ubuntu# machinectl status trixie1
+Could not get path to machine: No machine 'trixie1' known
+root@ip-192-168-0-83:/home/ubuntu# sudo systemctl edit --full --force trixie1.service
+Successfully installed edited file '/etc/systemd/system/trixie1.service'.
+root@ip-192-168-0-83:/home/ubuntu# sudo systemctl cat trixie1.service
+# /etc/systemd/system/trixie1.service
+[Unit]
+Description=Bullseye Container
+[Service]
+LimitNOFILE=100000
+ExecStart=/usr/bin/systemd-nspawn
+--machine=trixie1
+--directory=/var/lib/machines/trixie1/ -b
+--network-ipvlan=eth0
+Restart=always
+[Install]
+Also=dbus.service
+WantedBy=default.target
+root@ip-192-168-0-83:/home/ubuntu# sudo systemctl start trixie1.service
+root@ip-192-168-0-83:/home/ubuntu# sudo systemctl status trixie1.service
+● trixie1.service - Bullseye Container
+     Loaded: loaded (/etc/systemd/system/trixie1.service; disabled; preset: enabled)
+     Active: active (running) since Fri 2026-07-17 00:33:58 UTC; 4s ago
+   Main PID: 36197 (systemd-nspawn)
+      Tasks: 1 (limit: 1013)
+     Memory: 1.3M (peak: 1.9M)
+        CPU: 17ms
+     CGroup: /system.slice/trixie1.service
+             └─36197 /usr/bin/systemd-nspawn --machine=trixie1 --directory=/var/lib/machines/trixie1 --network-ipvlan=e>
+
+Jul 17 00:33:58 ip-192-168-0-83 systemd-nspawn[36197]: [  OK  ] Started cron.service - Regular background program proce>
+Jul 17 00:33:58 ip-192-168-0-83 systemd-nspawn[36197]:          Starting systemd-user-sessions.service - Permit User Se>
+Jul 17 00:33:58 ip-192-168-0-83 systemd-nspawn[36197]: [  OK  ] Finished systemd-user-sessions.service - Permit User Se>
+Jul 17 00:33:58 ip-192-168-0-83 systemd-nspawn[36197]: [  OK  ] Started console-getty.service - Console Getty.
+Jul 17 00:33:58 ip-192-168-0-83 systemd-nspawn[36197]: [  OK  ] Reached target getty.target - Login Prompts.
+Jul 17 00:33:58 ip-192-168-0-83 systemd-nspawn[36197]: [  OK  ] Reached target multi-user.target - Multi-User System.
+Jul 17 00:33:58 ip-192-168-0-83 systemd-nspawn[36197]: [  OK  ] Reached target graphical.target - Graphical Interface.
+Jul 17 00:33:59 ip-192-168-0-83 systemd-nspawn[36197]: 
+Jul 17 00:33:59 ip-192-168-0-83 systemd-nspawn[36197]: Debian GNU/Linux 13 ip-192-168-0-83 pts/0
+Jul 17 00:33:59 ip-192-168-0-83 systemd-nspawn[36197]: 
+root@ip-192-168-0-83:/home/ubuntu# sudo debootstrap --arch=amd64 noble /var/lib/machines/noble1
+I: Retrieving InRelease 
+I: Checking Release signature
+I: Valid Release signature (key id F6ECB3762474EDA9D21B7022871920D1991BC93C)
+I: Retrieving Packages 
+I: Validating Packages 
+I: Resolving dependencies of required packages...
+I: Resolving dependencies of base packages...
+I: Checking component main on http://archive.ubuntu.com/ubuntu...
+I: Retrieving adduser 3.137ubuntu1
+I: Validating adduser 3.137ubuntu1
+I: Retrieving apt 2.7.14build2
+I: Validating apt 2.7.14build2
+I: Retrieving apt-utils 2.7.14build2
+I: Validating apt-utils 2.7.14build2
+I: Retrieving base-files 13ubuntu10
+I: Validating base-files 13ubuntu10
+I: Retrieving base-passwd 3.6.3build1
+I: Validating base-passwd 3.6.3build1
+I: Retrieving bash 5.2.21-2ubuntu4
+I: Validating bash 5.2.21-2ubuntu4
+I: Retrieving bsdutils 1:2.39.3-9ubuntu6
+I: Validating bsdutils 1:2.39.3-9ubuntu6
+I: Retrieving ca-certificates 20240203
+I: Validating ca-certificates 20240203
+I: Retrieving console-setup 1.226ubuntu1
+I: Validating console-setup 1.226ubuntu1
+I: Retrieving console-setup-linux 1.226ubuntu1
+I: Validating console-setup-linux 1.226ubuntu1
+I: Retrieving coreutils 9.4-3ubuntu6
+I: Validating coreutils 9.4-3ubuntu6
+I: Retrieving cron 3.0pl1-184ubuntu2
+I: Validating cron 3.0pl1-184ubuntu2
+I: Retrieving cron-daemon-common 3.0pl1-184ubuntu2
+I: Validating cron-daemon-common 3.0pl1-184ubuntu2
+I: Retrieving dash 0.5.12-6ubuntu5
+I: Validating dash 0.5.12-6ubuntu5
+I: Retrieving dbus 1.14.10-4ubuntu4
+I: Validating dbus 1.14.10-4ubuntu4
+I: Retrieving dbus-bin 1.14.10-4ubuntu4
+I: Validating dbus-bin 1.14.10-4ubuntu4
+I: Retrieving dbus-daemon 1.14.10-4ubuntu4
+I: Validating dbus-daemon 1.14.10-4ubuntu4
+I: Retrieving dbus-session-bus-common 1.14.10-4ubuntu4
+I: Validating dbus-session-bus-common 1.14.10-4ubuntu4
+I: Retrieving dbus-system-bus-common 1.14.10-4ubuntu4
+I: Validating dbus-system-bus-common 1.14.10-4ubuntu4
+I: Retrieving dbus-user-session 1.14.10-4ubuntu4
+I: Validating dbus-user-session 1.14.10-4ubuntu4
+I: Retrieving debconf 1.5.86ubuntu1
+I: Validating debconf 1.5.86ubuntu1
+I: Retrieving debconf-i18n 1.5.86ubuntu1
+I: Validating debconf-i18n 1.5.86ubuntu1
+I: Retrieving debianutils 5.17build1
+I: Validating debianutils 5.17build1
+I: Retrieving dhcpcd-base 1:10.0.6-1ubuntu3
+I: Validating dhcpcd-base 1:10.0.6-1ubuntu3
+I: Retrieving diffutils 1:3.10-1build1
+I: Validating diffutils 1:3.10-1build1
+I: Retrieving distro-info 1.7build1
+I: Validating distro-info 1.7build1
+I: Retrieving distro-info-data 0.60
+I: Validating distro-info-data 0.60
+I: Retrieving dmsetup 2:1.02.185-3ubuntu3
+I: Validating dmsetup 2:1.02.185-3ubuntu3
+I: Retrieving dpkg 1.22.6ubuntu6
+I: Validating dpkg 1.22.6ubuntu6
+I: Retrieving e2fsprogs 1.47.0-2.4~exp1ubuntu4
+I: Validating e2fsprogs 1.47.0-2.4~exp1ubuntu4
+I: Retrieving eject 2.39.3-9ubuntu6
+I: Validating eject 2.39.3-9ubuntu6
+I: Retrieving findutils 4.9.0-5build1
+I: Validating findutils 4.9.0-5build1
+I: Retrieving gcc-14-base 14-20240412-0ubuntu1
+I: Validating gcc-14-base 14-20240412-0ubuntu1
+I: Retrieving gir1.2-girepository-2.0 1.80.1-1
+I: Validating gir1.2-girepository-2.0 1.80.1-1
+I: Retrieving gir1.2-glib-2.0 2.80.0-6ubuntu1
+I: Validating gir1.2-glib-2.0 2.80.0-6ubuntu1
+I: Retrieving gpgv 2.4.4-2ubuntu17
+I: Validating gpgv 2.4.4-2ubuntu17
+I: Retrieving grep 3.11-4build1
+I: Validating grep 3.11-4build1
+I: Retrieving gzip 1.12-1ubuntu3
+I: Validating gzip 1.12-1ubuntu3
+I: Retrieving hostname 3.23+nmu2ubuntu2
+I: Validating hostname 3.23+nmu2ubuntu2
+I: Retrieving init 1.66ubuntu1
+I: Validating init 1.66ubuntu1
+I: Retrieving init-system-helpers 1.66ubuntu1
+I: Validating init-system-helpers 1.66ubuntu1
+I: Retrieving iproute2 6.1.0-1ubuntu6
+I: Validating iproute2 6.1.0-1ubuntu6
+I: Retrieving iputils-ping 3:20240117-1build1
+I: Validating iputils-ping 3:20240117-1build1
+I: Retrieving iso-codes 4.16.0-1
+I: Validating iso-codes 4.16.0-1
+I: Retrieving kbd 2.6.4-2ubuntu2
+I: Validating kbd 2.6.4-2ubuntu2
+I: Retrieving keyboard-configuration 1.226ubuntu1
+I: Validating keyboard-configuration 1.226ubuntu1
+I: Retrieving kmod 31+20240202-2ubuntu7
+I: Validating kmod 31+20240202-2ubuntu7
+I: Retrieving krb5-locales 1.20.1-6ubuntu2
+I: Validating krb5-locales 1.20.1-6ubuntu2
+I: Retrieving less 590-2ubuntu2
+I: Validating less 590-2ubuntu2
+I: Retrieving libacl1 2.3.2-1build1
+I: Validating libacl1 2.3.2-1build1
+I: Retrieving libapparmor1 4.0.0-beta3-0ubuntu3
+I: Validating libapparmor1 4.0.0-beta3-0ubuntu3
+I: Retrieving libapt-pkg6.0t64 2.7.14build2
+I: Validating libapt-pkg6.0t64 2.7.14build2
+I: Retrieving libargon2-1 0~20190702+dfsg-4build1
+I: Validating libargon2-1 0~20190702+dfsg-4build1
+I: Retrieving libassuan0 2.5.6-1build1
+I: Validating libassuan0 2.5.6-1build1
+I: Retrieving libatm1t64 1:2.5.1-5.1build1
+I: Validating libatm1t64 1:2.5.1-5.1build1
+I: Retrieving libattr1 1:2.5.2-1build1
+I: Validating libattr1 1:2.5.2-1build1
+I: Retrieving libaudit-common 1:3.1.2-2.1build1
+I: Validating libaudit-common 1:3.1.2-2.1build1
+I: Retrieving libaudit1 1:3.1.2-2.1build1
+I: Validating libaudit1 1:3.1.2-2.1build1
+I: Retrieving libblkid1 2.39.3-9ubuntu6
+I: Validating libblkid1 2.39.3-9ubuntu6
+I: Retrieving libbpf1 1:1.3.0-2build2
+I: Validating libbpf1 1:1.3.0-2build2
+I: Retrieving libbsd0 0.12.1-1build1
+I: Validating libbsd0 0.12.1-1build1
+I: Retrieving libbz2-1.0 1.0.8-5.1
+I: Validating libbz2-1.0 1.0.8-5.1
+I: Retrieving libc-bin 2.39-0ubuntu8
+I: Validating libc-bin 2.39-0ubuntu8
+I: Retrieving libc6 2.39-0ubuntu8
+I: Validating libc6 2.39-0ubuntu8
+I: Retrieving libcap-ng0 0.8.4-2build2
+I: Validating libcap-ng0 0.8.4-2build2
+I: Retrieving libcap2 1:2.66-5ubuntu2
+I: Validating libcap2 1:2.66-5ubuntu2
+I: Retrieving libcap2-bin 1:2.66-5ubuntu2
+I: Validating libcap2-bin 1:2.66-5ubuntu2
+I: Retrieving libcom-err2 1.47.0-2.4~exp1ubuntu4
+I: Validating libcom-err2 1.47.0-2.4~exp1ubuntu4
+I: Retrieving libcrypt1 1:4.4.36-4build1
+I: Validating libcrypt1 1:4.4.36-4build1
+I: Retrieving libcryptsetup12 2:2.7.0-1ubuntu4
+I: Validating libcryptsetup12 2:2.7.0-1ubuntu4
+I: Retrieving libdb5.3t64 5.3.28+dfsg2-7
+I: Validating libdb5.3t64 5.3.28+dfsg2-7
+I: Retrieving libdbus-1-3 1.14.10-4ubuntu4
+I: Validating libdbus-1-3 1.14.10-4ubuntu4
+I: Retrieving libdebconfclient0 0.271ubuntu3
+I: Validating libdebconfclient0 0.271ubuntu3
+I: Retrieving libdevmapper1.02.1 2:1.02.185-3ubuntu3
+I: Validating libdevmapper1.02.1 2:1.02.185-3ubuntu3
+I: Retrieving libelf1t64 0.190-1.1build4
+I: Validating libelf1t64 0.190-1.1build4
+I: Retrieving libestr0 0.1.11-1build1
+I: Validating libestr0 0.1.11-1build1
+I: Retrieving libexpat1 2.6.1-2build1
+I: Validating libexpat1 2.6.1-2build1
+I: Retrieving libext2fs2t64 1.47.0-2.4~exp1ubuntu4
+I: Validating libext2fs2t64 1.47.0-2.4~exp1ubuntu4
+I: Retrieving libfastjson4 1.2304.0-1build1
+I: Validating libfastjson4 1.2304.0-1build1
+I: Retrieving libfdisk1 2.39.3-9ubuntu6
+I: Validating libfdisk1 2.39.3-9ubuntu6
+I: Retrieving libffi8 3.4.6-1build1
+I: Validating libffi8 3.4.6-1build1
+I: Retrieving libfribidi0 1.0.13-3build1
+I: Validating libfribidi0 1.0.13-3build1
+I: Retrieving libgcc-s1 14-20240412-0ubuntu1
+I: Validating libgcc-s1 14-20240412-0ubuntu1
+I: Retrieving libgcrypt20 1.10.3-2build1
+I: Validating libgcrypt20 1.10.3-2build1
+I: Retrieving libgirepository-1.0-1 1.80.1-1
+I: Validating libgirepository-1.0-1 1.80.1-1
+I: Retrieving libglib2.0-0t64 2.80.0-6ubuntu1
+I: Validating libglib2.0-0t64 2.80.0-6ubuntu1
+I: Retrieving libglib2.0-data 2.80.0-6ubuntu1
+I: Validating libglib2.0-data 2.80.0-6ubuntu1
+I: Retrieving libgmp10 2:6.3.0+dfsg-2ubuntu6
+I: Validating libgmp10 2:6.3.0+dfsg-2ubuntu6
+I: Retrieving libgnutls30t64 3.8.3-1.1ubuntu3
+I: Validating libgnutls30t64 3.8.3-1.1ubuntu3
+I: Retrieving libgpg-error0 1.47-3build2
+I: Validating libgpg-error0 1.47-3build2
+I: Retrieving libgssapi-krb5-2 1.20.1-6ubuntu2
+I: Validating libgssapi-krb5-2 1.20.1-6ubuntu2
+I: Retrieving libhogweed6t64 3.9.1-2.2build1
+I: Validating libhogweed6t64 3.9.1-2.2build1
+I: Retrieving libicu74 74.2-1ubuntu3
+I: Validating libicu74 74.2-1ubuntu3
+I: Retrieving libidn2-0 2.3.7-2build1
+I: Validating libidn2-0 2.3.7-2build1
+I: Retrieving libjson-c5 0.17-1build1
+I: Validating libjson-c5 0.17-1build1
+I: Retrieving libk5crypto3 1.20.1-6ubuntu2
+I: Validating libk5crypto3 1.20.1-6ubuntu2
+I: Retrieving libkeyutils1 1.6.3-3build1
+I: Validating libkeyutils1 1.6.3-3build1
+I: Retrieving libkmod2 31+20240202-2ubuntu7
+I: Validating libkmod2 31+20240202-2ubuntu7
+I: Retrieving libkrb5-3 1.20.1-6ubuntu2
+I: Validating libkrb5-3 1.20.1-6ubuntu2
+I: Retrieving libkrb5support0 1.20.1-6ubuntu2
+I: Validating libkrb5support0 1.20.1-6ubuntu2
+I: Retrieving liblocale-gettext-perl 1.07-6ubuntu5
+I: Validating liblocale-gettext-perl 1.07-6ubuntu5
+I: Retrieving liblz4-1 1.9.4-1build1
+I: Validating liblz4-1 1.9.4-1build1
+I: Retrieving liblzma5 5.6.1+really5.4.5-1
+I: Validating liblzma5 5.6.1+really5.4.5-1
+I: Retrieving libmd0 1.1.0-2build1
+I: Validating libmd0 1.1.0-2build1
+I: Retrieving libmnl0 1.0.5-2build1
+I: Validating libmnl0 1.0.5-2build1
+I: Retrieving libmount1 2.39.3-9ubuntu6
+I: Validating libmount1 2.39.3-9ubuntu6
+I: Retrieving libncursesw6 6.4+20240113-1ubuntu2
+I: Validating libncursesw6 6.4+20240113-1ubuntu2
+I: Retrieving libnetplan1 1.0-2ubuntu1
+I: Validating libnetplan1 1.0-2ubuntu1
+I: Retrieving libnettle8t64 3.9.1-2.2build1
+I: Validating libnettle8t64 3.9.1-2.2build1
+I: Retrieving libnewt0.52 0.52.24-2ubuntu2
+I: Validating libnewt0.52 0.52.24-2ubuntu2
+I: Retrieving libnpth0t64 1.6-3.1build1
+I: Validating libnpth0t64 1.6-3.1build1
+I: Retrieving libnss-systemd 255.4-1ubuntu8
+I: Validating libnss-systemd 255.4-1ubuntu8
+I: Retrieving libp11-kit0 0.25.3-4ubuntu2
+I: Validating libp11-kit0 0.25.3-4ubuntu2
+I: Retrieving libpam-cap 1:2.66-5ubuntu2
+I: Validating libpam-cap 1:2.66-5ubuntu2
+I: Retrieving libpam-modules 1.5.3-5ubuntu5
+I: Validating libpam-modules 1.5.3-5ubuntu5
+I: Retrieving libpam-modules-bin 1.5.3-5ubuntu5
+I: Validating libpam-modules-bin 1.5.3-5ubuntu5
+I: Retrieving libpam-runtime 1.5.3-5ubuntu5
+I: Validating libpam-runtime 1.5.3-5ubuntu5
+I: Retrieving libpam-systemd 255.4-1ubuntu8
+I: Validating libpam-systemd 255.4-1ubuntu8
+I: Retrieving libpam0g 1.5.3-5ubuntu5
+I: Validating libpam0g 1.5.3-5ubuntu5
+I: Retrieving libpcre2-8-0 10.42-4ubuntu2
+I: Validating libpcre2-8-0 10.42-4ubuntu2
+I: Retrieving libpopt0 1.19+dfsg-1build1
+I: Validating libpopt0 1.19+dfsg-1build1
+I: Retrieving libproc2-0 2:4.0.4-4ubuntu3
+I: Validating libproc2-0 2:4.0.4-4ubuntu3
+I: Retrieving libpython3-stdlib 3.12.3-0ubuntu1
+I: Validating libpython3-stdlib 3.12.3-0ubuntu1
+I: Retrieving libpython3.12-minimal 3.12.3-1
+I: Validating libpython3.12-minimal 3.12.3-1
+I: Retrieving libpython3.12-stdlib 3.12.3-1
+I: Validating libpython3.12-stdlib 3.12.3-1
+I: Retrieving libreadline8t64 8.2-4build1
+I: Validating libreadline8t64 8.2-4build1
+I: Retrieving libseccomp2 2.5.5-1ubuntu3
+I: Validating libseccomp2 2.5.5-1ubuntu3
+I: Retrieving libselinux1 3.5-2ubuntu2
+I: Validating libselinux1 3.5-2ubuntu2
+I: Retrieving libsemanage-common 3.5-1build5
+I: Validating libsemanage-common 3.5-1build5
+I: Retrieving libsemanage2 3.5-1build5
+I: Validating libsemanage2 3.5-1build5
+I: Retrieving libsepol2 3.5-2build1
+I: Validating libsepol2 3.5-2build1
+I: Retrieving libslang2 2.3.3-3build2
+I: Validating libslang2 2.3.3-3build2
+I: Retrieving libsmartcols1 2.39.3-9ubuntu6
+I: Validating libsmartcols1 2.39.3-9ubuntu6
+I: Retrieving libsqlite3-0 3.45.1-1ubuntu2
+I: Validating libsqlite3-0 3.45.1-1ubuntu2
+I: Retrieving libss2 1.47.0-2.4~exp1ubuntu4
+I: Validating libss2 1.47.0-2.4~exp1ubuntu4
+I: Retrieving libssl3t64 3.0.13-0ubuntu3
+I: Validating libssl3t64 3.0.13-0ubuntu3
+I: Retrieving libstdc++6 14-20240412-0ubuntu1
+I: Validating libstdc++6 14-20240412-0ubuntu1
+I: Retrieving libsystemd-shared 255.4-1ubuntu8
+I: Validating libsystemd-shared 255.4-1ubuntu8
+I: Retrieving libsystemd0 255.4-1ubuntu8
+I: Validating libsystemd0 255.4-1ubuntu8
+I: Retrieving libtasn1-6 4.19.0-3build1
+I: Validating libtasn1-6 4.19.0-3build1
+I: Retrieving libtext-charwidth-perl 0.04-11build3
+I: Validating libtext-charwidth-perl 0.04-11build3
+I: Retrieving libtext-iconv-perl 1.7-8build3
+I: Validating libtext-iconv-perl 1.7-8build3
+I: Retrieving libtext-wrapi18n-perl 0.06-10
+I: Validating libtext-wrapi18n-perl 0.06-10
+I: Retrieving libtinfo6 6.4+20240113-1ubuntu2
+I: Validating libtinfo6 6.4+20240113-1ubuntu2
+I: Retrieving libtirpc-common 1.3.4+ds-1.1build1
+I: Validating libtirpc-common 1.3.4+ds-1.1build1
+I: Retrieving libtirpc3t64 1.3.4+ds-1.1build1
+I: Validating libtirpc3t64 1.3.4+ds-1.1build1
+I: Retrieving libudev1 255.4-1ubuntu8
+I: Validating libudev1 255.4-1ubuntu8
+I: Retrieving libunistring5 1.1-2build1
+I: Validating libunistring5 1.1-2build1
+I: Retrieving libuuid1 2.39.3-9ubuntu6
+I: Validating libuuid1 2.39.3-9ubuntu6
+I: Retrieving libxml2 2.9.14+dfsg-1.3ubuntu3
+I: Validating libxml2 2.9.14+dfsg-1.3ubuntu3
+I: Retrieving libxtables12 1.8.10-3ubuntu2
+I: Validating libxtables12 1.8.10-3ubuntu2
+I: Retrieving libxxhash0 0.8.2-2build1
+I: Validating libxxhash0 0.8.2-2build1
+I: Retrieving libyaml-0-2 0.2.5-1build1
+I: Validating libyaml-0-2 0.2.5-1build1
+I: Retrieving libzstd1 1.5.5+dfsg2-2build1
+I: Validating libzstd1 1.5.5+dfsg2-2build1
+I: Retrieving locales 2.39-0ubuntu8
+I: Validating locales 2.39-0ubuntu8
+I: Retrieving login 1:4.13+dfsg1-4ubuntu3
+I: Validating login 1:4.13+dfsg1-4ubuntu3
+I: Retrieving logrotate 3.21.0-2build1
+I: Validating logrotate 3.21.0-2build1
+I: Retrieving logsave 1.47.0-2.4~exp1ubuntu4
+I: Validating logsave 1.47.0-2.4~exp1ubuntu4
+I: Retrieving lsb-release 12.0-2
+I: Validating lsb-release 12.0-2
+I: Retrieving mawk 1.3.4.20240123-1build1
+I: Validating mawk 1.3.4.20240123-1build1
+I: Retrieving media-types 10.1.0
+I: Validating media-types 10.1.0
+I: Retrieving mount 2.39.3-9ubuntu6
+I: Validating mount 2.39.3-9ubuntu6
+I: Retrieving ncurses-base 6.4+20240113-1ubuntu2
+I: Validating ncurses-base 6.4+20240113-1ubuntu2
+I: Retrieving ncurses-bin 6.4+20240113-1ubuntu2
+I: Validating ncurses-bin 6.4+20240113-1ubuntu2
+I: Retrieving netbase 6.4
+I: Validating netbase 6.4
+I: Retrieving netcat-openbsd 1.226-1ubuntu2
+I: Validating netcat-openbsd 1.226-1ubuntu2
+I: Retrieving netplan-generator 1.0-2ubuntu1
+I: Validating netplan-generator 1.0-2ubuntu1
+I: Retrieving netplan.io 1.0-2ubuntu1
+I: Validating netplan.io 1.0-2ubuntu1
+I: Retrieving networkd-dispatcher 2.2.4-1
+I: Validating networkd-dispatcher 2.2.4-1
+I: Retrieving openssl 3.0.13-0ubuntu3
+I: Validating openssl 3.0.13-0ubuntu3
+I: Retrieving passwd 1:4.13+dfsg1-4ubuntu3
+I: Validating passwd 1:4.13+dfsg1-4ubuntu3
+I: Retrieving perl-base 5.38.2-3.2build2
+I: Validating perl-base 5.38.2-3.2build2
+I: Retrieving procps 2:4.0.4-4ubuntu3
+I: Validating procps 2:4.0.4-4ubuntu3
+I: Retrieving python-apt-common 2.7.7ubuntu1
+I: Validating python-apt-common 2.7.7ubuntu1
+I: Retrieving python3 3.12.3-0ubuntu1
+I: Validating python3 3.12.3-0ubuntu1
+I: Retrieving python3-apt 2.7.7ubuntu1
+I: Validating python3-apt 2.7.7ubuntu1
+I: Retrieving python3-cffi-backend 1.16.0-2build1
+I: Validating python3-cffi-backend 1.16.0-2build1
+I: Retrieving python3-dbus 1.3.2-5build3
+I: Validating python3-dbus 1.3.2-5build3
+I: Retrieving python3-gi 3.48.2-1
+I: Validating python3-gi 3.48.2-1
+I: Retrieving python3-markdown-it 3.0.0-2
+I: Validating python3-markdown-it 3.0.0-2
+I: Retrieving python3-mdurl 0.1.2-1
+I: Validating python3-mdurl 0.1.2-1
+I: Retrieving python3-minimal 3.12.3-0ubuntu1
+I: Validating python3-minimal 3.12.3-0ubuntu1
+I: Retrieving python3-netifaces 0.11.0-2build3
+I: Validating python3-netifaces 0.11.0-2build3
+I: Retrieving python3-netplan 1.0-2ubuntu1
+I: Validating python3-netplan 1.0-2ubuntu1
+I: Retrieving python3-pkg-resources 68.1.2-2ubuntu1
+I: Validating python3-pkg-resources 68.1.2-2ubuntu1
+I: Retrieving python3-pygments 2.17.2+dfsg-1
+I: Validating python3-pygments 2.17.2+dfsg-1
+I: Retrieving python3-rich 13.7.1-1
+I: Validating python3-rich 13.7.1-1
+I: Retrieving python3-typing-extensions 4.10.0-1
+I: Validating python3-typing-extensions 4.10.0-1
+I: Retrieving python3-yaml 6.0.1-2build2
+I: Validating python3-yaml 6.0.1-2build2
+I: Retrieving python3.12 3.12.3-1
+I: Validating python3.12 3.12.3-1
+I: Retrieving python3.12-minimal 3.12.3-1
+I: Validating python3.12-minimal 3.12.3-1
+I: Retrieving readline-common 8.2-4build1
+I: Validating readline-common 8.2-4build1
+I: Retrieving rsyslog 8.2312.0-3ubuntu9
+I: Validating rsyslog 8.2312.0-3ubuntu9
+I: Retrieving sed 4.9-2build1
+I: Validating sed 4.9-2build1
+I: Retrieving sensible-utils 0.0.22
+I: Validating sensible-utils 0.0.22
+I: Retrieving shared-mime-info 2.4-4
+I: Validating shared-mime-info 2.4-4
+I: Retrieving sudo 1.9.15p5-3ubuntu5
+I: Validating sudo 1.9.15p5-3ubuntu5
+I: Retrieving systemd 255.4-1ubuntu8
+I: Validating systemd 255.4-1ubuntu8
+I: Retrieving systemd-dev 255.4-1ubuntu8
+I: Validating systemd-dev 255.4-1ubuntu8
+I: Retrieving systemd-hwe-hwdb 255.1.3
+I: Validating systemd-hwe-hwdb 255.1.3
+I: Retrieving systemd-resolved 255.4-1ubuntu8
+I: Validating systemd-resolved 255.4-1ubuntu8
+I: Retrieving systemd-sysv 255.4-1ubuntu8
+I: Validating systemd-sysv 255.4-1ubuntu8
+I: Retrieving systemd-timesyncd 255.4-1ubuntu8
+I: Validating systemd-timesyncd 255.4-1ubuntu8
+I: Retrieving sysvinit-utils 3.08-6ubuntu3
+I: Validating sysvinit-utils 3.08-6ubuntu3
+I: Retrieving tar 1.35+dfsg-3build1
+I: Validating tar 1.35+dfsg-3build1
+I: Retrieving tzdata 2024a-2ubuntu1
+I: Validating tzdata 2024a-2ubuntu1
+I: Retrieving ubuntu-keyring 2023.11.28.1
+I: Validating ubuntu-keyring 2023.11.28.1
+I: Retrieving ubuntu-minimal 1.539
+I: Validating ubuntu-minimal 1.539
+I: Retrieving ubuntu-pro-client 31.2.3
+I: Validating ubuntu-pro-client 31.2.3
+I: Retrieving ubuntu-pro-client-l10n 31.2.3
+I: Validating ubuntu-pro-client-l10n 31.2.3
+I: Retrieving ucf 3.0043+nmu1
+I: Validating ucf 3.0043+nmu1
+I: Retrieving udev 255.4-1ubuntu8
+I: Validating udev 255.4-1ubuntu8
+I: Retrieving util-linux 2.39.3-9ubuntu6
+I: Validating util-linux 2.39.3-9ubuntu6
+I: Retrieving vim-common 2:9.1.0016-1ubuntu7
+I: Validating vim-common 2:9.1.0016-1ubuntu7
+I: Retrieving vim-tiny 2:9.1.0016-1ubuntu7
+I: Validating vim-tiny 2:9.1.0016-1ubuntu7
+I: Retrieving whiptail 0.52.24-2ubuntu2
+I: Validating whiptail 0.52.24-2ubuntu2
+I: Retrieving xdg-user-dirs 0.18-1build1
+I: Validating xdg-user-dirs 0.18-1build1
+I: Retrieving xkb-data 2.41-2ubuntu1
+I: Validating xkb-data 2.41-2ubuntu1
+I: Retrieving xxd 2:9.1.0016-1ubuntu7
+I: Validating xxd 2:9.1.0016-1ubuntu7
+I: Retrieving zlib1g 1:1.3.dfsg-3.1ubuntu2
+I: Validating zlib1g 1:1.3.dfsg-3.1ubuntu2
+I: Chosen extractor for .deb packages: dpkg-deb
+I: Extracting base-files...
+I: Extracting base-passwd...
+I: Extracting bash...
+I: Extracting bsdutils...
+I: Extracting coreutils...
+I: Extracting dash...
+I: Extracting debconf...
+I: Extracting debianutils...
+I: Extracting diffutils...
+I: Extracting dpkg...
+I: Extracting e2fsprogs...
+I: Extracting findutils...
+I: Extracting gcc-14-base...
+I: Extracting grep...
+I: Extracting gzip...
+I: Extracting hostname...
+I: Extracting init-system-helpers...
+I: Extracting libacl1...
+I: Extracting libattr1...
+I: Extracting libaudit-common...
+I: Extracting libaudit1...
+I: Extracting libblkid1...
+I: Extracting libbz2-1.0...
+I: Extracting libc-bin...
+I: Extracting libc6...
+I: Extracting libcap-ng0...
+I: Extracting libcap2...
+I: Extracting libcom-err2...
+I: Extracting libcrypt1...
+I: Extracting libdebconfclient0...
+I: Extracting libext2fs2t64...
+I: Extracting libgcc-s1...
+I: Extracting libgcrypt20...
+I: Extracting libgmp10...
+I: Extracting libgpg-error0...
+I: Extracting liblz4-1...
+I: Extracting liblzma5...
+I: Extracting libmd0...
+I: Extracting libmount1...
+I: Extracting libncursesw6...
+I: Extracting libpam-modules...
+I: Extracting libpam-modules-bin...
+I: Extracting libpam-runtime...
+I: Extracting libpam0g...
+I: Extracting libpcre2-8-0...
+I: Extracting libproc2-0...
+I: Extracting libselinux1...
+I: Extracting libsemanage-common...
+I: Extracting libsemanage2...
+I: Extracting libsepol2...
+I: Extracting libsmartcols1...
+I: Extracting libss2...
+I: Extracting libssl3t64...
+I: Extracting libsystemd0...
+I: Extracting libtinfo6...
+I: Extracting libudev1...
+I: Extracting libuuid1...
+I: Extracting libzstd1...
+I: Extracting login...
+I: Extracting logsave...
+I: Extracting mawk...
+I: Extracting mount...
+I: Extracting ncurses-base...
+I: Extracting ncurses-bin...
+I: Extracting passwd...
+I: Extracting perl-base...
+I: Extracting procps...
+I: Extracting sed...
+I: Extracting sensible-utils...
+I: Extracting sysvinit-utils...
+I: Extracting tar...
+I: Extracting util-linux...
+I: Extracting zlib1g...
+I: Installing core packages...
+I: Unpacking required packages...
+I: Unpacking base-files...
+I: Unpacking base-passwd...
+I: Unpacking bash...
+I: Unpacking bsdutils...
+I: Unpacking coreutils...
+I: Unpacking dash...
+I: Unpacking debconf...
+I: Unpacking debianutils...
+I: Unpacking diffutils...
+I: Unpacking dpkg...
+I: Unpacking e2fsprogs...
+I: Unpacking findutils...
+I: Unpacking gcc-14-base:amd64...
+I: Unpacking grep...
+I: Unpacking gzip...
+I: Unpacking hostname...
+I: Unpacking init-system-helpers...
+I: Unpacking libacl1:amd64...
+I: Unpacking libattr1:amd64...
+I: Unpacking libaudit-common...
+I: Unpacking libaudit1:amd64...
+I: Unpacking libblkid1:amd64...
+I: Unpacking libbz2-1.0:amd64...
+I: Unpacking libc-bin...
+I: Unpacking libc6:amd64...
+I: Unpacking libcap-ng0:amd64...
+I: Unpacking libcap2:amd64...
+I: Unpacking libcom-err2:amd64...
+I: Unpacking libcrypt1:amd64...
+I: Unpacking libdebconfclient0:amd64...
+I: Unpacking libext2fs2t64:amd64...
+I: Unpacking libgcc-s1:amd64...
+I: Unpacking libgcrypt20:amd64...
+I: Unpacking libgmp10:amd64...
+I: Unpacking libgpg-error0:amd64...
+I: Unpacking liblz4-1:amd64...
+I: Unpacking liblzma5:amd64...
+I: Unpacking libmd0:amd64...
+I: Unpacking libmount1:amd64...
+I: Unpacking libncursesw6:amd64...
+I: Unpacking libpam-modules:amd64...
+I: Unpacking libpam-modules-bin...
+I: Unpacking libpam-runtime...
+I: Unpacking libpam0g:amd64...
+I: Unpacking libpcre2-8-0:amd64...
+I: Unpacking libproc2-0:amd64...
+I: Unpacking libselinux1:amd64...
+I: Unpacking libsemanage-common...
+I: Unpacking libsemanage2:amd64...
+I: Unpacking libsepol2:amd64...
+I: Unpacking libsmartcols1:amd64...
+I: Unpacking libss2:amd64...
+I: Unpacking libssl3t64:amd64...
+I: Unpacking libsystemd0:amd64...
+I: Unpacking libtinfo6:amd64...
+I: Unpacking libudev1:amd64...
+I: Unpacking libuuid1:amd64...
+I: Unpacking libzstd1:amd64...
+I: Unpacking login...
+I: Unpacking logsave...
+I: Unpacking mawk...
+I: Unpacking mount...
+I: Unpacking ncurses-base...
+I: Unpacking ncurses-bin...
+I: Unpacking passwd...
+I: Unpacking perl-base...
+I: Unpacking procps...
+I: Unpacking sed...
+I: Unpacking sensible-utils...
+I: Unpacking sysvinit-utils...
+I: Unpacking tar...
+I: Unpacking util-linux...
+I: Unpacking zlib1g:amd64...
+I: Configuring required packages...
+I: Configuring gcc-14-base:amd64...
+I: Configuring libaudit-common...
+I: Configuring libsemanage-common...
+I: Configuring debconf...
+I: Configuring ncurses-base...
+I: Configuring init-system-helpers...
+I: Configuring sensible-utils...
+I: Configuring libgcc-s1:amd64...
+I: Configuring libc6:amd64...
+I: Configuring libmd0:amd64...
+I: Configuring libattr1:amd64...
+I: Configuring sysvinit-utils...
+I: Configuring libext2fs2t64:amd64...
+I: Configuring debianutils...
+I: Configuring mawk...
+I: Configuring libdebconfclient0:amd64...
+I: Configuring libbz2-1.0:amd64...
+I: Configuring libblkid1:amd64...
+I: Configuring libtinfo6:amd64...
+I: Configuring libzstd1:amd64...
+I: Configuring liblzma5:amd64...
+I: Configuring libgpg-error0:amd64...
+I: Configuring libssl3t64:amd64...
+I: Configuring liblz4-1:amd64...
+I: Configuring libc-bin...
+I: Configuring ncurses-bin...
+I: Configuring libacl1:amd64...
+I: Configuring libsmartcols1:amd64...
+I: Configuring libgcrypt20:amd64...
+I: Configuring zlib1g:amd64...
+I: Configuring libcrypt1:amd64...
+I: Configuring libcom-err2:amd64...
+I: Configuring diffutils...
+I: Configuring libcap2:amd64...
+I: Configuring hostname...
+I: Configuring libcap-ng0:amd64...
+I: Configuring libgmp10:amd64...
+I: Configuring libaudit1:amd64...
+I: Configuring libuuid1:amd64...
+I: Configuring libss2:amd64...
+I: Configuring libsepol2:amd64...
+I: Configuring libpcre2-8-0:amd64...
+I: Configuring libncursesw6:amd64...
+I: Configuring logsave...
+I: Configuring libudev1:amd64...
+I: Configuring base-files...
+I: Configuring bash...
+I: Configuring grep...
+I: Configuring e2fsprogs...
+I: Configuring libsystemd0:amd64...
+I: Configuring libselinux1:amd64...
+I: Configuring libpam0g:amd64...
+I: Configuring sed...
+I: Configuring libproc2-0:amd64...
+I: Configuring findutils...
+I: Configuring libmount1:amd64...
+I: Configuring procps...
+I: Configuring libsemanage2:amd64...
+I: Configuring base-passwd...
+I: Configuring bsdutils...
+I: Configuring tar...
+I: Configuring libpam-modules-bin...
+I: Configuring coreutils...
+I: Configuring util-linux...
+I: Configuring dpkg...
+I: Configuring mount...
+I: Configuring dash...
+I: Configuring libpam-modules:amd64...
+I: Configuring perl-base...
+I: Configuring gzip...
+I: Configuring passwd...
+I: Configuring libpam-runtime...
+I: Configuring login...
+I: Configuring libc-bin...
+I: Unpacking the base system...
+I: Unpacking apt...
+I: Unpacking apt-utils...
+I: Unpacking ca-certificates...
+I: Unpacking console-setup...
+I: Unpacking console-setup-linux...
+I: Unpacking cron...
+I: Unpacking dbus...
+I: Unpacking dbus-bin...
+I: Unpacking dbus-daemon...
+I: Unpacking dbus-session-bus-common...
+I: Unpacking dbus-system-bus-common...
+I: Unpacking dbus-user-session...
+I: Unpacking debconf-i18n...
+I: Unpacking dhcpcd-base...
+I: Unpacking distro-info...
+I: Unpacking distro-info-data...
+I: Unpacking dmsetup...
+I: Unpacking eject...
+I: Unpacking gir1.2-girepository-2.0:amd64...
+I: Unpacking gir1.2-glib-2.0:amd64...
+I: Unpacking gpgv...
+I: Unpacking init...
+I: Unpacking iproute2...
+I: Unpacking iputils-ping...
+I: Unpacking iso-codes...
+I: Unpacking kbd...
+I: Unpacking keyboard-configuration...
+I: Unpacking kmod...
+I: Unpacking krb5-locales...
+I: Unpacking less...
+I: Unpacking libapt-pkg6.0t64:amd64...
+I: Unpacking libassuan0:amd64...
+I: Unpacking libatm1t64:amd64...
+I: Unpacking libbpf1:amd64...
+I: Unpacking libbsd0:amd64...
+I: Unpacking libcap2-bin...
+I: Unpacking libdb5.3t64:amd64...
+I: Unpacking libdbus-1-3:amd64...
+I: Unpacking libelf1t64:amd64...
+I: Unpacking libestr0:amd64...
+I: Unpacking libfastjson4:amd64...
+I: Unpacking libffi8:amd64...
+I: Unpacking libfribidi0:amd64...
+I: Unpacking libgirepository-1.0-1:amd64...
+I: Unpacking libglib2.0-0t64:amd64...
+I: Unpacking libglib2.0-data...
+I: Unpacking libgnutls30t64:amd64...
+I: Unpacking libgssapi-krb5-2:amd64...
+I: Unpacking libhogweed6t64:amd64...
+I: Unpacking libicu74:amd64...
+I: Unpacking libidn2-0:amd64...
+I: Unpacking libk5crypto3:amd64...
+I: Unpacking libkeyutils1:amd64...
+I: Unpacking libkrb5-3:amd64...
+I: Unpacking libkrb5support0:amd64...
+I: Unpacking liblocale-gettext-perl...
+I: Unpacking libmnl0:amd64...
+I: Unpacking libnetplan1:amd64...
+I: Unpacking libnettle8t64:amd64...
+I: Unpacking libnewt0.52:amd64...
+I: Unpacking libnpth0t64:amd64...
+I: Unpacking libnss-systemd:amd64...
+I: Unpacking libp11-kit0:amd64...
+I: Unpacking libpam-cap:amd64...
+I: Unpacking libpam-systemd:amd64...
+I: Unpacking libpopt0:amd64...
+I: Unpacking libpython3-stdlib:amd64...
+I: Unpacking libpython3.12-stdlib:amd64...
+I: Unpacking libreadline8t64:amd64...
+I: Unpacking libslang2:amd64...
+I: Unpacking libsqlite3-0:amd64...
+I: Unpacking libstdc++6:amd64...
+I: Unpacking libtasn1-6:amd64...
+I: Unpacking libtext-charwidth-perl:amd64...
+I: Unpacking libtext-iconv-perl:amd64...
+I: Unpacking libtext-wrapi18n-perl...
+I: Unpacking libtirpc-common...
+I: Unpacking libtirpc3t64:amd64...
+I: Unpacking libunistring5:amd64...
+I: Unpacking libxml2:amd64...
+I: Unpacking libxtables12:amd64...
+I: Unpacking libxxhash0:amd64...
+I: Unpacking libyaml-0-2:amd64...
+I: Unpacking locales...
+I: Unpacking logrotate...
+I: Unpacking lsb-release...
+I: Unpacking media-types...
+I: Unpacking netbase...
+I: Unpacking netcat-openbsd...
+I: Unpacking netplan-generator...
+I: Unpacking netplan.io...
+I: Unpacking networkd-dispatcher...
+I: Unpacking openssl...
+I: Unpacking python-apt-common...
+I: Unpacking python3...
+I: Unpacking python3-apt...
+I: Unpacking python3-cffi-backend:amd64...
+I: Unpacking python3-dbus...
+I: Unpacking python3-gi...
+I: Unpacking python3-markdown-it...
+I: Unpacking python3-mdurl...
+I: Unpacking python3-netifaces:amd64...
+I: Unpacking python3-netplan...
+I: Unpacking python3-pkg-resources...
+I: Unpacking python3-pygments...
+I: Unpacking python3-rich...
+I: Unpacking python3-typing-extensions...
+I: Unpacking python3-yaml...
+I: Unpacking python3.12...
+I: Unpacking readline-common...
+I: Unpacking rsyslog...
+I: Unpacking shared-mime-info...
+I: Unpacking sudo...
+I: Unpacking systemd-hwe-hwdb...
+I: Unpacking systemd-resolved...
+I: Unpacking systemd-timesyncd...
+I: Unpacking tzdata...
+I: Unpacking ubuntu-keyring...
+I: Unpacking ubuntu-minimal...
+I: Unpacking ubuntu-pro-client...
+I: Unpacking ubuntu-pro-client-l10n...
+I: Unpacking ucf...
+I: Unpacking udev...
+I: Unpacking vim-common...
+I: Unpacking vim-tiny...
+I: Unpacking whiptail...
+I: Unpacking xdg-user-dirs...
+I: Unpacking xkb-data...
+I: Unpacking xxd...
+I: Configuring the base system...
+I: Configuring media-types...
+I: Configuring libtext-iconv-perl:amd64...
+I: Configuring libtext-charwidth-perl:amd64...
+I: Configuring libnpth0t64:amd64...
+I: Configuring libkeyutils1:amd64...
+I: Configuring libatm1t64:amd64...
+I: Configuring init...
+I: Configuring xdg-user-dirs...
+I: Configuring libyaml-0-2:amd64...
+I: Configuring distro-info-data...
+I: Configuring libestr0:amd64...
+I: Configuring libfastjson4:amd64...
+I: Configuring libtirpc-common...
+I: Configuring libsqlite3-0:amd64...
+I: Configuring cron...
+I: Configuring less...
+I: Configuring libnss-systemd:amd64...
+I: Configuring xkb-data...
+I: Configuring krb5-locales...
+I: Configuring kmod...
+I: Configuring libassuan0:amd64...
+I: Configuring locales...
+I: Configuring ubuntu-keyring...
+I: Configuring libtext-wrapi18n-perl...
+I: Configuring xxd...
+I: Configuring libelf1t64:amd64...
+I: Configuring libkrb5support0:amd64...
+I: Configuring tzdata...
+I: Configuring libcap2-bin...
+I: Configuring eject...
+I: Configuring libnettle8t64:amd64...
+I: Configuring libglib2.0-data...
+I: Configuring vim-common...
+I: Configuring libslang2:amd64...
+I: Configuring libdbus-1-3:amd64...
+I: Configuring libfribidi0:amd64...
+I: Configuring libunistring5:amd64...
+I: Configuring libmnl0:amd64...
+I: Configuring systemd-timesyncd...
+I: Configuring udev...
+I: Configuring sudo...
+I: Configuring dhcpcd-base...
+I: Configuring ucf...
+I: Configuring libk5crypto3:amd64...
+I: Configuring libxtables12:amd64...
+I: Configuring systemd-hwe-hwdb...
+I: Configuring libdb5.3t64:amd64...
+I: Configuring libffi8:amd64...
+I: Configuring python-apt-common...
+I: Configuring libhogweed6t64:amd64...
+I: Configuring dmsetup...
+I: Configuring gpgv...
+I: Configuring dbus-session-bus-common...
+I: Configuring libxxhash0:amd64...
+I: Configuring libtasn1-6:amd64...
+I: Configuring netbase...
+I: Configuring libkrb5-3:amd64...
+I: Configuring lsb-release...
+I: Configuring dbus-system-bus-common...
+I: Configuring openssl...
+I: Configuring libbsd0:amd64...
+I: Configuring libpam-cap:amd64...
+I: Configuring readline-common...
+I: Configuring iso-codes...
+I: Configuring libstdc++6:amd64...
+I: Configuring dbus-bin...
+I: Configuring liblocale-gettext-perl...
+I: Configuring libbpf1:amd64...
+I: Configuring libpopt0:amd64...
+I: Configuring logrotate...
+I: Configuring distro-info...
+I: Configuring libnewt0.52:amd64...
+I: Configuring rsyslog...
+I: Configuring netcat-openbsd...
+I: Configuring debconf-i18n...
+I: Configuring libidn2-0:amd64...
+I: Configuring dbus-daemon...
+I: Configuring vim-tiny...
+I: Configuring ca-certificates...
+I: Configuring libglib2.0-0t64:amd64...
+I: Configuring dbus...
+I: Configuring libp11-kit0:amd64...
+I: Configuring libgssapi-krb5-2:amd64...
+I: Configuring gir1.2-glib-2.0:amd64...
+I: Configuring libreadline8t64:amd64...
+I: Configuring libicu74:amd64...
+I: Configuring whiptail...
+I: Configuring libpam-systemd:amd64...
+I: Configuring libgirepository-1.0-1:amd64...
+I: Configuring keyboard-configuration...
+I: Configuring libapt-pkg6.0t64:amd64...
+I: Configuring iputils-ping...
+I: Configuring libxml2:amd64...
+I: Configuring systemd-resolved...
+I: Configuring libgnutls30t64:amd64...
+I: Configuring apt...
+I: Configuring apt-utils...
+I: Configuring libpython3.12-stdlib:amd64...
+I: Configuring libtirpc3t64:amd64...
+I: Configuring iproute2...
+I: Configuring python3.12...
+I: Configuring libnetplan1:amd64...
+I: Configuring dbus-user-session...
+I: Configuring gir1.2-girepository-2.0:amd64...
+I: Configuring shared-mime-info...
+I: Configuring netplan-generator...
+I: Configuring libpython3-stdlib:amd64...
+I: Configuring python3...
+I: Configuring python3-mdurl...
+I: Configuring python3-gi...
+I: Configuring python3-typing-extensions...
+I: Configuring python3-markdown-it...
+I: Configuring python3-netifaces:amd64...
+I: Configuring python3-cffi-backend:amd64...
+I: Configuring python3-pkg-resources...
+I: Configuring python3-dbus...
+I: Configuring python3-apt...
+I: Configuring python3-yaml...
+I: Configuring python3-pygments...
+I: Configuring python3-netplan...
+I: Configuring ubuntu-pro-client...
+I: Configuring ubuntu-pro-client-l10n...
+I: Configuring networkd-dispatcher...
+I: Configuring python3-rich...
+I: Configuring netplan.io...
+I: Configuring kbd...
+I: Configuring console-setup-linux...
+I: Configuring console-setup...
+I: Configuring ubuntu-minimal...
+I: Configuring libc-bin...
+I: Configuring ca-certificates...
+I: Base system installed successfully.
+root@ip-192-168-0-83:/home/ubuntu# machinectl list-images
+NAME    TYPE      RO USAGE CREATED                     MODIFIED
+noble1  directory no       Fri 2026-07-17 00:42:56 UTC -
+trixie1 directory no       Thu 2026-07-16 23:43:26 UTC -
+
+2 images listed.
+root@ip-192-168-0-83:/home/ubuntu# sudo systemctl edit --full --force noble1.service
+root@ip-192-168-0-83:/home/ubuntu# sudo nano /usr/local/bin/check_disk_usage.sh
+root@ip-192-168-0-83:/home/ubuntu# sudo chmod +x /usr/local/bin/check_disk_usage.sh
+root@ip-192-168-0-83:/home/ubuntu# sudo nano /etc/systemd/system/disk-check.timer
+root@ip-192-168-0-83:/home/ubuntu# sudo systemctl daemon-reload
+root@ip-192-168-0-83:/home/ubuntu# sudo nano /etc/systemd/system/disk-check.service
+root@ip-192-168-0-83:/home/ubuntu# sudo nano /etc/systemd/system/disk-check.service
+root@ip-192-168-0-83:/home/ubuntu# sudo systemctl daemon-reload
+root@ip-192-168-0-83:/home/ubuntu# sudo systemctl enable --now disk-check.timer
+root@ip-192-168-0-83:/home/ubuntu# systemctl status disk-check.timer
+● disk-check.timer - Запуск перевірки диска кожні 5 хвилин
+     Loaded: loaded (/etc/systemd/system/disk-check.timer; enabled; preset: enabled)
+     Active: active (waiting) since Fri 2026-07-17 01:00:09 UTC; 23s ago
+    Trigger: Fri 2026-07-17 01:05:21 UTC; 4min 49s left
+   Triggers: ● disk-check.service
+
+Jul 17 01:00:09 ip-192-168-0-83 systemd[1]: Started disk-check.timer - Запуск перевірки диска кожні 5 хвилин.
+root@ip-192-168-0-83:/home/ubuntu# journalctl -u disk-check.service
+Jul 17 01:00:09 ip-192-168-0-83 systemd[1]: Starting disk-check.service - Check Disk Usage Service...
+Jul 17 01:00:09 ip-192-168-0-83 check_disk_usage.sh[51154]: Поточне використання диска: 17%
+Jul 17 01:00:09 ip-192-168-0-83 systemd[1]: disk-check.service: Deactivated successfully.
+Jul 17 01:00:09 ip-192-168-0-83 systemd[1]: Finished disk-check.service - Check Disk Usage Service.
+root@ip-192-168-0-83:/home/ubuntu# cat /usr/local/bin/check_disk_usage.sh
+#!/bin/bash
+USAGE=$(df / | awk 'NR==2 {print $5}' | sed 's/%//')
+
+echo "Поточне використання диска: ${USAGE}%"
+
+if [ "$USAGE" -gt 90 ]; then
+    echo "УВАГА: На диску залишилося мало місця! Використано: ${USAGE}%" >&2
+fi
+root@ip-192-168-0-83:/home/ubuntu# cat /etc/systemd/system/disk-check.service
+[Unit]
+Description=Check Disk Usage Service
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/check_disk_usage.sh
+root@ip-192-168-0-83:/home/ubuntu# cat /etc/systemd/system/disk-check.timer
+[Unit]
+Description=Запуск перевірки диска кожні 5 хвилин
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=5min
+
+Persistent=true
+
+RandomizedDelaySec=30
+
+[Install]
+WantedBy=timers.target
+
