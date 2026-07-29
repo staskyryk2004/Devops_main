@@ -1,0 +1,8 @@
+[proxy]
+192.168.101.10 ansible_user=vagrant
+
+[db]
+192.168.101.20 ansible_user=vagrant
+
+[web]
+192.168.101.30 ansible_user=vagrant
