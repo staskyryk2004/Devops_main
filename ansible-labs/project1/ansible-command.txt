@@ -1,0 +1,362 @@
+ubuntu@ip-192-168-0-29:~$ cd repository
+ubuntu@ip-192-168-0-29:~/repository$ cd Devops_main
+ubuntu@ip-192-168-0-29:~/repository/Devops_main$ ls -l
+total 240
+-rw-rw-r-- 1 ubuntu ubuntu     14 Jul 29 17:38 README.md
+drwxrwxr-x 3 ubuntu ubuntu   4096 Jul 29 17:38 ansible-labs
+drwxrwxr-x 2 ubuntu ubuntu   4096 Jul 29 17:38 aws-labs
+-rw-rw-r-- 1 ubuntu ubuntu   1190 Jul 29 17:38 bash-script.sh
+-rw-rw-r-- 1 ubuntu ubuntu  10972 Jul 29 17:38 lab1
+-rw-rw-r-- 1 ubuntu ubuntu   1709 Jul 29 17:38 lab2
+-rw-rw-r-- 1 ubuntu ubuntu   6235 Jul 29 17:38 minikube-output.txt
+-rw-rw-r-- 1 ubuntu ubuntu    321 Jul 29 17:38 nginx.conf.template
+-rw-rw-r-- 1 ubuntu ubuntu    377 Jul 29 17:38 nginx.service.template
+drwxrwxr-x 2 ubuntu ubuntu   4096 Jul 29 17:38 podman-nginx
+-rw-rw-r-- 1 ubuntu ubuntu   5113 Jul 29 17:38 systemd-analyze.log
+-rw-rw-r-- 1 ubuntu ubuntu 163848 Jul 29 17:38 systemd-output.txt
+-rw-rw-r-- 1 ubuntu ubuntu   4290 Jul 29 17:38 systemd-port80.log
+-rw-rw-r-- 1 ubuntu ubuntu   2330 Jul 29 17:38 systemd-port8080.log
+drwxrwxr-x 3 ubuntu ubuntu   4096 Jul 29 17:38 vagrant-labs
+ubuntu@ip-192-168-0-29:~/repository/Devops_main$ cd ansible-labs
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs$ cd project1
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ nano Vagrantfile
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ sudo virsh destroy project1_proxy
+Domain 'project1_proxy' destroyed
+
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ sudo virsh undefine project1_proxy
+Domain 'project1_proxy' has been undefined
+
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ rm -rf .vagrant/machines/proxy
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ nano Vagrantfile
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ rm -rf .vagrant
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ killall -9 vagrant ruby 2>/dev/null
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ rm -f .vagrant/machines/db/libvirt/action_stub*
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ rm -f .vagrant/machines/db/libvirt/lock*
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ find .vagrant/machines/ -name "*lock*" -delete
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ find .vagrant/machines/ -name "*action_stub*" -delete
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ sudo virsh destroy project1_db 2>/dev/null
+Domain 'project1_db' destroyed
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ sudo virsh undefine project1_db
+Domain 'project1_db' has been undefined
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ rm -rf .vagrant/machines/db
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ vagrant up db --provider=libvirt
+Bringing machine 'db' up with 'libvirt' provider...
+==> db: Checking if box 'generic/ubuntu2204' version '4.3.12' is up to date...
+[fog][WARNING] Unrecognized arguments: libvirt_ip_command
+==> db: Creating image (snapshot of base box volume).
+==> db: Creating domain with the following settings...
+==> db:  -- Name:              project1_db
+==> db:  -- Description:       Source: /home/ubuntu/repository/Devops_main/ansible-labs/project1/Vagrantfile
+==> db:  -- Domain type:       qemu
+==> db:  -- Cpus:              2
+==> db:  -- Feature:           acpi
+==> db:  -- Feature:           apic
+==> db:  -- Feature:           pae
+==> db:  -- Clock offset:      utc
+==> db:  -- Memory:            1024M
+==> db:  -- Base box:          generic/ubuntu2204
+==> db:  -- Storage pool:      default
+==> db:  -- Image(vda):        /var/lib/libvirt/images/project1_db.img, virtio, 128G
+==> db:  -- Disk driver opts:  cache='default'
+==> db:  -- Graphics Type:     vnc
+==> db:  -- Video Type:        cirrus
+==> db:  -- Video VRAM:        256
+==> db:  -- Video 3D accel:    false
+==> db:  -- Keymap:            en-us
+==> db:  -- TPM Backend:       passthrough
+==> db:  -- INPUT:             type=mouse, bus=ps2
+==> db: Creating shared folders metadata...
+==> db: Starting domain.
+==> db: Domain launching with graphics connection settings...
+==> db:  -- Graphics Port:      5900
+==> db:  -- Graphics IP:        127.0.0.1
+==> db:  -- Graphics Password:  Not defined
+==> db:  -- Graphics Websocket: 5700
+==> db: Waiting for domain to get an IP address...
+==> db: Waiting for machine to boot. This may take a few minutes...
+    db: SSH address: 192.168.121.46:22
+    db: SSH username: vagrant
+    db: SSH auth method: private key
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: 
+    db: Vagrant insecure key detected. Vagrant will automatically replace
+    db: this with a newly generated keypair for better security.
+    db: 
+    db: Inserting generated public key within guest...
+    db: Removing insecure key from the guest if it's present...
+    db: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> db: Machine booted and ready!
+==> db: Setting hostname...
+==> db: Configuring and enabling network interfaces...
+
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ nano Vagrantfile
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ rm -rf .vagrant
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ sudo virsh undefine project1_web
+Domain 'project1_web' has been undefined
+
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ sudo virsh destroy project1_web 2>/dev/null
+Domain 'project1_web' destroyed
+
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ sudo virsh undefine project1_web 2>/dev/null
+
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ sudo virsh vol-delete --pool default project1_web.img 2>/dev/null
+Vol project1_web.img deleted
+
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ rm -rf .vagrant/machines/web
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ nano Vagrantfile
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ sudo swapon --show
+NAME      TYPE SIZE USED PRIO
+/swapfile file   2G 1.1G   -1
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ nano Vagrantfile
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ vagrant up web --provider=libvirt
+Bringing machine 'web' up with 'libvirt' provider...
+==> web: Checking if box 'generic/ubuntu2204' version '4.3.12' is up to date...
+[fog][WARNING] Unrecognized arguments: libvirt_ip_command
+==> web: Creating image (snapshot of base box volume).
+==> web: Creating domain with the following settings...
+==> web:  -- Name:              project1_web
+==> web:  -- Description:       Source: /home/ubuntu/repository/Devops_main/ansible-labs/project1/Vagrantfile
+==> web:  -- Domain type:       qemu
+==> web:  -- Cpus:              2
+==> web:  -- Feature:           acpi
+==> web:  -- Feature:           apic
+==> web:  -- Feature:           pae
+==> web:  -- Clock offset:      utc
+==> web:  -- Memory:            1024M
+==> web:  -- Base box:          generic/ubuntu2204
+==> web:  -- Storage pool:      default
+==> web:  -- Image(vda):        /var/lib/libvirt/images/project1_web.img, virtio, 128G
+==> web:  -- Disk driver opts:  cache='default'
+==> web:  -- Graphics Type:     none
+==> web:  -- Video Type:        cirrus
+==> web:  -- Video VRAM:        256
+==> web:  -- Video 3D accel:    false
+==> web:  -- Keymap:            en-us
+==> web:  -- TPM Backend:       passthrough
+==> web:  -- INPUT:             type=mouse, bus=ps2
+==> web: Creating shared folders metadata...
+==> web: Updating domain definition due to configuration change
+==> web: Starting domain.
+==> web: Waiting for domain to get an IP address...
+==> web: Waiting for machine to boot. This may take a few minutes...
+    web: SSH address: 192.168.121.155:22
+    web: SSH username: vagrant
+    web: SSH auth method: private key
+    web: Warning: Connection refused. Retrying...
+    web: Warning: Connection refused. Retrying...
+    web: Warning: Connection refused. Retrying...
+    web: Warning: Connection refused. Retrying...
+    web: Warning: Connection refused. Retrying...
+    web: Warning: Connection refused. Retrying...
+    web: Warning: Connection refused. Retrying...
+    web: Warning: Connection refused. Retrying...
+    web: Warning: Connection refused. Retrying...
+    web: Warning: Connection refused. Retrying...
+    web: Warning: Connection refused. Retrying...
+    web: Warning: Connection refused. Retrying...
+    web: Warning: Connection refused. Retrying...
+    web: Warning: Connection refused. Retrying...
+    web: Warning: Connection refused. Retrying...
+    web: Warning: Connection refused. Retrying...
+    web: Warning: Connection refused. Retrying...
+    web: Warning: Connection refused. Retrying...
+    web: Warning: Connection refused. Retrying...
+    web: Warning: Connection refused. Retrying...
+    web: Warning: Connection refused. Retrying...
+    web: Warning: Connection refused. Retrying...
+    web: 
+    web: Vagrant insecure key detected. Vagrant will automatically replace
+    web: this with a newly generated keypair for better security.
+    web: 
+    web: Inserting generated public key within guest...
+    web: Removing insecure key from the guest if it's present...
+    web: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> web: Machine booted and ready!
+==> web: Setting hostname...
+==> web: Configuring and enabling network interfaces...
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ ls -l
+total 24
+-rw-rw-r-- 1 ubuntu ubuntu  702 Jul 30 14:32 Vagrantfile
+-rw-rw-r-- 1 ubuntu ubuntu  829 Jul 29 18:04 Vagrantfile1
+-rw-rw-r-- 1 ubuntu ubuntu  103 Jul 29 18:01 ansible.cfg
+-rw-rw-r-- 1 ubuntu ubuntu  399 Jul 29 22:02 inventory
+-rw-rw-r-- 1 ubuntu ubuntu 3815 Jul 30 12:56 playbook.yaml
+-rw-rw-r-- 1 ubuntu ubuntu  729 Jul 29 21:59 vagrant-ssh-config
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ nano inventory
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ ls -l .vagrant/machines/*/libvirt/private_key
+-rw------- 1 ubuntu ubuntu 400 Jul 30 14:40 .vagrant/machines/web/libvirt/private_key
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ vagrant provision db
+==> db: Domain is not created. Please run `vagrant up` first.
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ nano inventory
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ ls -l .vagrant/machines/*/libvirt/private_key
+-rw------- 1 ubuntu ubuntu 400 Jul 30 14:40 .vagrant/machines/web/libvirt/private_key
+
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ sudo virsh destroy project1_db 2>/dev/null
+Domain 'project1_db' destroyed
+
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ sudo virsh undefine project1_db 2>/dev/null
+Domain 'project1_db' has been undefined
+
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ sudo virsh vol-delete --pool default project1_db.img 2>/dev/null
+Vol project1_db.img deleted
+
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ rm -rf .vagrant/machines/db
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ vagrant up db --provider=libvirt
+Bringing machine 'db' up with 'libvirt' provider...
+==> db: Checking if box 'generic/ubuntu2204' version '4.3.12' is up to date...
+[fog][WARNING] Unrecognized arguments: libvirt_ip_command
+==> db: Creating image (snapshot of base box volume).
+==> db: Creating domain with the following settings...
+==> db:  -- Name:              project1_db
+==> db:  -- Description:       Source: /home/ubuntu/repository/Devops_main/ansible-labs/project1/Vagrantfile
+==> db:  -- Domain type:       qemu
+==> db:  -- Cpus:              2
+==> db:  -- Feature:           acpi
+==> db:  -- Feature:           apic
+==> db:  -- Feature:           pae
+==> db:  -- Clock offset:      utc
+==> db:  -- Memory:            1024M
+==> db:  -- Base box:          generic/ubuntu2204
+==> db:  -- Storage pool:      default
+==> db:  -- Image(vda):        /var/lib/libvirt/images/project1_db.img, virtio, 128G
+==> db:  -- Disk driver opts:  cache='default'
+==> db:  -- Graphics Type:     none
+==> db:  -- Video Type:        cirrus
+==> db:  -- Video VRAM:        256
+==> db:  -- Video 3D accel:    false
+==> db:  -- Keymap:            en-us
+==> db:  -- TPM Backend:       passthrough
+==> db:  -- INPUT:             type=mouse, bus=ps2
+==> db: Creating shared folders metadata...
+==> db: Updating domain definition due to configuration change
+==> db: Starting domain.
+==> db: Waiting for domain to get an IP address...
+==> db: Waiting for machine to boot. This may take a few minutes...
+    db: SSH address: 192.168.121.242:22
+    db: SSH username: vagrant
+    db: SSH auth method: private key
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: Warning: Connection refused. Retrying...
+    db: 
+    db: Vagrant insecure key detected. Vagrant will automatically replace
+    db: this with a newly generated keypair for better security.
+    db: 
+    db: Inserting generated public key within guest...
+    db: Removing insecure key from the guest if it's present...
+    db: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> db: Machine booted and ready!
+==> db: Setting hostname...
+==> db: Configuring and enabling network interfaces...
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ vagrant status
+[fog][WARNING] Unrecognized arguments: libvirt_ip_command
+[fog][WARNING] Unrecognized arguments: libvirt_ip_command
+Current machine states:
+
+db                        running (libvirt)
+web                       running (libvirt)
+
+This environment represents multiple VMs. The VMs are all listed
+above with their current state. For more information about a specific
+VM, run `vagrant status NAME`.
+ubuntu@ip-192-168-0-29:~/repository/Devops_main/ansible-labs/project1$ ansible-playbook -i inventory playbook.yaml
+
+PLAY [Configure Database Node (Node B)] ********************************************************************************
+
+TASK [Gathering Facts] *************************************************************************************************
+[WARNING]: Host '192.168.101.20' is using the discovered Python interpreter at '/usr/bin/python3.10', but future installation of another Python interpreter could cause a different interpreter to be discovered. See https://docs.ansible.com/ansible-core/2.20/reference_appendices/interpreter_discovery.html for more information.
+ok: [192.168.101.20]
+
+TASK [Install MariaDB / MySQL] *****************************************************************************************
+changed: [192.168.101.20]
+
+TASK [Configure MySQL to listen on 192.168.101.20] *********************************************************************
+changed: [192.168.101.20]
+
+TASK [Start and enable MariaDB] ****************************************************************************************
+ok: [192.168.101.20]
+
+TASK [Create WordPress Database] ***************************************************************************************
+changed: [192.168.101.20]
+
+TASK [Create Database User] ********************************************************************************************
+changed: [192.168.101.20]
+
+RUNNING HANDLER [Restart MariaDB] **************************************************************************************
+changed: [192.168.101.20]
+
+PLAY [Configure Web Node (Node C)] *************************************************************************************
+
+TASK [Gathering Facts] *************************************************************************************************
+[WARNING]: Host '192.168.101.30' is using the discovered Python interpreter at '/usr/bin/python3.10', but future installation of another Python interpreter could cause a different interpreter to be discovered. See https://docs.ansible.com/ansible-core/2.20/reference_appendices/interpreter_discovery.html for more information.
+ok: [192.168.101.30]
+
+TASK [Install Apache, PHP and extensions] ******************************************************************************
+changed: [192.168.101.30]
+
+TASK [Download and Extract WordPress] **********************************************************************************
+changed: [192.168.101.30]
+
+TASK [Set permissions for WordPress folder] ****************************************************************************
+changed: [192.168.101.30]
+
+TASK [Create wp-config.php from template] ******************************************************************************
+changed: [192.168.101.30]
+
+TASK [Change Apache VirtualHost document root to WordPress] ************************************************************
+changed: [192.168.101.30]
+
+TASK [Enable Apache Rewrite module] ************************************************************************************
+changed: [192.168.101.30]
+
+RUNNING HANDLER [Restart Apache] ***************************************************************************************
+changed: [192.168.101.30]
+
+PLAY RECAP *************************************************************************************************************
+192.168.101.20             : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+192.168.101.30             : ok=8    changed=7    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

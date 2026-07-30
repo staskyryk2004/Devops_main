@@ -1,3 +1,6 @@
+# ===================================================
+# 1. Налаштування Node B (MySQL Database)
+# ===================================================
 - name: Configure Database Node (Node B)
   hosts: db
   become: true
@@ -30,13 +33,13 @@
         enabled: true
 
     - name: Create WordPress Database
-      ansible.mysql.mysql_db:
+      community.mysql.mysql_db:
         name: "{{ db_name }}"
         state: present
         login_unix_socket: /var/run/mysqld/mysqld.sock
 
     - name: Create Database User
-      ansible.mysql.mysql_user:
+      community.mysql.mysql_user:
         name: "{{ db_user }}"
         password: "{{ db_pass }}"
         host: "{{ web_ip }}"
@@ -131,43 +134,3 @@
         name: apache2
         state: restarted
 
-
-# ===================================================
-# 3. Налаштування Node A (Nginx Reverse Proxy)
-# ===================================================
-- name: Configure Proxy Node (Node A)
-  hosts: proxy
-  become: true
-  vars:
-    node_c_ip: "192.168.102.30"
-
-  tasks:
-    - name: Install Nginx
-      ansible.builtin.apt:
-        name: nginx
-        state: present
-        update_cache: yes
-
-    - name: Configure Nginx reverse proxy
-      ansible.builtin.copy:
-        dest: /etc/nginx/sites-available/default
-        content: |
-          server {
-              listen 80;
-              server_name mysite.com;
-
-              location / {
-                  proxy_pass http://{{ node_c_ip }}:80;
-                  proxy_set_header Host $host;
-                  proxy_set_header X-Real-IP $remote_addr;
-                  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-                  proxy_set_header X-Forwarded-Proto $scheme;
-              }
-          }
-      notify: Restart Nginx
-
-  handlers:
-    - name: Restart Nginx
-      ansible.builtin.service:
-        name: nginx
-        state: restarted
